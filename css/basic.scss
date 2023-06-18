@@ -1,20 +1,3 @@
-@font-face {
-    font-family: 'Book-man-old-style';
-    src: url(../fonts/georgia-regular.woff2) format('woff2'),
-         url(../fonts/georgia-regular.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Robotolight';
-    src: url(../fonts/Robotolight.woff2) format('woff2'),
-         url(../fonts/Robotolight.woff) format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 
@@ -28,7 +11,7 @@ body {
     // font-size: 20px;
     min-width: 320px;
     overflow-x: hidden;
-    // background-color: $black;
+    background-color: $purple;
     // color: $dark;
 }
 
