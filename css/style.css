@@ -31,6 +31,7 @@ main {
 }
 
 ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -50,6 +51,12 @@ ul {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
   .title {
     font-weight: 700;
     font-size: 42px;
@@ -59,6 +66,23 @@ ul {
   }
   .title--indent {
     margin-bottom: 66px;
+  }
+  .text--small {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .appointment__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .appointment__list-item {
+    padding: 46px 44px 55px 44px;
+    background-color: purple;
+    border-radius: 13px;
+    text-align: center;
+  }
+  .list-item__text {
+    color: #8381B9;
   }
 }
 @media (min-width: 1280px) {
