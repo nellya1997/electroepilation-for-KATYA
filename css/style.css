@@ -1,20 +1,25 @@
 @font-face {
-  font-family: "Book-man-old-style";
-  src: url(../fonts/georgia-regular.woff2) format("woff2"), url(../fonts/georgia-regular.woff) format("woff");
+  font-family: "inter-regular";
+  src: url(../fonts/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Robotolight";
-  src: url(../fonts/Robotolight.woff2) format("woff2"), url(../fonts/Robotolight.woff) format("woff");
-  font-weight: 300;
+  font-family: "inter-italic";
+  src: url(../fonts/Inter-Italic.woff2) format("woff2"), url(../fonts/Inter-Italic.woff) format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 body {
+  font-family: "inter-regular", "font", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   min-width: 320px;
   overflow-x: hidden;
+  background-color: #F5F5F5;
+  color: #8381B9;
 }
 
 .container {
@@ -44,6 +49,16 @@ ul {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .title--indent {
+    margin-bottom: 66px;
   }
 }
 @media (min-width: 1280px) {

@@ -1,1 +1,107 @@
-@import '../css/basic.scss'
+@font-face {
+    font-family: 'inter-regular';
+    src: url(../fonts/Inter-Regular.woff2) format('woff2'),
+         url(../fonts/Inter-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter-italic';
+    src: url(../fonts/Inter-Italic.woff2) format('woff2'),
+         url(../fonts/Inter-Italic.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+// цвета
+
+$hard-purple: #8381B9;
+$ligth-purple: #F5F5F5;
+$purple: #CDC9E0;
+$white: #fff;
+$purple1: #AEA1CD;
+$purple2: #B7AAD5;
+$grey: #AAAAAA;
+$purple3: #DEDBEB;
+
+
+
+body {
+    font-family: 'inter-regular', 'font', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $ligth-purple;
+    color: $hard-purple;
+}
+
+.container {
+    margin: 0 15px;
+}
+
+main {
+    margin: 0 auto;
+}
+
+ul {
+    // list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 567 */
+@media (min-width: 0px) {
+
+    .container {
+        margin: 0 15px;
+    }
+
+    .picture {
+
+        display: inline-block;
+        width: 100%;
+
+        & img {
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 42px;
+        color: $white;
+        margin: 0;
+        padding: 0;
+
+        &--indent {
+            margin-bottom: 66px;
+        }
+
+    }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+    // .container {
+    //     margin: 0 auto;
+    //     max-width: 600px;
+    // }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 820px;
+    }
+}
+
