@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Book-man-old-style';
+    src: url(../fonts/georgia-regular.woff2) format('woff2'),
+         url(../fonts/georgia-regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Robotolight';
+    src: url(../fonts/Robotolight.woff2) format('woff2'),
+         url(../fonts/Robotolight.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+// цвета
+
+$purple: #CDC9E0;
+
+body {
+    // font-family: 'georgia-regular', 'font', sans-serif;
+    // font-weight: 300;
+    // font-size: 20px;
+    min-width: 320px;
+    overflow-x: hidden;
+    // background-color: $black;
+    // color: $dark;
+}
+
+.container {
+
+    margin: 0 15px;
+}
+
+main {
+    margin: 0 auto;
+}
+
+ul {
+    // list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 567 */
+@media (min-width: 0px) {
+
+    .container {
+        margin: 0 15px;
+    }
+
+    .picture {
+
+        display: inline-block;
+        width: 100%;
+
+        & img {
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+    // .container {
+    //     margin: 0 auto;
+    //     max-width: 600px;
+    // }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 820px;
+    }
+}
+
