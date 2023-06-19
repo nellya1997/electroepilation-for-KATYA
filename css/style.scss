@@ -37,7 +37,7 @@ body {
     font-size: 20px;
     min-width: 320px;
     overflow-x: hidden;
-    background-color: $ligth-purple;
+    background-color: $purple;
     color: $hard-purple;
 }
 
@@ -53,6 +53,10 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -75,14 +79,6 @@ ul {
         }
     }
 
-    .flex {
-        display: flex;
-    }
-
-    .grid {
-        display: grid;
-    }
-
     .title {
         font-weight: 700;
         font-size: 42px;
@@ -90,39 +86,108 @@ ul {
         margin: 0;
         padding: 0;
 
+        &--h2 {
+            display: flex;
+            justify-content: center;
+        }
+
         &--indent {
             margin-bottom: 66px;
         }
 
     }
 
-    .text {
+    .content {
+        margin: 0;
+        padding: 0;
+        color: $hard-purple;
+
         &--small {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
+        }
+        
+        &--indent {
+            margin-bottom: 5px;
         }
     }
   
+    .section {
 
-    .appointment {
-
-        &__list {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+        &--appointment {
+            padding-bottom: 100px;
         }
 
-        &__list-item {
-            padding: 46px 44px 55px 44px;
-            background-color: purple;
-            // Исправить потом этот цвет. Написан для примера.
-            border-radius: 13px;
-            text-align: center;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        
+        &__item {
+            display: flex;
+            margin-bottom: 23px;
+            margin-right: 20px;
+            flex-direction: column;
+            width: calc(33% - 15px);
+
+        }
+        &__item:last-child {
+            margin-right: 0;
+        } 
+        &__item-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            background-color: $purple3;
+            border-radius: 10px;
+        }
+
+        &__item-img {
+            display: flex;
+            margin-bottom: 17px;
+            align-items: center;
+            justify-content: center;
+                max-width: 116px;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        font-weight: 500;
+        font-size: 15px;
+
+        &--apointment {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 100%;
+            color: $white;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #AEA1CD 0%, #B7AAD5 100%);
+            border-radius: 12px;;
+        }
+
+        &--online-transaction {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $purple3;
+            color: $hard-purple;
+            border-radius: 12px;
 
         }
     }
 
-    .list-item__text {
-        color: $hard-purple;
+    .link {
+        text-decoration: none;
+        color: inherit;
     }
 }
 

@@ -13,31 +13,63 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header"></header>
-    <main>
-      <section class="appointment">
-        <div class="container">
+    <div class="container">
+      <header class="header"></header>
+      <main>
+        <section class="section--appointment">
           <h2 class="title title--h2 title--indent">ОНЛАЙН-ЗАПИСЬ</h2>
-          <ul class="appointment__list grid">
-            <li class="appointment__list-item">
-              <!-- <svg class="cart-svg">
-                <use xlink:href="/_sprite.svg#appointment"></use>
-              </svg> -->
-              <p class="list-item__text text--small">Выбери свободное окошко</p>
+          <ul class="list">
+            <li class="list__item">
+              <div class="list__item-card">
+                <img
+                  class="list__item-img"
+                  src="img/appointment/appointment.svg"
+                  alt=""
+                />
+                <p class="content content--small">Выбери свободное окошко</p>
+              </div>
+              <button class="button--apointment button">
+                <a class="link" href="#">записаться</a>
+              </button>
             </li>
-            <li class="appointment__list-item">
-              <p class="list-item__text text--small">Нет подходящего окошка?</p>
-              <span class="text--small">Пиши сюда</span>
+            <li class="list__item">
+              <div class="list__item-card">
+                <img
+                  class="list__item-img"
+                  src="img/appointment/whatsapp.svg"
+                  alt=""
+                />
+                <p class="content content--small content--indent">
+                  Нет подходящего окошка?
+                </p>
+                <span class="content--small">Пиши сюда</span>
+              </div>
+              <button class="button--apointment button">
+                <a class="link" href="#">whatsapp</a>
+              </button>
             </li>
-            <li class="appointment__list-item">
-              <p class="list-item__text text--small">
-                Для тех, кто хочет быть моделью
-              </p>
+            <li class="list__item">
+              <div class="list__item-card">
+                <img
+                  class="list__item-img"
+                  src="img/appointment/model.svg"
+                  alt=""
+                />
+                <p class="content content--small">
+                  Для тех, кто хочет быть моделью
+                </p>
+              </div>
+              <button class="button--apointment button">
+                <a class="link" href="#">записаться</a>
+              </button>
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
+          <button class="button button--online-transaction">
+            <a href="#" class="link">Возможна оплата онлайн переводом</a>
+          </button>
+        </section>
+      </main>
+    </div>
     <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
