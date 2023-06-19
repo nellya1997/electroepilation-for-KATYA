@@ -71,6 +71,7 @@ ul {
     font-size: 28px;
     font-weight: 700;
     line-height: 34px;
+    color: #8381B9;
   }
   .text--small {
     font-size: 14px;
@@ -86,6 +87,9 @@ ul {
   }
   .about__info {
     width: calc(50% - 2px);
+  }
+  .about__content {
+    font-family: "inter-italic", "font", sans-serif;
   }
   .appointment__list {
     grid-template-columns: repeat(3, 1fr);
