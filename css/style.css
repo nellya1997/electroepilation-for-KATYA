@@ -99,6 +99,9 @@ ul {
     background-color: #fff;
     border-radius: 12px;
   }
+  .title--top-master {
+    margin-bottom: 25px;
+  }
   .content {
     margin: 0;
     padding: 0;
@@ -197,6 +200,16 @@ ul {
     justify-content: center;
     max-width: 116px;
   }
+  .list--price {
+    display: flex;
+    flex-direction: column;
+  }
+  .list__item-price {
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .button {
     display: flex;
     justify-content: center;
@@ -222,6 +235,22 @@ ul {
     background-color: #DEDBEB;
     color: #8381B9;
     border-radius: 12px;
+  }
+  .price__block {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #DEDBEB;
+  }
+  .item-price--content {
+    padding-left: 50px;
+    white-space: nowrap;
+    text-transform: lowercase;
+  }
+  .item-price--stipple {
+    width: 100%;
+    border-bottom: 1px dashed #fff;
   }
   .swiper-inner {
     position: relative;
