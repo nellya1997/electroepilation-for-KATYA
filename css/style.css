@@ -115,6 +115,13 @@ ul {
   .link--width {
     display: block;
   }
+  .link--transaction {
+    text-decoration: none;
+    color: inherit;
+  }
+  .section--appointment {
+    padding-bottom: 100px;
+  }
   .appointment__list {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -127,6 +134,63 @@ ul {
   }
   .list-item__text {
     color: #8381B9;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list__item {
+    display: flex;
+    margin-bottom: 23px;
+    margin-right: 20px;
+    flex-direction: column;
+    width: calc(33% - 15px);
+  }
+  .list__item:last-child {
+    margin-right: 0;
+  }
+  .list__item-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #DEDBEB;
+    border-radius: 10px;
+  }
+  .list__item-img {
+    display: flex;
+    margin-bottom: 17px;
+    align-items: center;
+    justify-content: center;
+    max-width: 116px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .button--apointment {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #AEA1CD 0%, #B7AAD5 100%);
+    border-radius: 12px;
+  }
+  .button--online-transaction {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #DEDBEB;
+    color: #8381B9;
+    border-radius: 12px;
   }
 }
 @media (min-width: 1280px) {

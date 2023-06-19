@@ -158,6 +158,19 @@ ul {
         &--width {
             display: block;
         }
+
+        &--transaction {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .section {
+
+        &--appointment {
+            padding-bottom: 100px;
+        }
+
     }
 
 
@@ -180,6 +193,71 @@ ul {
 
     .list-item__text {
         color: $hard-purple;
+    }
+
+     .list {
+        display: flex;
+        justify-content: space-between;
+        
+        &__item {
+            display: flex;
+            margin-bottom: 23px;
+            margin-right: 20px;
+            flex-direction: column;
+            width: calc(33% - 15px);
+
+        }
+        &__item:last-child {
+            margin-right: 0;
+        } 
+        &__item-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            background-color: $purple3;
+            border-radius: 10px;
+        }
+
+        &__item-img {
+            display: flex;
+            margin-bottom: 17px;
+            align-items: center;
+            justify-content: center;
+                max-width: 116px;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        font-weight: 500;
+        font-size: 15px;
+
+        &--apointment {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 100%;
+            color: $white;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #AEA1CD 0%, #B7AAD5 100%);
+            border-radius: 12px;;
+        }
+
+        &--online-transaction {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $purple3;
+            color: $hard-purple;
+            border-radius: 12px;
+
+        }
     }
 }
 
