@@ -39,7 +39,7 @@ ul {
 /* 567 */
 @media (min-width: 0px) {
   .container {
-    margin: 0 15px;
+    margin: 0 21px;
   }
   .picture {
     display: inline-block;
@@ -72,6 +72,7 @@ ul {
     font-weight: 700;
     line-height: 34px;
     color: #8381B9;
+    margin-bottom: 15px;
   }
   .text--small {
     font-size: 14px;
@@ -84,12 +85,34 @@ ul {
   .about__flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
   .about__info {
     width: calc(50% - 2px);
   }
   .about__content {
     font-family: "inter-italic", "font", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+  }
+  .about__content span {
+    font-weight: 700;
+  }
+  .link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #AEA1CD;
+    border-radius: 12px;
+    color: #F8F5F0;
+    text-decoration: none;
+    padding: 7px 0;
+    text-align: center;
+  }
+  .link--width {
+    display: block;
   }
   .appointment__list {
     grid-template-columns: repeat(3, 1fr);
