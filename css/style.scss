@@ -24,6 +24,7 @@ $hard-purple: #8381B9;
 $ligth-purple: #F5F5F5;
 $purple: #CDC9E0;
 $white: #fff;
+$white1: #F8F5F0;
 $purple1: #AEA1CD;
 $purple2: #B7AAD5;
 $grey: #AAAAAA;
@@ -64,7 +65,7 @@ ul {
 @media (min-width: 0px) {
 
     .container {
-        margin: 0 15px;
+        margin: 0 21px;
     }
 
     .picture {
@@ -103,6 +104,7 @@ ul {
             font-weight: 700;
             line-height: 34px;
             color: $hard-purple;
+            margin-bottom: 15px;
         }
 
     }
@@ -121,6 +123,7 @@ ul {
         &__flex {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 32px;
         }
 
         &__info {
@@ -129,6 +132,30 @@ ul {
 
         &__content {
             font-family: $font-italic;
+            font-weight: 300;
+            font-size: 12px;
+            margin: 0;
+            text-align: right;
+
+            & span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .link {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        background-color: $purple1;
+        border-radius: 12px;
+        color: $white1;
+        text-decoration: none;
+        padding: 7px 0;
+        text-align: center;
+
+        &--width {
+            display: block;
         }
     }
 
