@@ -18,7 +18,7 @@ body {
   font-size: 20px;
   min-width: 320px;
   overflow-x: hidden;
-  background-color: #F5F5F5;
+  background-color: #CDC9E0;
   color: #8381B9;
 }
 
@@ -51,11 +51,11 @@ ul {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .flex {
-    display: flex;
+  .picture--about {
+    width: calc(50% - 5px);
   }
-  .grid {
-    display: grid;
+  .picture--about img {
+    border-radius: 0px 88px;
   }
   .title {
     font-weight: 700;
@@ -67,9 +67,25 @@ ul {
   .title--indent {
     margin-bottom: 66px;
   }
+  .title--h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+  }
   .text--small {
     font-size: 14px;
     font-weight: 400;
+  }
+  .about {
+    padding-top: 62px;
+    margin-bottom: 62px;
+  }
+  .about__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__info {
+    width: calc(50% - 2px);
   }
   .appointment__list {
     grid-template-columns: repeat(3, 1fr);

@@ -37,7 +37,7 @@ body {
     font-size: 20px;
     min-width: 320px;
     overflow-x: hidden;
-    background-color: $ligth-purple;
+    background-color: $purple;
     color: $hard-purple;
 }
 
@@ -73,14 +73,14 @@ ul {
             width: 100%;
             object-fit: cover;
         }
-    }
 
-    .flex {
-        display: flex;
-    }
+        &--about {
 
-    .grid {
-        display: grid;
+            width: calc(50% - 5px);
+            & img {
+                border-radius: 0px 88px;
+            }
+        }
     }
 
     .title {
@@ -94,6 +94,12 @@ ul {
             margin-bottom: 66px;
         }
 
+        &--h1 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 34px;
+        }
+
     }
 
     .text {
@@ -102,7 +108,21 @@ ul {
         font-weight: 400;
         }
     }
-  
+
+    .about {
+        padding-top: 62px;
+        margin-bottom: 62px;
+
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__info {
+            width: calc(50% - 2px);
+        }
+    }
+
 
     .appointment {
 
