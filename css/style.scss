@@ -29,6 +29,10 @@ $purple2: #B7AAD5;
 $grey: #AAAAAA;
 $purple3: #DEDBEB;
 
+// переменная со шрифтом
+
+$font-italic: 'inter-italic', 'font', sans-serif;
+
 
 
 body {
@@ -98,6 +102,7 @@ ul {
             font-size: 28px;
             font-weight: 700;
             line-height: 34px;
+            color: $hard-purple;
         }
 
     }
@@ -120,6 +125,10 @@ ul {
 
         &__info {
             width: calc(50% - 2px);
+        }
+
+        &__content {
+            font-family: $font-italic;
         }
     }
 
