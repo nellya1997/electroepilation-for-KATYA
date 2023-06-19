@@ -55,6 +55,12 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .picture--about {
+    width: calc(50% - 5px);
+  }
+  .picture--about img {
+    border-radius: 0px 88px;
+  }
   .title {
     font-weight: 700;
     font-size: 42px;
@@ -65,9 +71,16 @@ img {
   .title--h2 {
     display: flex;
     justify-content: center;
+    font-size: 28px;
   }
   .title--indent {
     margin-bottom: 66px;
+  }
+  .title--h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #8381B9;
   }
   .content {
     margin: 0;
@@ -80,6 +93,20 @@ img {
   }
   .content--indent {
     margin-bottom: 5px;
+  }
+  .section .about {
+    padding-top: 62px;
+    margin-bottom: 62px;
+  }
+  .section .about__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section .about__info {
+    width: calc(50% - 2px);
+  }
+  .section .about__content {
+    font-family: "inter-italic", "font", sans-serif;
   }
   .section--appointment {
     padding-bottom: 100px;
