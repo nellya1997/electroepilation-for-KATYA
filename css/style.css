@@ -56,6 +56,7 @@ ul {
   }
   .picture--about img {
     border-radius: 0px 88px;
+    border: 7px solid #F8F5F0;
   }
   .title {
     font-weight: 700;
@@ -85,10 +86,10 @@ ul {
   .about__flex {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 18px;
   }
   .about__info {
-    width: calc(50% - 2px);
+    width: calc(50% - 9px);
   }
   .about__content {
     font-family: "inter-italic", "font", sans-serif;

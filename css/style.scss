@@ -84,6 +84,7 @@ ul {
             width: calc(50% - 5px);
             & img {
                 border-radius: 0px 88px;
+                border: 7px solid $white1;
             }
         }
     }
@@ -123,11 +124,11 @@ ul {
         &__flex {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 32px;
+            margin-bottom: 18px;
         }
 
         &__info {
-            width: calc(50% - 2px);
+            width: calc(50% - 9px);
         }
 
         &__content {
