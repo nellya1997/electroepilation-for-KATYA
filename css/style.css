@@ -58,6 +58,9 @@ ul {
     border-radius: 0px 88px;
     border: 7px solid #F8F5F0;
   }
+  .picture--work img, .picture--masters img {
+    border-radius: 20px;
+  }
   .title-wrapper {
     width: 100%;
     display: flex;
@@ -95,7 +98,6 @@ ul {
     padding: 20px 30px;
     background-color: #fff;
     border-radius: 12px;
-    text-transform: uppercase;
   }
   .content {
     margin: 0;
@@ -221,38 +223,54 @@ ul {
     color: #8381B9;
     border-radius: 12px;
   }
+  .swiper-inner {
+    position: relative;
+  }
   .swiper-pagination.swiper-pagination-masters {
     top: auto;
-    bottom: -20px;
+    bottom: 0px;
   }
   .swiper-pagination.swiper-pagination-masters .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2px);
   }
+  .swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+  }
   .swiper.swiper--masters {
     padding-bottom: 52px;
-    overflow: visible;
   }
   .swiper.swiper--work {
     padding-bottom: 52px;
-    overflow: visible;
   }
   .swiper.swiper--indent {
     margin-bottom: 57px;
   }
+  .swiper-slide {
+    border-radius: 20px;
+  }
   .swiper-pagination .swiper-pagination-bullet {
-    background-color: gray;
-    width: 7px;
-    height: 7px;
+    background-color: #AAAAAA;
+    width: 12px;
+    height: 12px;
   }
   .swiper-pagination .swiper-pagination-bullet-active {
-    width: 9px;
-    height: 9px;
+    width: 18px;
+    height: 18px;
+    background-color: #E3E3E3;
   }
   .swiper-button-next, .swiper-button-prev {
     width: 78px;
     height: 78px;
     border-radius: 100%;
     background-color: #fff;
+  }
+  .swiper-navigation {
+    position: absolute;
+    top: 45%;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
   }
   .swiper-button-next {
     top: 50%;
