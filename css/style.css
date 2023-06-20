@@ -384,6 +384,9 @@ ul {
     top: 50%;
     left: -20px;
   }
+  .map iframe {
+    border-radius: 20px;
+  }
 }
 @media (min-width: 375px) {
   .list__item-img {
