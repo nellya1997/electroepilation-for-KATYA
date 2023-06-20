@@ -113,6 +113,11 @@ ul {
   .about__info {
     width: calc(50% - 9px);
   }
+  .about__info-decor {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
   .about__content {
     font-family: "inter-italic", "font", sans-serif;
     font-weight: 300;
@@ -140,6 +145,9 @@ ul {
   .link--transaction {
     text-decoration: none;
     color: inherit;
+  }
+  .link--apointment {
+    background-color: transparent;
   }
   .section--appointment {
     padding-bottom: 100px;
@@ -187,8 +195,17 @@ ul {
     max-width: 116px;
   }
   .list--price {
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
+  }
+  .list__item-subtitle {
+    color: #F8F5F0;
+  }
+  .list__item-subtitle span {
+    background-color: #8381B9;
+    padding: 2px;
+    border-radius: 3px;
   }
   .list__item-price {
     margin-bottom: 11px;
@@ -203,9 +220,15 @@ ul {
     font-size: 8px;
     line-height: 8px;
     letter-spacing: -4%;
+    white-space: nowrap;
+  }
+  .list__item-price span:nth-child(2n) {
+    width: 100%;
+    border-bottom: 1px dashed #F8F5F0;
   }
   .list__item-price span:nth-child(3) {
     font-weight: 700;
+    white-space: nowrap;
   }
   .list__indent-bottom {
     margin-bottom: 25px;
