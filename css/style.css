@@ -43,7 +43,8 @@ ul {
 /* 567 */
 @media (min-width: 0px) {
   .container {
-    margin: 0 21px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   .picture {
     display: inline-block;
@@ -168,16 +169,6 @@ ul {
   }
   .section--masters {
     padding-top: 100px;
-  }
-  .appointment__list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .appointment__list-item {
-    padding: 46px 44px 55px 44px;
-    background-color: purple;
-    border-radius: 13px;
-    text-align: center;
   }
   .list {
     display: flex;
