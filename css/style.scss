@@ -132,6 +132,8 @@ ul {
 
     }
 
+
+
     .content {
         margin: 0;
         padding: 0;
@@ -153,6 +155,12 @@ ul {
 
         &__info {
             width: calc(50% - 9px);
+        }
+
+        &__info-decor {
+            display: flex;
+            align-items: center;
+            justify-content: end;
         }
 
         &__content {
@@ -186,6 +194,9 @@ ul {
         &--transaction {
             text-decoration: none;
             color: inherit;
+        }
+        &--apointment {
+            background-color: transparent;
         }
     }
 
@@ -244,8 +255,19 @@ ul {
         }
 
         &--price {
+            padding-left: 20px;
             display: flex;
             flex-direction: column;
+        }
+
+        &__item-subtitle {
+            color: $white1;
+
+            & span {
+                background-color: $hard-purple;
+                padding: 2px;
+                border-radius: 3px;
+            }
         }
 
         &__item-price {
@@ -261,10 +283,16 @@ ul {
                 font-size: 8px;
                 line-height: 8px;
                 letter-spacing: -4%;
+                white-space: nowrap;
             }
-
+            & span:nth-child(2n) {
+                width: 100%;
+                border-bottom: 1px dashed $white1;
+                
+            }
             & span:nth-child(3) {
                 font-weight: 700;
+                white-space: nowrap;
             }
         }
 
