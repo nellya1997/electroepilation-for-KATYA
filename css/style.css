@@ -66,13 +66,6 @@ ul {
   .picture--work img, .picture--masters img {
     border-radius: 20px;
   }
-  .title-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: -20px;
-  }
   .title {
     font-weight: 700;
     font-size: 42px;
@@ -94,21 +87,8 @@ ul {
     font-size: 28px;
     text-align: center;
   }
-  .title--h3 {
-    font-size: 15px;
-    color: #8381B9;
-    text-transform: uppercase;
-  }
   .title--info {
     text-align: end;
-  }
-  .title--masters {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px 30px;
-    background-color: #fff;
-    border-radius: 12px;
-    text-transform: uppercase;
   }
   .title--top-master {
     margin-bottom: 25px;
@@ -164,11 +144,15 @@ ul {
   .section--appointment {
     padding-bottom: 100px;
   }
-  .section--works {
+  .sliders {
     padding-top: 100px;
   }
-  .section--masters {
-    padding-top: 100px;
+  .sliders__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
   }
   .list {
     display: flex;
@@ -213,6 +197,16 @@ ul {
     justify-content: space-between;
     width: 100%;
   }
+  .list__item-price span {
+    font-weight: "inter-italic", "font", sans-serif;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 8px;
+    letter-spacing: -4%;
+  }
+  .list__item-price span:nth-child(3) {
+    font-weight: 700;
+  }
   .list__indent-bottom {
     margin-bottom: 25px;
   }
@@ -248,6 +242,21 @@ ul {
     width: 100%;
     border-radius: 25px;
     background-color: #DEDBEB;
+  }
+  .price__work {
+    font-size: 15px;
+    color: #8381B9;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .sliders__name {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-transform: uppercase;
   }
   .swiper-inner {
     position: relative;
@@ -338,6 +347,9 @@ ul {
   .list__item-img {
     width: 116px;
   }
+  .list--price {
+    flex-direction: column;
+  }
   .list__item {
     text-align: center;
     display: flex;
@@ -354,19 +366,6 @@ ul {
   }
   .title--h3 {
     font-size: 20px;
-  }
-  .item-price--content {
-    font-size: 15px;
-  }
-  .item-price--content-price {
-    font-size: 12px;
-    white-space: nowrap;
-  }
-  .item-price--subtitle {
-    text-transform: uppercase;
-  }
-  .item-price--indent {
-    padding-left: 20px;
   }
 }
 @media (min-width: 1280px) {

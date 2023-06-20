@@ -1,36 +1,53 @@
-let swiperWork = document.querySelectorAll('.swiper');
+// let swiperWork = document.querySelectorAll('.swiper');
 
-swiperWork.forEach(function (work){
-    let swipers = new Swiper(work, {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    })
-    });
+// swiperWork.forEach(function (work){
+//     let swipers = new Swiper(work, {
+//         pagination: {
+//             el: '.swiper-pagination',
+//             clickable: true,
+//         },
+//         spaceBetween: 30,
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//     })
+//     });
 
-    // let swiperSaleProduct = document.querySelectorAll('.js-sale-product');
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    // centeredSlides:true,
+    spaceBetween: 50,
+    // controller: {
+    //   inverse: true,
+    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2"
+    }
+});
 
-    // swiperSaleProduct.forEach(function (product){
-    //     let swipers = new Swiper(product, {
-    //       effect: 'fade',
-    
-    //       fadeEffect: {
-    //         crossFade: true
-    //       },
-    
-    //       pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //       },
-    //       autoplay: {
-    //         delay: 2500,
-    //         disableOnInteraction: false,
-    //       },
-    //     });
-    // });
+const swiper1 = new Swiper(".swiper--masters", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    // centeredSlides:true,
+    spaceBetween: 50,
+    // controller: {
+    //   inverse: true,
+    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next1",
+        prevEl: ".swiper-button-prev1"
+    }
+});
