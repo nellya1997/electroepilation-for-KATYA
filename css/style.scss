@@ -69,7 +69,8 @@ ul {
 @media (min-width: 0px) {
 
     .container {
-        margin: 0 21px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .picture {
@@ -225,24 +226,6 @@ ul {
             padding-top: 100px;
         }
 
-    }
-
-
-    .appointment {
-
-        &__list {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        &__list-item {
-            padding: 46px 44px 55px 44px;
-            background-color: purple;
-            // Исправить потом этот цвет. Написан для примера.
-            border-radius: 13px;
-            text-align: center;
-
-        }
     }
 
     .list {
