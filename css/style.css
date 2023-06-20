@@ -12,6 +12,10 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "inter-regular", "font", sans-serif;
   font-weight: 600;
@@ -79,19 +83,23 @@ ul {
     margin-bottom: 66px;
   }
   .title--h1 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 34px;
     color: #8381B9;
     margin-bottom: 15px;
   }
   .title--h2 {
+    font-size: 28px;
     text-align: center;
   }
   .title--h3 {
     font-size: 15px;
     color: #8381B9;
     text-transform: uppercase;
+  }
+  .title--info {
+    text-align: end;
   }
   .title--masters {
     font-size: 20px;
@@ -250,27 +258,6 @@ ul {
     border-radius: 25px;
     background-color: #DEDBEB;
   }
-  .item-price--content {
-    font-weight: 600;
-    font-size: 12px;
-  }
-  .item-price--content-price {
-    font-weight: 600;
-    font-size: 12px;
-    white-space: nowrap;
-  }
-  .item-price--subtitle {
-    text-transform: uppercase;
-  }
-  .item-price--indent {
-    padding-left: 20px;
-  }
-  .item-price--stipple {
-    display: flex;
-    width: 100%;
-    border-bottom: 1px dashed #fff;
-    align-items: end;
-  }
   .swiper-inner {
     position: relative;
   }
@@ -307,8 +294,14 @@ ul {
     background-color: #E3E3E3;
   }
   .swiper-button-next, .swiper-button-prev {
-    width: 78px;
-    height: 78px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+  .swiper-button-next svg, .swiper-button-prev svg {
+    width: 27px;
+    height: 39px;
     border-radius: 100%;
     background-color: #fff;
   }
@@ -333,6 +326,18 @@ ul {
   .list__item-img {
     width: 80px;
   }
+  .swiper-button-next, .swiper-button-prev {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+  .swiper-button-next svg, .swiper-button-prev svg {
+    width: 37px;
+    height: 39px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
 }
 @media (min-width: 768px) {
   .list {
@@ -348,6 +353,13 @@ ul {
     margin-bottom: 23px;
     flex-direction: column;
     width: calc(33% - 15px);
+  }
+  .title--h1 {
+    font-size: 28px;
+  }
+  .title--h2 {
+    font-size: 42px;
+    text-align: center;
   }
   .title--h3 {
     font-size: 20px;
