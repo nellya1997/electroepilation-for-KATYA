@@ -430,6 +430,18 @@ ul {
   .title--h3 {
     font-size: 20px;
   }
+  .price__work {
+    font-size: 24px;
+  }
+  .list__item-price {
+    font-size: 18px;
+  }
+  .list__item-price span {
+    font-size: 18px;
+  }
+  .list__item-subtitle span {
+    padding: 6px;
+  }
 }
 @media (min-width: 1280px) {
   .container {
