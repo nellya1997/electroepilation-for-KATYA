@@ -14,7 +14,7 @@
 //     })
 //     });
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper--work", {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
