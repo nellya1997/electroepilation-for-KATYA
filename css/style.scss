@@ -35,6 +35,9 @@ $white2: #E3E3E3;
 
 $font-italic: 'inter-italic', 'font', sans-serif;
 
+html {
+    scroll-behavior:smooth;
+}
 
 
 body {
@@ -114,7 +117,7 @@ ul {
         }
 
         &--h1 {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             line-height: 34px;
             color: $hard-purple;
@@ -122,6 +125,7 @@ ul {
         }
 
         &--h2 {
+            font-size: 28px;
             text-align: center;
         }
         
@@ -129,6 +133,10 @@ ul {
             font-size: 15px;
             color: $hard-purple;
             text-transform: uppercase;
+        }
+
+        &--info {
+            text-align: end;
         }
 
         &--masters {
@@ -402,8 +410,14 @@ ul {
         background-color: $white2;
     }
     .swiper-button-next, .swiper-button-prev {
-        width: 78px;
-        height: 78px;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        background-color: $white;
+    }
+    .swiper-button-next svg, .swiper-button-prev svg {
+        width:27px;
+        height:39px;
         border-radius: 100%;
         background-color: $white;
     }
@@ -435,6 +449,19 @@ ul {
         &__item-img {
             width: 80px;
     }
+    
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    background-color: $white;
+}
+.swiper-button-next svg, .swiper-button-prev svg {
+    width:37px;
+    height:39px;
+    border-radius: 100%;
+    background-color: $white;
 }
 }
 
@@ -456,6 +483,14 @@ ul {
     }
 }
 .title {
+
+    &--h1 {
+        font-size: 28px;
+    }
+    &--h2 {
+        font-size: 42px;
+        text-align: center;
+    }
     &--h3 {
         font-size: 20px;
     }
