@@ -7,429 +7,76 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="blur-cloud-first"></div>
-    <div class="blur-cloud-second"></div>
-    <div class="container">
-      <header class="header"></header>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo">KATRIN ELEKTRO</div>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="" class="link link--navigation">ВИДЫ УСЛУГ</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="link link--navigation">О&nbsp;НАС</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="link link--navigation">ОТЗЫВЫ</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="link link--navigation">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
       <main>
-        <section class="about">
-          <div class="about__flex">
-            <picture class="picture picture--about">
-              <source
-                type="image/webp"
-                srcset="img/about/content1.webp"
-                media="(max-width: 2400px)"
-              />
-              <source
-                type="image/jpeg"
-                srcset="img/about/content1.jpg"
-                media="(max-width: 2400px)"
-              />
-              <img
-                src="img/about/content1.jpg"
-                alt="Студия Катерины Орловой katrin_elektro"
-              />
-            </picture>
+        <section class="atelier">
+          <div class="container container--atelier">
+            <div class="atelier__wrapper">
+              <div class="atelier__wrapper-content">
+                <h1 class="atelier__title title">СТУДИЯ
+                  <span class="atelier__content">ЭЛЕКТРОЭПИЛЯЦИИ</span>
+                </h1>
+                <span class="atelier__info">Единственный доказанный метод удаления волос навсегда </span>
+                <a class="link atelier__link" href="">Записаться</a>
+              </div>
+              <picture class="picture picture--atelier">
+                <source type="image/webp" srcset="img/atelier/content1.webp" media="(max-width: 2400px)">
+                <source type="image/jpeg" srcset="img/atelier/content1.jpg" media="(max-width: 2400px)">
+                <img src="img/atelier/content1.jpg" alt="Студия электроэпиляции">
+              </picture>
+            </div>
+            <div class="atelier__advertisement">
+              <div class="atelier__advertisement-content">
+                <div class="atelier__">
+                  <span class="atelier__quotes"></span>
+                    Я&nbsp;пошла на&nbsp;электро к&nbsp;Екатерине, когда увидела пост, что волосы пропадут НАВСЕГДА
+                    Не&nbsp;как от&nbsp;лазера или шугаринга,
+                    а&nbsp;прямо вообще!
+                  <span class="atelier__quotes"></span>
+                </div>
+              </div>
 
-            <div class="about__info">
-              <h1 class="title title--h1 title--info">
-                <span class="about__info-decor">
-                  ЭЛЕКТР
-                  <img src="img/icons/info-decor.png" alt="Икнока буквы 'О'" />
-                </span>
-                ЭПИЛЯЦИЯ
-              </h1>
-              <p class="about__content">
-                Делаем всю Дзержинку гладкой <span>НАВСЕГДА</span>
-              </p>
+              <div class="atelier__circle circle"></div>
             </div>
           </div>
 
-          <a class="link link--width" href="#price">ВЫБРАТЬ УСЛУГУ</a>
         </section>
-        <section class="section--appointment">
-          <h2 class="title title--h2 title--indent">
-            Онлайн&nbsp;-&nbsp;Запись
-          </h2>
-          <ul class="list">
-            <li class="list__item">
-              <div class="list__item-card">
-                <img
-                  class="list__item-img"
-                  src="img/appointment/appointment.svg"
-                  alt="Онлайн запись изображение"
-                />
-                <p class="content content--small">Выбери свободное окошко</p>
-              </div>
-              <a
-                class="link link--apointment"
-                href="https://wa.me/89035329338?text=Добрый день! Хочу записать к Вам на прием."
-                >Записаться</a
-              >
-            </li>
-            <li class="list__item">
-              <div class="list__item-card">
-                <img
-                  class="list__item-img"
-                  src="img/appointment/whatsapp.svg"
-                  alt="whatsapp"
-                />
-                <p class="content content--small content--indent">
-                  Нет подходящего окошка?
-                </p>
-                <span class="content--small">Пиши сюда</span>
-              </div>
-              <a
-                class="link link--apointment"
-                href="https://wa.me/89035329338?text=Добрый день! Хочу записать к Вам на прием."
-                >whatsapp</a
-              >
-            </li>
-            <li class="list__item">
-              <div class="list__item-card">
-                <img
-                  class="list__item-img"
-                  src="img/appointment/model.svg"
-                  alt="Модель изображение"
-                />
-                <p class="content content--small">
-                  Для тех, кто хочет быть моделью
-                </p>
-              </div>
-              <a
-                class="link link--apointment"
-                href="https://wa.me/89035329338?text=Добрый день! Хочу стать моделью."
-                >Записаться</a
-              >
-            </li>
-          </ul>
-          <button class="button button--online-transaction">
-            <a href="#" class="link--transaction"
-              >Возможна оплата онлайн переводом</a
-            >
-          </button>
-        </section>
-        <section class="price" id="price">
-          <h2 class="title title--h2 title--indent">Прайс на услуги</h2>
-          <div class="price__block">
-            <span class="price__work">ТОП МАСТЕР</span>
-            <ul class="list list--price">
-              <li class="list__item-price list__item-subtitle">
-                <span>Женская эпиляция</span>
-              </li>
-              <li class="list__item-price">
-                <span>ноги</span>
-                <span></span>
-                <span>43 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span>подмышечные впадины </span>
-                <span></span>
-                <span>43 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span>бикини</span>
-                <span></span>
-                <span>45 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span>лицо</span>
-                <span></span>
-                <span>45 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span>пушковый волос</span>
-                <span></span>
-                <span>45 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span></span>
-              </li>
-              <li class="list__item-price list__item-subtitle">
-                <span>Мужская эпиляция</span>
-              </li>
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >лицо
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">70 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >подмышечные впадины
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">70 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >спина
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">70 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >грудь
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">70 р/мин.</span>
-              </li>
-              <li class="list__item-price list__indent-bottom">
-                <span class="item-price--content item-price--indent"
-                  >бикини
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">80 р/мин.</span>
-              </li>
-            </ul>
 
-            <span class="price__work"> мастера полина и елена </span>
-            <ul class="list list--price">
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >тело
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">35 р/мин.</span>
-              </li>
-              <li class="list__item-price list__indent-bottom">
-                <span class="item-price--content item-price--indent"
-                  >бикини
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">40 р/мин.</span>
-              </li>
-            </ul>
-            <span class="price__work">дополнительно</span>
-            <ul class="list list--price">
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >иголка-электрод
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">250 р/мин.</span>
-              </li>
-              <li class="list__item-price">
-                <span class="item-price--content item-price--indent"
-                  >апликационная анестезия
-                </span>
-                <span class="item-price--stipple"></span>
-                <span class="item-price--content-price">450 р/мин.</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="sliders">
-          <h2 class="title title--h2 title--indent">Наши мастера</h2>
-          <div class="swiper-inner">
-            <div class="swiper-navigation">
-              <div class="swiper-button-next swiper-button-next2">
-                <svg
-                  viewBox="0 0 37 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3L30.5 18L2 36"
-                    stroke="#8381B9"
-                    stroke-width="6"
-                  />
-                </svg>
-              </div>
-              <div class="swiper-button-prev swiper-button-prev2">
-                <svg
-                  viewBox="0 0 37 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M35 36L6.5 21L35 3"
-                    stroke="#8381B9"
-                    stroke-width="6"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="swiper swiper--work">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture class="picture picture--masters">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/masters/masters1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/masters/masters1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img
-                      src="img/masters/masters1.jpg"
-                      alt="Мастер Екатерина фото"
-                    />
-                  </picture>
-                  <div class="sliders__wrapper">
-                    <span class="sliders__name"> Мастер Екатерина </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="picture picture--masters">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/masters/masters1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/masters/masters1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img
-                      src="img/masters/masters1.jpg"
-                      alt="Мастер Екатерина фото"
-                    />
-                  </picture>
-                  <div class="sliders__wrapper">
-                    <span class="sliders__name"> Мастер Екатерина </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="picture picture--masters">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/masters/masters1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/masters/masters1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img
-                      src="img/masters/masters1.jpg"
-                      alt="Мастер Екатерина фото"
-                    />
-                  </picture>
-                  <div class="sliders__wrapper">
-                    <span class="sliders__name"> Мастер Екатерина </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-pagination swiper-pagination2 swiper-pagination-masters"
-              ></div>
+        <section class="services">
+          <div class="container">
+            <div class="services__wrapper">
+              <h2 class="services__title title">ВИДЫ УСЛУГ</h2>
             </div>
           </div>
-        </section>
-        <section class="sliders">
-          <h2 class="title title--h2 title--indent title--work">Наши Работы</h2>
-          <div class="swiper-inner">
-            <div class="swiper-navigation">
-              <div class="swiper-button-prev swiper-button-prev1">
-                <svg
-                  viewBox="0 0 37 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M35 36L6.5 21L35 3"
-                    stroke="#8381B9"
-                    stroke-width="6"
-                  />
-                </svg>
-              </div>
-              <div class="swiper-button-next swiper-button-next1">
-                <svg
-                  viewBox="0 0 37 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3L30.5 18L2 36"
-                    stroke="#8381B9"
-                    stroke-width="6"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="swiper swiper--masters">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture class="picture picture--work">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/work/work1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/work/work1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img src="img/work/work1.jpg" alt="Пример работ фото" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="picture picture--work">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/work/work1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/work/work1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img src="img/work/work1.jpg" alt="Пример работ фото" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="picture picture--work">
-                    <source
-                      type="image/jpeg"
-                      srcset="img/work/work1.jpg"
-                      media="(max-width: 2400px)"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="img/work/work1.webp"
-                      media="(max-width: 2400px)"
-                    />
-                    <img src="img/work/work1.jpg" alt="Пример работ фото" />
-                  </picture>
-                </div>
-              </div>
-              <div
-                class="swiper-pagination swiper-pagination2 swiper-pagination-work"
-              ></div>
-            </div>
-          </div>
-        </section>
-        <section class="map">
-          <h2 class="title title--h2 title--indent">НАШ АДРЕС</h2>
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A39687e383a56620336ab9a8c758e24ca7306e073c3c491eafe3195e6fe8a9c85&amp;source=constructor"
-            width="100%"
-            height="400"
-            frameborder="0"
-          ></iframe>
-          <p class="map__adress">
-            Адрес г. Дзержинский(московская область), ул Дзержинская 21а
-          </p>
         </section>
       </main>
       <footer class="footer"></footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
