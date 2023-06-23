@@ -14,26 +14,26 @@
 //     })
 //     });
 
-const swiper = new Swiper(".swiper--work", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 30,
-    // centeredSlides:true,
-    spaceBetween: 50,
-    // controller: {
-    //   inverse: true,
-    // },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next2",
-        prevEl: ".swiper-button-prev2"
-    }
-});
+// const swiper = new Swiper(".swiper--work", {
+//     slidesPerView: 1,
+//     loop: true,
+//     spaceBetween: 30,
+//     // centeredSlides:true,
+//     spaceBetween: 50,
+//     // controller: {
+//     //   inverse: true,
+//     // },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next2",
+//         prevEl: ".swiper-button-prev2"
+//     }
+// });
 
-const swiper1 = new Swiper(".swiper--masters", {
+const swiper1 = new Swiper(".swiper", {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
