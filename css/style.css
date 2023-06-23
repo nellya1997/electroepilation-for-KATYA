@@ -12,8 +12,8 @@ html {
 body {
   font-family: "Montserrat-SemiBold", "font", sans-serif;
   font-weight: 600;
-  font-size: 8px;
-  line-height: 8px;
+  font-size: 14px;
+  line-height: 14px;
   min-width: 320px;
   overflow-x: hidden;
   color: #3A3A42;
@@ -44,8 +44,6 @@ ul {
   }
   .logo {
     font-weight: 700;
-    font-size: 8px;
-    line-height: 8px;
     color: #7A7DBC;
   }
   .navigation__list {
@@ -89,7 +87,6 @@ ul {
        object-fit: contain;
   }
   .picture--services {
-    max-height: 100px;
     margin-bottom: 5px;
   }
   .title {
@@ -100,7 +97,7 @@ ul {
     color: #7A7DBC;
   }
   .title--h3 {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
     background-color: #969AE4;
     color: #fff;
@@ -182,7 +179,6 @@ ul {
     background: url(../icon/quotes-end.svg) no-repeat;
   }
   .atelier__advertisement-content {
-    line-height: 9px;
     padding: 17px 35px;
     display: inline-block;
   }
@@ -209,10 +205,12 @@ ul {
     justify-content: space-between;
     box-shadow: 0px 2px 5px #EEDCFA;
     margin-bottom: 27px;
+    padding: 0 5px;
   }
   .services__list li {
     width: calc(50% - 18px);
     margin-bottom: 16px;
+    padding-bottom: 25px;
   }
   .services__content {
     display: block;
@@ -230,7 +228,7 @@ ul {
     line-height: 14px;
     color: #7A7DBC;
     line-height: 14px;
-    max-width: 192px;
+    max-width: 303px;
     display: inline-block;
   }
   .services__wrapper-center {
@@ -264,6 +262,9 @@ ul {
   .swiper .swiper-pagination-bullet {
     width: 5px;
     height: 5px;
+  }
+  .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #7A7DBC;
   }
 }
 @media (min-width: 768px) {
