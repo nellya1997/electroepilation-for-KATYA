@@ -27,8 +27,8 @@ html {
 body {
     font-family: "Montserrat-SemiBold", "font", sans-serif;
     font-weight: 600;
-    font-size: 8px;
-    line-height: 8px;
+    font-size: 14px;
+    line-height: 14px;
     min-width: 320px;
     overflow-x: hidden;
     // background-color: $purple;
@@ -65,8 +65,8 @@ ul {
 
     .logo {
         font-weight: 700;
-        font-size: 8px;
-        line-height: 8px;
+        // font-size: 8px;
+        // line-height: 8px;
         color: $purple;
     }
     .navigation {
@@ -122,7 +122,7 @@ ul {
         }
 
         &--services {
-            max-height: 100px;
+            // max-height: 100px;
             margin-bottom: 5px;
         }
     }
@@ -135,7 +135,7 @@ ul {
         color: $purple;
 
         &--h3 {
-            font-size: 12px;
+            font-size: 15px;
             line-height: 15px;
             background-color: $pink2;
             color: $white;
@@ -235,7 +235,7 @@ ul {
         }
 
         &__advertisement-content {
-            line-height: 9px;
+            // line-height: 9px;
             padding: 17px 35px;
             display: inline-block;
         }
@@ -265,31 +265,101 @@ ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 0 28px;
-            box-shadow: 0px 2px 5px #eedcfa;
+            // padding: 0 28px;
+            box-shadow: 0px 2px 5px #EEDCFA;
             margin-bottom: 27px;
+            padding: 0 5px;
 
             & li {
                 width: calc(50% - 18px);
                 margin-bottom: 16px;
+                padding-bottom: 25px;
             }
         }
 
         &__content {
+            // font-size: 11px;
             display: block;
             text-align: center;
             line-height: 10px;
         }
 
         &__title-swipper {
-            margin-bottom: 10px;
+            margin-bottom: 23px;
         }
 
         &__swiper {
-            padding: 0 50px;
+            // padding: 0 50px;
+            margin-bottom: 63px;
+        }
+
+        &__content-swiper {
+            font-size: 14px;
+            line-height: 14px;
+            color: $purple;
+            line-height: 14px;
+            max-width: 303px;
+            display: inline-block;
+        }
+        &__wrapper-center {
+            margin: 0 auto;
+        }
+
+        // &__content-swiper {
+        //     max-width: 192px;
+        //     display: inline-block;
+
+        &__swiper-wrapper {
+            padding-bottom: 36px;
+        }
+
+        &__swiper-wrapper .swiper-pagination,
+        &__swiper-wrapper .swiper-button-next,
+        &__swiper-wrapper .swiper-button-prev {
+            bottom: 11px;
+            top: auto;
+        }
+
+        &__wrapper-info {
+
+        }
+
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        width: 30px;
+        height: 30px;
+        left: calc(50% - 63px);
+        background-color: $purple;
+        border-radius: 50%;
+        bottom: 0px;
+
+        &::after {
+            // content: 'prev';
+            // width: 7px;
+            // height: 7px;
+            font-size: 12px;
+            color: $white;
+            // left: calc(50% - 33px);
+        }
+    }
+
+    .swiper .swiper-button-next {
+        right: calc(50% - 63px);
+        left: auto;
+    }
+
+    .swiper .swiper-pagination-bullet {
+        width: 5px;
+        height: 5px;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #7A7DBC;
         }
     }
 }
+
 
 @media (min-width: 375px) {
     .header {
@@ -327,8 +397,15 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .header {
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
     }
+    .header {
+
+    }
+
     .logo {
     }
     .navigation {
@@ -362,11 +439,9 @@ ul {
 }
 
 @media (min-width: 1280px) {
-    // .container {
-    //     max-width: 820px;
-    //     padding: 0 60px;
-
-    // }
+    .container {
+        max-width: 820px;
+    }
     .header {
     }
     .logo {
