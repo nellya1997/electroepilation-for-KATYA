@@ -1,7 +1,6 @@
 @font-face {
-    font-family: 'Montserrat-SemiBold';
-    src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
-         url(../fonts/Montserrat-SemiBold.woff) format('woff');
+    font-family: "Montserrat-SemiBold";
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,25 +8,24 @@
 
 // цвета
 
-$purple: #7A7DBC;
-$dark: #3A3A42;
-$pink: #EC84B6;
-$pink1: #EEDCFA;
-$pink2: #969AE4;
+$purple: #7a7dbc;
+$dark: #3a3a42;
+$pink: #ec84b6;
+$pink1: #eedcfa;
+$pink2: #969ae4;
 $white: #fff;
-$light-pink: #FDECFF;
+$light-pink: #fdecff;
 
 // переменная со шрифтом
 
 // $font-italic: 'inter-italic', 'font', sans-serif;
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
-
 body {
-    font-family: 'Montserrat-SemiBold', 'font', sans-serif;
+    font-family: "Montserrat-SemiBold", "font", sans-serif;
     font-weight: 600;
     font-size: 8px;
     line-height: 8px;
@@ -46,7 +44,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
 
 /* 567 */
 @media (min-width: 0px) {
@@ -83,12 +80,10 @@ ul {
         }
     }
 
-
     .link {
         text-decoration: none;
 
         &--navigation {
-
         }
     }
 
@@ -104,15 +99,15 @@ ul {
             top: 0;
             // position: relative;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-image: linear-gradient(to bottom,transparent, 65% , $white);
-                }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, transparent, 65%, $white);
+            }
 
             & img {
                 width: 100%;
@@ -145,6 +140,7 @@ ul {
             background-color: $pink2;
             color: $white;
             padding: 2px 3px;
+            border-radius: 2px;
         }
     }
 
@@ -165,12 +161,12 @@ ul {
         margin-bottom: 60px;
         position: relative;
 
-		&__wrapper {
+        &__wrapper {
             display: flex;
             justify-content: space-between;
             position: relative;
             margin-bottom: 76px;
-		}
+        }
 
         &__wrapper-content {
             padding-top: 105px;
@@ -179,18 +175,18 @@ ul {
             max-width: 44%;
         }
 
-		&__title {
+        &__title {
             font-weight: 700;
             font-size: 30px;
             line-height: 21px;
             color: $purple;
             margin-bottom: 4px;
-		}
+        }
 
-		&__content {
+        &__content {
             font-size: 15px;
             line-height: 18px;
-		}
+        }
 
         &__info {
             font-size: 8px;
@@ -200,14 +196,13 @@ ul {
             display: inline-block;
         }
 
-
-		&__link {
+        &__link {
             padding: 9px 32px;
             background-color: $pink;
             border-radius: 50px;
             padding: 7px 38px;
             color: $white;
-		}
+        }
 
         &__advertisement {
             max-width: 210px;
@@ -226,7 +221,7 @@ ul {
                 left: 2px;
                 width: 21px;
                 height: 51px;
-                content: '';
+                content: "";
                 background: url(../icon/quotes-start.svg) no-repeat;
             }
 
@@ -255,14 +250,12 @@ ul {
     }
 
     .services {
-
         margin-bottom: 60px;
 
         &__wrapper {
             display: flex;
             flex-direction: column;
         }
-
 
         &__title {
             margin-bottom: 25px;
@@ -273,7 +266,7 @@ ul {
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 0 28px;
-            box-shadow: 0px 2px 5px #EEDCFA;
+            box-shadow: 0px 2px 5px #eedcfa;
             margin-bottom: 27px;
 
             & li {
@@ -296,8 +289,6 @@ ul {
             padding: 0 50px;
         }
     }
-
-
 }
 
 @media (min-width: 375px) {
@@ -308,7 +299,6 @@ ul {
     .navigation {
     }
     .list {
-
         &__item {
         }
 
@@ -317,23 +307,20 @@ ul {
     }
 
     .atelier {
-
-		&__wrapper {
-		}
-
-        &__wrapper-content {
-
+        &__wrapper {
         }
 
-		&__title {
-		}
+        &__wrapper-content {
+        }
 
-		&__content {
-		}
+        &__title {
+        }
 
+        &__content {
+        }
 
-		&__link {
-		}
+        &__link {
+        }
     }
     .title {
     }
@@ -347,7 +334,6 @@ ul {
     .navigation {
     }
     .list {
-
         &__item {
         }
 
@@ -356,23 +342,20 @@ ul {
     }
 
     .atelier {
-
-		&__wrapper {
-		}
-
-        &__wrapper-content {
-
+        &__wrapper {
         }
 
-		&__title {
-		}
+        &__wrapper-content {
+        }
 
-		&__content {
-		}
+        &__title {
+        }
 
+        &__content {
+        }
 
-		&__link {
-		}
+        &__link {
+        }
     }
     .title {
     }
@@ -391,7 +374,6 @@ ul {
     .navigation {
     }
     .list {
-
         &__item {
         }
 
@@ -400,48 +382,150 @@ ul {
     }
 
     .atelier {
-
-		&__wrapper {
-		}
-
-        &__wrapper-content {
-
+        &__wrapper {
         }
 
-		&__title {
-		}
+        &__wrapper-content {
+        }
 
-		&__content {
-		}
+        &__title {
+        }
 
+        &__content {
+        }
 
-		&__link {
-		}
+        &__link {
+        }
     }
     .title {
     }
 }
 
+
 // Price
-.price {
-}
-.price__wrapper {
-}
+
 .price__title {
+    text-align: center;
+    margin-bottom: 15px;
 }
-.title {
-}
+
 .price__subtitle {
-}
-.price__servises {
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
 }
 .price__servise {
+    min-width: 161px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.2);
+
+    /* матовый эффект и тень */
+    box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+    backdrop-filter: blur(2.5px);
+    margin-top: 13px;
+}
+
+.servises__wrapper {
     display: flex;
     justify-content: center;
+    column-gap: 12px;
+    margin-bottom: 15px;
 }
 .price__servise-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.price__servise-list p {
+    margin: 0;
 }
 .price__servise-list {
+    padding: 6px 6px 8px 7px;
+}
+.price__servise-list li {
+    margin-bottom: 7px;
 }
 .price__servise-item {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+// Дополнительно
+
+.servise__additionally-subtitle {
+    width: 176px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.servise__additionally {
+    padding: 0px 86px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.servise__additionally-list {
+    width: 161px;
+    padding: 10px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.2);
+
+    /* матовый эффект и тень */
+    box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+    backdrop-filter: blur(2.5px);
+}
+.servise__additionally-item {
+    display: flex;
+    justify-content: space-between;
+}
+.servise__additionally-item p + p {
+    margin-bottom: 5px;
+}
+
+// Фон прайса
+
+.price {
+    position: relative;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 58px;
+    left: -9px;
+    top: 141px;
+    z-index: -1;
+    border-radius: 60px;
+    background: $light-pink;
+}
+
+.price::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 53px;
+    right: 51px;
+    top: 45px;
+    z-index: -1;
+    border-radius: 60px;
+    background: $light-pink;
+}
+
+.price-bg {
+    position: relative;
+}
+.price-bg::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    left: 70px;
+    top: 42px;
+    z-index: -1;
+    border-radius: 60px;
+    background: $light-pink;
 }

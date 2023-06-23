@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff");
@@ -16,7 +17,7 @@ body {
   line-height: 8px;
   min-width: 320px;
   overflow-x: hidden;
-  color: #3A3A42;
+  color: #3a3a42;
 }
 
 main {
@@ -46,7 +47,7 @@ ul {
     font-weight: 700;
     font-size: 8px;
     line-height: 8px;
-    color: #7A7DBC;
+    color: #7a7dbc;
   }
   .navigation__list {
     display: flex;
@@ -97,19 +98,20 @@ ul {
     font-weight: 700;
     line-height: 22px;
     margin: 0 auto;
-    color: #7A7DBC;
+    color: #7a7dbc;
   }
   .title--h3 {
     font-size: 12px;
     line-height: 15px;
-    background-color: #969AE4;
+    background-color: #969ae4;
     color: #fff;
     padding: 2px 3px;
+    border-radius: 2px;
   }
   .circle {
     width: 54px;
     height: 54px;
-    background-color: #FDECFF;
+    background-color: #fdecff;
     border-radius: 50%;
   }
   .list {
@@ -136,7 +138,7 @@ ul {
     font-weight: 700;
     font-size: 30px;
     line-height: 21px;
-    color: #7A7DBC;
+    color: #7a7dbc;
     margin-bottom: 4px;
   }
   .atelier__content {
@@ -152,7 +154,7 @@ ul {
   }
   .atelier__link {
     padding: 9px 32px;
-    background-color: #EC84B6;
+    background-color: #ec84b6;
     border-radius: 50px;
     padding: 7px 38px;
     color: #fff;
@@ -160,7 +162,7 @@ ul {
   .atelier__advertisement {
     max-width: 210px;
     margin: 0 auto;
-    box-shadow: 0px 2px 5px #EEDCFA;
+    box-shadow: 0px 2px 5px #eedcfa;
     border-radius: 9px;
     z-index: 1;
     position: relative;
@@ -208,7 +210,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 28px;
-    box-shadow: 0px 2px 5px #EEDCFA;
+    box-shadow: 0px 2px 5px #eedcfa;
     margin-bottom: 27px;
   }
   .services__list li {
@@ -226,4 +228,136 @@ ul {
   .services__swiper {
     padding: 0 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.price__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.price__subtitle {
+  width: 85px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.price__servise {
+  min-width: 161px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.2);
+  /* матовый эффект и тень */
+  box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  margin-top: 13px;
+}
+
+.servises__wrapper {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-bottom: 15px;
+}
+
+.price__servise-title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.price__servise-list p {
+  margin: 0;
+}
+
+.price__servise-list {
+  padding: 6px 6px 8px 7px;
+}
+
+.price__servise-list li {
+  margin-bottom: 7px;
+}
+
+.price__servise-item {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servise__additionally-subtitle {
+  width: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.servise__additionally {
+  padding: 0px 86px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servise__additionally-list {
+  width: 161px;
+  padding: 10px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.2);
+  /* матовый эффект и тень */
+  box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
+
+.servise__additionally-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servise__additionally-item p + p {
+  margin-bottom: 5px;
+}
+
+.price {
+  position: relative;
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 58px;
+  left: -9px;
+  top: 141px;
+  z-index: -1;
+  border-radius: 60px;
+  background: #fdecff;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 53px;
+  right: 51px;
+  top: 45px;
+  z-index: -1;
+  border-radius: 60px;
+  background: #fdecff;
+}
+
+.price-bg {
+  position: relative;
+}
+
+.price-bg::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 29px;
+  left: 70px;
+  top: 42px;
+  z-index: -1;
+  border-radius: 60px;
+  background: #fdecff;
+}
