@@ -29,8 +29,8 @@ html {
 body {
     font-family: 'Montserrat-SemiBold', 'font', sans-serif;
     font-weight: 600;
-    font-size: 8px;
-    line-height: 8px;
+    font-size: 14px;
+    line-height: 14px;
     min-width: 320px;
     overflow-x: hidden;
     // background-color: $purple;
@@ -68,8 +68,8 @@ ul {
 
     .logo {
         font-weight: 700;
-        font-size: 8px;
-        line-height: 8px;
+        // font-size: 8px;
+        // line-height: 8px;
         color: $purple;
     }
     .navigation {
@@ -127,7 +127,7 @@ ul {
         }
 
         &--services {
-            max-height: 100px;
+            // max-height: 100px;
             margin-bottom: 5px;
         }
     }
@@ -140,7 +140,7 @@ ul {
         color: $purple;
 
         &--h3 {
-            font-size: 12px;
+            font-size: 15px;
             line-height: 15px;
             background-color: $pink2;
             color: $white;
@@ -240,7 +240,7 @@ ul {
         }
 
         &__advertisement-content {
-            line-height: 9px;
+            // line-height: 9px;
             padding: 17px 35px;
             display: inline-block;
         }
@@ -275,10 +275,12 @@ ul {
             // padding: 0 28px;
             box-shadow: 0px 2px 5px #EEDCFA;
             margin-bottom: 27px;
+            padding: 0 5px;
 
             & li {
                 width: calc(50% - 18px);
                 margin-bottom: 16px;
+                padding-bottom: 25px;
             }
         }
 
@@ -303,7 +305,7 @@ ul {
             line-height: 14px;
             color: $purple;
             line-height: 14px;
-            max-width: 192px;
+            max-width: 303px;
             display: inline-block;
         }
         &__wrapper-center {
@@ -358,6 +360,10 @@ ul {
     .swiper .swiper-pagination-bullet {
         width: 5px;
         height: 5px;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #7A7DBC;
+        }
     }
 }
 
