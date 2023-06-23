@@ -92,6 +92,10 @@ ul {
     }
 
     .picture {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
         &--atelier {
             width: 70%;
             position: absolute;
@@ -114,6 +118,16 @@ ul {
                 height: 100%;
             }
         }
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--services {
+            max-height: 100px;
+            margin-bottom: 5px;
+        }
     }
 
     .title {
@@ -131,9 +145,14 @@ ul {
         border-radius: 50%;
     }
 
+    .list {
+        margin: 0;
+        padding: 0;
+    }
+
     .atelier {
         // padding-top: 12px;
-        margin-bottom: 67px;
+        margin-bottom: 60px;
 
 		&__wrapper {
             display: flex;
@@ -226,14 +245,28 @@ ul {
 
     .services {
 
-		&__wrapper {
+        &__wrapper {
             display: flex;
-		}
+            flex-direction: column;
+        }
 
 
-		&__title {
-		}
-}
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 28px;
+
+            & li {
+                width: calc(50% - 18px);
+                margin-bottom: 20px;
+            }
+        }
+    }
 
 
 }
