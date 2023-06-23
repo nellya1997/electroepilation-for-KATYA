@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Обнуление стилей -->
+  <link rel="stylesheet" href="./css/reset.css">
   </head>
   <body>
       <header class="header">
@@ -54,7 +56,7 @@
             </picture>
             <div class="atelier__advertisement">
               <div class="atelier__advertisement-content">
-                <div class="atelier__wrapper-info">
+                <div class="atelier__">
                   <span class="atelier__quotes"></span>
                     Я&nbsp;пошла на&nbsp;электро к&nbsp;Екатерине, когда увидела пост, что волосы пропадут НАВСЕГДА
                     Не&nbsp;как от&nbsp;лазера или шугаринга,
@@ -63,53 +65,53 @@
                 </div>
               </div>
 
-              <div class="atelier__circle circle"></div>
-            </div>
-          </div>
+          <div class="atelier__circle circle"></div>
+        </div>
+      </div>
 
-        </section>
+    </section>
 
-        <section class="services">
-          <div class="container">
-            <div class="services__wrapper">
-              <h2 class="services__title title">ВИДЫ УСЛУГ</h2>
-              <ul class="services__list list">
-                <li>
-                  <picture class="picture picture--services">
-                    <source type="image/webp" srcset="img/services/content1.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/services/content1.jpg" media="(max-width: 2400px)">
-                    <img src="img/services/content1.jpg" alt="Студия электроэпиляции">
-                  </picture>
-                  <span class="services__content">Эпиляция лица</span>
-                </li>
-                <li>
-                  <picture class="picture picture--services">
-                    <source type="image/webp" srcset="img/services/content2.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/services/content2.jpg" media="(max-width: 2400px)">
-                    <img src="img/services/content2.jpg" alt="Студия электроэпиляции">
-                  </picture>
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <h2 class="services__title title">ВИДЫ УСЛУГ</h2>
+          <ul class="services__list list">
+            <li>
+              <picture class="picture picture--services">
+                <source type="image/webp" srcset="img/services/content1.webp" media="(max-width: 2400px)">
+                <source type="image/jpeg" srcset="img/services/content1.jpg" media="(max-width: 2400px)">
+                <img src="img/services/content1.jpg" alt="Студия электроэпиляции">
+              </picture>
+              <span class="services__content">Эпиляция лица</span>
+            </li>
+            <li>
+              <picture class="picture picture--services">
+                <source type="image/webp" srcset="img/services/content2.webp" media="(max-width: 2400px)">
+                <source type="image/jpeg" srcset="img/services/content2.jpg" media="(max-width: 2400px)">
+                <img src="img/services/content2.jpg" alt="Студия электроэпиляции">
+              </picture>
 
-                  <span class="services__content">Эпиляция ног</span>
-                </li>
-                <li>
-                  <picture class="picture picture--services">
-                    <source type="image/webp" srcset="img/services/content3.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/services/content3.jpg" media="(max-width: 2400px)">
-                    <img src="img/services/content3.jpg" alt="Студия электроэпиляции">
-                  </picture>
+              <span class="services__content">Эпиляция ног</span>
+            </li>
+            <li>
+              <picture class="picture picture--services">
+                <source type="image/webp" srcset="img/services/content3.webp" media="(max-width: 2400px)">
+                <source type="image/jpeg" srcset="img/services/content3.jpg" media="(max-width: 2400px)">
+                <img src="img/services/content3.jpg" alt="Студия электроэпиляции">
+              </picture>
 
-                  <span class="services__content">Эпиляция зоны бикини</span>
-                </li>
-                <li>
-                  <picture class="picture picture--services">
-                    <source type="image/webp" srcset="img/services/content4.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/services/content4.jpg" media="(max-width: 2400px)">
-                    <img src="img/services/content4.jpg" alt="Студия электроэпиляции">
-                  </picture>
+              <span class="services__content">Эпиляция зоны бикини</span>
+            </li>
+            <li>
+              <picture class="picture picture--services">
+                <source type="image/webp" srcset="img/services/content4.webp" media="(max-width: 2400px)">
+                <source type="image/jpeg" srcset="img/services/content4.jpg" media="(max-width: 2400px)">
+                <img src="img/services/content4.jpg" alt="Студия электроэпиляции">
+              </picture>
 
-                  <span class="services__content">Эпиляция подмышечных впадин</span>
-                </li>
-              </ul>
+              <span class="services__content">Эпиляция подмышечных впадин</span>
+            </li>
+          </ul>
 
               <h3 class="services__title-swipper title title--h3">До&nbsp;и&nbsp;после процедуры</h3>
               <div class="services__swiper">
@@ -123,16 +125,17 @@
                     </picture>
                   </div>
 
-                  <div class="swiper-slide">
-                    <picture class="picture picture--services">
-                      <source type="image/webp" srcset="img/services-swiper/content1.webp" media="(max-width: 2400px)">
-                      <source type="image/jpeg" srcset="img/services-swiper/content1.jpg" media="(max-width: 2400px)">
-                      <img src="img/services-swiper/content1.jpg" alt="Студия электроэпиляции">
-                    </picture>
-                  </div>
-
-                  <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-slide">
+                  <picture class="picture picture--services">
+                    <source type="image/webp" srcset="img/services-swiper/content1.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/services-swiper/content1.jpg" media="(max-width: 2400px)">
+                    <img src="img/services-swiper/content1.jpg" alt="Студия электроэпиляции">
+                  </picture>
                 </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+
 
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -148,6 +151,122 @@
               </div>
           </div>
         </section>
+
+          <!-- Price -->
+
+    <section class="price">
+      <div class="container">
+        <div class="price__wrapper">
+          <h2 class="price__title title">ПРАЙС</h2>
+          <h3 class="price__subtitle title--h3">Топ мастер</h3>
+          <div class="price__servises">
+            <div class="servises__wrapper">
+
+              <div class="price__servise">
+                <div class="price__servise-title ">
+                  Женская эпиляция
+                </div>
+                <ul class="price__servise-list">
+                  <li class="price__servise-item">
+                    <p>Ноги</p>
+                    <p>43 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Подмышечные впадины</p>
+                    <p>43 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Бикини</p>
+                    <p>45 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Лицо</p>
+                    <p>45 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Пушковый волос </p>
+                    <p>45 р/мин</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="price__servise">
+                <div class="price__servise-title">
+                  Мужская эпиляция
+                </div>
+                <ul class="price__servise-list">
+                  <li class="price__servise-item">
+                    <p>Лицо</p>
+                    <p>70 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Подмышечные впадины</p>
+                    <p>70 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Спина</p>
+                    <p>70 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Грудь </p>
+                    <p>70 р/мин</p>
+                  </li>
+                  <li class="price__servise-item">
+                    <p>Бикини</p>
+                    <p>80 р/мин</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Дополнительно -->
+
+            <div class="price__servise-additionally">
+              <div class="servise__additionally-subtitle title--h3">
+                Мастера Полина и Елена
+              </div>
+
+              <div class="servise__additionally">
+
+                <ul class="servise__additionally-list">
+                  <li class="servise__additionally-item">
+                    <p>Тело</p>
+                    <p>35 р/мин</p>
+                  </li>
+                  <li class="servise__additionally-item">
+                    <p>Бикини</p>
+                    <p>40 р/мин</p>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="price__servise-additionally price-bg">
+                <div class="servise__additionally-subtitle title--h3">
+                  Дополнительные услуги
+                </div>
+                <div class="servise__additionally ">
+
+                  <ul class="servise__additionally-list">
+                    <li class="servise__additionally-item">
+                      <p>Иголка-электрод</p>
+                      <p>250 р/мин</p>
+                    </li>
+                    <li class="servise__additionally-item">
+                      <p>Апликационная
+                        <br>анестезия
+                      </p>
+                      <p>450 р/мин</p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+    </section>
       </main>
       <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
