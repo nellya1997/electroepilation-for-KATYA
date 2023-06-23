@@ -266,7 +266,7 @@ ul {
             flex-wrap: wrap;
             justify-content: space-between;
             // padding: 0 28px;
-            box-shadow: 0px 2px 5px #EEDCFA;
+            box-shadow: 0px 2px 5px #eedcfa;
             margin-bottom: 27px;
             padding: 0 5px;
 
@@ -321,9 +321,7 @@ ul {
         }
 
         &__wrapper-info {
-
         }
-
     }
 
     .swiper .swiper-button-prev,
@@ -355,11 +353,10 @@ ul {
         height: 5px;
 
         &.swiper-pagination-bullet-active {
-            background-color: #7A7DBC;
+            background-color: #7a7dbc;
         }
     }
 }
-
 
 @media (min-width: 375px) {
     .header {
@@ -397,13 +394,11 @@ ul {
 }
 
 @media (min-width: 768px) {
-
     .container {
         max-width: 600px;
         margin: 0 auto;
     }
     .header {
-
     }
 
     .logo {
@@ -476,131 +471,139 @@ ul {
     }
 }
 
+// Общие стили
+
+.title--1 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 12px;
+    background-color: $pink2;
+    border-radius: 2px;
+    color: $white;
+}
+
+.title--2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: $purple;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
 // Price
 
-.price__title {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.price__subtitle {
-    width: 85px;
-    text-align: center;
-    margin: 0 auto;
-}
-.price__servise {
-    min-width: 161px;
-    border-radius: 9px;
-    background: rgba(255, 255, 255, 0.2);
-
-    /* матовый эффект и тень */
-    box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
-    backdrop-filter: blur(2.5px);
-    margin-top: 13px;
-}
-
-.servises__wrapper {
-    display: flex;
-    justify-content: center;
-    column-gap: 12px;
-    margin-bottom: 15px;
-}
-.price__servise-title {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-.price__servise-list p {
-    margin: 0;
-}
-.price__servise-list {
-    padding: 6px 6px 8px 7px;
-}
-.price__servise-list li {
-    margin-bottom: 7px;
-}
-.price__servise-item {
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-}
-
-// Дополнительно
-
-.servise__additionally-subtitle {
-    width: 176px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.servise__additionally {
-    padding: 0px 86px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.servise__additionally-list {
-    width: 161px;
-    padding: 10px;
-    border-radius: 9px;
-    background: rgba(255, 255, 255, 0.2);
-
-    /* матовый эффект и тень */
-    box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
-    backdrop-filter: blur(2.5px);
-}
-.servise__additionally-item {
-    display: flex;
-    justify-content: space-between;
-}
-.servise__additionally-item p + p {
-    margin-bottom: 5px;
-}
-
-// Фон прайса
-
 .price {
-    position: relative;
+    &__subtitle {
+        max-width: 115px;
+        margin: 0 auto;
+    }
+
+    &__categories {
+        background: url("/img/price/price-bg.png") no-repeat;
+
+        max-width: 349px;
+        margin: 0 auto;
+    }
+
+    &__category {
+        max-width: 253px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.2);
+
+        /* матовый эффект и тень */
+        box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+        // backdrop-filter: blur(2.5px);
+    }
+
+    &__category-title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    &__category-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: 500;
+    }
+    &__category-item p {
+        padding-bottom: 5px;
+    }
+
+    &__subcategory-title {
+        text-align: center;
+        max-width: 230px;
+        margin: 30px auto 15px;
+    }
+
+    &__subcategory {
+        max-width: 244px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.2);
+
+        /* матовый эффект и тень */
+        box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+        // backdrop-filter: blur(2.5px);
+    }
+
+    &__subcategory-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: 500;
+    }
+    &__subcategory-item p {
+        padding-bottom: 5px;
+    }
 }
 
-.price::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 58px;
-    left: -9px;
-    top: 141px;
-    z-index: -1;
-    border-radius: 60px;
-    background: $light-pink;
+// О нас
+
+.about {
+    margin-top: 100px;
+
+    &__subtitle {
+        max-width: 147px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__workers {
+        max-width: 264px;
+        margin: 0 auto;
+    }
+
+    &__worker-img {
+        width: 236px;
+        height: 250px;
+        border-radius: 9px;
+        margin-bottom: 10px;
+    }
+
+    &__worker-name {
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    &__worker-text {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
 }
 
-.price::after {
-    content: "";
-    position: absolute;
-    width: 54px;
-    height: 53px;
-    right: 51px;
-    top: 45px;
-    z-index: -1;
-    border-radius: 60px;
-    background: $light-pink;
-}
-
-.price-bg {
-    position: relative;
-}
-.price-bg::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 29px;
-    left: 70px;
-    top: 42px;
-    z-index: -1;
-    border-radius: 60px;
-    background: $light-pink;
+// Слайдер о нас
+.swiper {
+    max-width: 236px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
