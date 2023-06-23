@@ -281,6 +281,7 @@ ul {
   }
 }
 .title--1 {
+  text-align: center;
   font-size: 15px;
   font-weight: 600;
   padding: 4px 12px;
@@ -368,6 +369,7 @@ ul {
 .about__workers {
   max-width: 264px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .about__worker-img {
   width: 236px;
@@ -383,6 +385,38 @@ ul {
 .about__worker-text {
   font-weight: 500;
   margin-bottom: 20px;
+}
+.about__desc {
+  max-width: 244px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #7a7dbc;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.2);
+  /* матовый эффект и тень */
+  box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
+.about .about_atelier {
+  max-width: 244px;
+  margin: 0 auto;
+}
+.about .about .swiper {
+  max-width: 244px;
+  margin: 0 auto;
+}
+.about .about__atelier-img {
+  width: 236px;
+  height: 160px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+}
+.about .about__atelier-text {
+  text-align: center;
+  font-weight: 500;
 }
 
 .swiper {
