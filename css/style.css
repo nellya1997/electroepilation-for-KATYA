@@ -400,9 +400,10 @@ ul {
   -webkit-backdrop-filter: blur(2.5px);
           backdrop-filter: blur(2.5px);
 }
-.about .about_atelier {
+.about .about__atelier {
   max-width: 244px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .about .about .swiper {
   max-width: 244px;
@@ -423,4 +424,31 @@ ul {
   max-width: 236px;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+
+.reviews {
+  background: url("/img/reviews/review-bg.jpg") no-repeat bottom right;
+  padding-bottom: 60px;
+}
+.reviews__title {
+  margin-bottom: 30px;
+}
+.reviews__subtitle {
+  max-width: 288px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.reviews__slider {
+  border-radius: 9px;
+  background: var(--unnamed, rgba(255, 255, 255, 0.2));
+  /* матовый эффект и тень */
+  box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
+.reviews__slider-img {
+  width: 236px;
+  height: 160px;
+  border-radius: 9px;
+  margin-bottom: 10px;
 }
