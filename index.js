@@ -14,34 +14,11 @@
 //     })
 //     });
 
-// const swiper = new Swiper(".swiper--work", {
-//     slidesPerView: 1,
-//     loop: true,
-//     spaceBetween: 30,
-//     // centeredSlides:true,
-//     spaceBetween: 50,
-//     // controller: {
-//     //   inverse: true,
-//     // },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next2",
-//         prevEl: ".swiper-button-prev2"
-//     }
-// });
-
 const swiper1 = new Swiper(".swiper", {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
-    // centeredSlides:true,
     spaceBetween: 50,
-    // controller: {
-    //   inverse: true,
-    // },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -51,3 +28,15 @@ const swiper1 = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev"
     }
 });
+
+// burger
+
+let burger = document.querySelector('.burger');
+let navigation = document.querySelector('.navigation');
+let body = document.querySelector('body');
+
+burger.addEventListener('click', ()=> {
+    navigation.classList.toggle('open');
+    burger.classList.toggle('open');
+    body.classList.toggle('stop-scroll');
+})
