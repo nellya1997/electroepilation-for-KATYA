@@ -44,11 +44,14 @@ ul {
 
 .header {
   padding-top: 47px;
+  overflow-x: hidden;
+  min-height: 87px;
 }
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -59,6 +62,9 @@ ul {
 }
 
 .burger {
+  padding: 0;
+  background-color: transparent;
+  border: none;
   width: 25px;
   height: 20px;
   position: relative;
@@ -101,13 +107,13 @@ ul {
 
 .navigation {
   position: absolute;
-  top: 97px;
+  top: 55px;
   z-index: 1;
-  left: 21px;
+  left: 0px;
   transform: translateX(120%);
   visibility: hidden;
   transition: all 0.4s ease-in;
-  width: calc(100% - 42px);
+  width: 100%;
 }
 .navigation.open {
   transform: none;
@@ -138,10 +144,10 @@ ul {
   width: 100%;
 }
 .picture--atelier {
-  width: 100%;
+  width: 92%;
   position: absolute;
-  right: -39px;
-  top: 9px;
+  right: 0px;
+  top: 0px;
 }
 .picture--atelier::after {
   content: "";
@@ -227,14 +233,14 @@ ul {
 .atelier {
   margin-bottom: 60px;
   position: relative;
-  padding-top: 91px;
+  padding-top: 21px;
 }
 .atelier__wrapper {
   display: flex;
   justify-content: space-between;
   position: relative;
   max-width: 52%;
-  margin-bottom: 320px;
+  margin-bottom: 235px;
 }
 .atelier__wrapper-content {
   position: relative;
@@ -246,7 +252,6 @@ ul {
   line-height: 21px;
   color: #7a7dbc;
   margin-bottom: 16px;
-  margin-left: -15px;
   text-align: left;
 }
 .atelier__content {

@@ -63,11 +63,15 @@ ul {
 .header {
 
     padding-top: 47px;
+    overflow-x: hidden;
+    min-height: 87px;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        // overflow-x: hidden;
     }
 }
 
@@ -80,6 +84,9 @@ ul {
 
 .burger {
 
+    padding: 0;
+    background-color: transparent;
+    border: none;
     width: 25px;
     height: 20px;
     position: relative;
@@ -133,13 +140,13 @@ ul {
 
 .navigation {
     position: absolute;
-    top: 97px;
+    top: 55px;
     z-index: 1;
-    left: 21px;
+    left: 0px;
     transform: translateX(120%);
     visibility: hidden;
     transition: all 0.4s ease-in;
-    width: calc(100% - 42px);
+    width: 100%;
 
     &.open {
         transform: none;
@@ -174,10 +181,10 @@ ul {
     width: 100%;
 
     &--atelier {
-        width: 100%;
+        width: 92%;
         position: absolute;
-        right: -39px;
-        top: 9px;
+        right: 0px;
+        top: 0px;
 
         &::after {
             content: "";
@@ -277,14 +284,15 @@ ul {
 .atelier {
     margin-bottom: 60px;
     position: relative;
-    padding-top: 91px;
+    padding-top: 21px;
+    // overflow-x: hidden;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         position: relative;
         max-width: 52%;
-        margin-bottom: 320px;
+        margin-bottom: 235px;
     }
 
     &__wrapper-content {
@@ -298,7 +306,6 @@ ul {
         line-height: 21px;
         color: $purple;
         margin-bottom: 16px;
-        margin-left: -15px;
         text-align: left;
     }
 
