@@ -162,6 +162,14 @@ ul {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 9px;
+}
+.picture--about {
+  height: 250px;
+  max-width: 236px;
+}
+.picture--about img {
+  border-radius: 14px;
 }
 .picture--services {
   margin-bottom: 5px;
@@ -239,6 +247,7 @@ ul {
   color: #7a7dbc;
   margin-bottom: 16px;
   margin-left: -15px;
+  text-align: left;
 }
 .atelier__content {
   font-size: 15px;
@@ -345,13 +354,14 @@ ul {
 }
 .swiper {
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 78px;
 }
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-  width: 30px;
-  height: 30px;
+  width: 39px;
+  height: 39px;
+  top: auto;
   left: calc(50% - 63px);
   background-color: #7a7dbc;
   border-radius: 50%;
@@ -359,7 +369,7 @@ ul {
 }
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
-  font-size: 12px;
+  font-size: 21px;
   color: #fff;
 }
 
@@ -369,8 +379,8 @@ ul {
 }
 
 .swiper .swiper-pagination-bullet {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #7a7dbc;
@@ -425,9 +435,11 @@ ul {
   margin-bottom: 10px;
 }
 .about__worker-name {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
 }
 .about__worker-text {
   font-weight: 500;
@@ -447,21 +459,20 @@ ul {
   -webkit-backdrop-filter: blur(2.5px);
           backdrop-filter: blur(2.5px);
 }
-.about .about__atelier {
+.about__atelier {
   margin: 0 auto;
   padding-bottom: 100px;
 }
-.about .about .swiper {
-  max-width: 244px;
-  margin: 0 auto;
+.about__workers .swiper {
+  padding-bottom: 85px;
 }
-.about .about__atelier-img {
+.about__atelier-img {
   width: 236px;
   height: 160px;
   border-radius: 9px;
   margin-bottom: 10px;
 }
-.about .about__atelier-text {
+.about__atelier-text {
   text-align: center;
   font-weight: 500;
 }
@@ -480,6 +491,11 @@ ul {
   box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
   -webkit-backdrop-filter: blur(2.5px);
           backdrop-filter: blur(2.5px);
+  padding: 0 13px;
+  padding-bottom: 10px;
+}
+.reviews__slider .swiper {
+  padding-bottom: 39px;
 }
 .reviews__slider-img {
   width: 236px;
@@ -488,10 +504,77 @@ ul {
   margin-bottom: 10px;
 }
 
+.footer {
+  margin-top: 60px;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__wrapper .footer__title {
+  margin-bottom: 30px;
+}
+.footer__wrapper .footer__subtitle {
+  padding: 4px 10px;
+  margin-bottom: 20px;
+}
+.footer__wrapper .footer__contacts {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__wrapper .footer__contacts a {
+  background: #ec84b6;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--phone {
+  padding: 5px 10px;
+  width: 150px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--phone.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--insta, .footer__wrapper .footer__contacts a.footer__contacts--whats, .footer__wrapper .footer__contacts a.footer__contacts--vk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 35px;
+}
+.footer__wrapper .footer__contacts--adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.footer__wrapper .footer__contacts--adress img {
+  margin-right: 5px;
+}
+.footer iframe {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 600px;
     margin: 0 auto;
+  }
+  .picture--about {
+    height: 323px;
+    max-width: 445px;
   }
 }
 @media (min-width: 1280px) {

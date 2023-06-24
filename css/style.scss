@@ -196,10 +196,21 @@ ul {
         }
     }
 
+
     & img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+        border-radius: 9px;
+    }
+
+    &--about {
+        height: 250px;
+        max-width: 236px;
+
+        & img {
+            border-radius: 14px;
+        }
     }
 
     &--services {
@@ -288,6 +299,7 @@ ul {
         color: $purple;
         margin-bottom: 16px;
         margin-left: -15px;
+        text-align: left;
     }
 
     &__content {
@@ -431,20 +443,21 @@ ul {
 
 .swiper {
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 78px;
 }
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-    width: 30px;
-    height: 30px;
+    width: 39px;
+    height: 39px;
+    top: auto;
     left: calc(50% - 63px);
     background-color: $purple;
     border-radius: 50%;
     bottom: 0px;
 
     &::after {
-        font-size: 12px;
+        font-size: 21px;
         color: $white;
     }
 }
@@ -455,8 +468,8 @@ ul {
 }
 
 .swiper .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
 
     &.swiper-pagination-bullet-active {
         background-color: $purple;
@@ -531,9 +544,11 @@ ul {
     }
 
     &__worker-name {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 17px;
+        line-height: 17px;
+        text-align: center;
     }
 
     &__worker-text {
@@ -558,14 +573,20 @@ ul {
     }
 
     // Слайдер офис
-    .about {
+    // .about {
         &__atelier {
             margin: 0 auto;
             padding-bottom: 100px;
         }
-        .swiper {
-            max-width: 244px;
-            margin: 0 auto;
+
+        // &__atelier .swiper {
+        //     // max-width: 280px;
+        //     padding-bottom: 48px;
+        //     margin: 0 auto;
+        // }
+
+        &__workers .swiper {
+            padding-bottom: 85px;
         }
 
         &__atelier-img {
@@ -579,7 +600,7 @@ ul {
             text-align: center;
             font-weight: 500;
         }
-    }
+    // }
 }
 
 // reviews
@@ -596,12 +617,89 @@ ul {
         /* матовый эффект и тень */
         box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
         backdrop-filter: blur(2.5px);
+        padding: 0 13px;
+        padding-bottom: 10px;
+
+        & .swiper {
+            padding-bottom: 39px;
+        }
     }
+
     &__slider-img {
         width: 236px;
         height: 160px;
         border-radius: 9px;
         margin-bottom: 10px;
+    }
+}
+
+.footer {
+    margin-top: 60px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer__title {
+            margin-bottom: 30px;
+        }
+        
+        .footer__subtitle {
+            padding: 4px 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer__contacts {
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            column-gap: 10px;
+
+            a {
+                background: $pink;
+                color: $white;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14.63px;
+
+                &.footer__contacts--phone {
+                    padding: 5px 10px;
+                    width: 150px;
+                    column-gap: 5px;
+                    &.col-2 {
+                        display: grid;
+                        grid-template-columns: repeat(2, max-content);
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+
+                &.footer__contacts--insta,
+                &.footer__contacts--whats,
+                &.footer__contacts--vk {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 35px;
+                }
+            }
+        }
+        .footer__contacts--adress {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px 0;
+                font-size: 12px;
+                font-weight: 600;
+
+                img {
+                    margin-right: 5px;
+                }
+        }
+    }
+    iframe {
+        margin-bottom: 40px;
     }
 }
 
@@ -678,6 +776,20 @@ ul {
     }
     .title {
     }
+
+    .picture {
+        &--about {
+            height: 323px;
+            max-width: 445px;
+        }
+    }
+
+    // .about {
+
+    //     & .swiper {
+    //         max-width: 460px;
+    //     }
+    // }
 }
 
 @media (min-width: 1280px) {
