@@ -15,7 +15,7 @@ $pink1: #eedcfa;
 $pink2: #969ae4;
 $white: #fff;
 $light-pink: #fdecff;
-$light-pink1: #FDFAFF;
+$light-pink1: #fdfaff;
 
 // переменная со шрифтом
 
@@ -35,8 +35,6 @@ body {
     overflow-x: hidden;
     color: $dark;
 }
-
-
 
 main {
     margin: 0 auto;
@@ -61,7 +59,6 @@ ul {
 }
 
 .header {
-
     padding-top: 47px;
     overflow-x: hidden;
     min-height: 87px;
@@ -83,7 +80,6 @@ ul {
 }
 
 .burger {
-
     padding: 0;
     background-color: transparent;
     border: none;
@@ -113,7 +109,6 @@ ul {
     }
 
     &.open {
-
         & .burger__line:first-child {
             left: 25%;
             top: 50%;
@@ -137,7 +132,6 @@ ul {
     }
 }
 
-
 .navigation {
     position: absolute;
     top: 55px;
@@ -147,6 +141,14 @@ ul {
     visibility: hidden;
     transition: all 0.4s ease-in;
     width: 100%;
+
+    // Тень на блок
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+    backdrop-filter: blur(2.5px);
+    padding: 5px;
 
     &.open {
         transform: none;
@@ -203,7 +205,6 @@ ul {
         }
     }
 
-
     & img {
         width: 100%;
         height: 100%;
@@ -256,7 +257,6 @@ ul {
         margin-bottom: 15px;
     }
 }
-
 
 .subtitle {
     font-size: 15px;
@@ -484,7 +484,6 @@ ul {
 }
 
 .price {
-
     &__title {
         margin-bottom: 23px;
     }
@@ -581,32 +580,32 @@ ul {
 
     // Слайдер офис
     // .about {
-        &__atelier {
-            margin: 0 auto;
-            padding-bottom: 100px;
-        }
+    &__atelier {
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
 
-        // &__atelier .swiper {
-        //     // max-width: 280px;
-        //     padding-bottom: 48px;
-        //     margin: 0 auto;
-        // }
+    // &__atelier .swiper {
+    //     // max-width: 280px;
+    //     padding-bottom: 48px;
+    //     margin: 0 auto;
+    // }
 
-        &__workers .swiper {
-            padding-bottom: 85px;
-        }
+    &__workers .swiper {
+        padding-bottom: 85px;
+    }
 
-        &__atelier-img {
-            width: 236px;
-            height: 160px;
-            border-radius: 9px;
-            margin-bottom: 10px;
-        }
+    &__atelier-img {
+        width: 236px;
+        height: 160px;
+        border-radius: 9px;
+        margin-bottom: 10px;
+    }
 
-        &__atelier-text {
-            text-align: center;
-            font-weight: 500;
-        }
+    &__atelier-text {
+        text-align: center;
+        font-weight: 500;
+    }
     // }
 }
 
@@ -650,7 +649,7 @@ ul {
         .footer__title {
             margin-bottom: 30px;
         }
-        
+
         .footer__subtitle {
             padding: 4px 10px;
             margin-bottom: 20px;
@@ -693,16 +692,16 @@ ul {
             }
         }
         .footer__contacts--adress {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 15px 0;
-                font-size: 12px;
-                font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 12px;
+            font-weight: 600;
 
-                img {
-                    margin-right: 5px;
-                }
+            img {
+                margin-right: 5px;
+            }
         }
     }
     iframe {
@@ -836,5 +835,3 @@ ul {
     .title {
     }
 }
-
-
