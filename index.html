@@ -17,21 +17,28 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="logo">KATRIN ELEKTRO</div>
+        <button class="burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
         <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="" class="link link--navigation">ВИДЫ УСЛУГ</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="link link--navigation">О&nbsp;НАС</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="link link--navigation">ОТЗЫВЫ</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="link link--navigation">КОНТАКТЫ</a>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="" class="link navigation__link">ВИДЫ УСЛУГ</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="link navigation__link">О&nbsp;НАС</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="link navigation__link">ОТЗЫВЫ</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="link navigation__link">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
@@ -115,8 +122,9 @@
 
 
           <!-- До и после -->
-
-          <h3 class="services__title-swipper title title--h3">До&nbsp;и&nbsp;после процедуры</h3>
+          <div class="flex-center">
+            <span class="subtitle">До&nbsp;и&nbsp;после процедуры</span>
+          </div>
           <div class="services__swiper">
             <div class="swiper services__swiper-wrapper">
               <div class="swiper-wrapper">
@@ -160,11 +168,11 @@
 
     <section class="price">
       <div class="container">
-        <div class="price__title title--2">
+        <div class="price__title title">
           ПРАЙС
         </div>
-        <div class="price__subtitle title--1">
-          Топ мастер
+        <div class="flex-center">
+          <span class="subtitle">Топ мастер</span>
         </div>
         <div class="price__categories">
           <!-- Women -->
@@ -225,32 +233,31 @@
             </ul>
           </div>
 
-
-          <div class="price__subcategory-title title--1">
-            Мастера Полина и Елена
+          <div class="flex-center">
+            <span class="subtitle">Мастера Полина и&nbsp;Елена</span>
           </div>
-          <div class="price__subcategory">
+          <div class="price__category">
             <ul class="price__subcategory-list">
-              <li class="price__subcategory-item">
+              <li class="price__category-item">
                 <p>Тело</p>
                 <p>35 р/мин</p>
               </li>
-              <li class="price__subcategory-item">
+              <li class="price__category-item">
                 <p>Бикини</p>
                 <p>40 р/мин</p>
               </li>
           </div>
 
-          <div class="price__subcategory-title title--1">
-            Дополнительные услуги
+          <div class="flex-center">
+            <span class="subtitle">Дополнительные услуги</span>
           </div>
-          <div class="price__subcategory">
+          <div class="price__category">
             <ul class="price__subcategory-list">
-              <li class="price__subcategory-item">
+              <li class="price__category-item">
                 <p>Иголка-электрод</p>
                 <p>250 р/мин</p>
               </li>
-              <li class="price__subcategory-item">
+              <li class="price__category-item">
                 <p>Апликационная
                   <br>анестезия
                 </p>
@@ -264,10 +271,12 @@
 
     <section class="about">
       <div class="container">
-        <div class="about__title title--2">
-          о нас
+        <div class="about__title title">
+          О НАС
         </div>
-        <div class="about__subtitle title--1">Наши мастера</div>
+        <div class="flex-center">
+          <span class="subtitle">Наши мастера</span>
+        </div>
         <div class="about__workers">
 
           <div class="swiper">
@@ -306,7 +315,9 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="about__subtitle title--1">Наш офис</div>
+        <div class="flex-center">
+          <span class="subtitle">Наш офис</span>
+        </div>
         <div class="about__desc">Наша студия оборудована
           в соответсвии со всеми требованиями СанПиН.
         </div>
@@ -340,8 +351,11 @@
 
     <div class="reviews">
       <div class="container">
-        <div class="reviews__title title--2">ОТЗЫВЫ</div>
-        <div class="reviews__subtitle title--1">Что о нас говорят наши клиенты</div>
+        <div class="reviews__title title">ОТЗЫВЫ</div>
+
+        <div class="flex-center">
+          <span class="subtitle">Что о&nbsp;нас говорят наши клиенты</span>
+        </div>
         <div class="reviews__slider">
           <div class="swiper">
             <div class="swiper-wrapper slider-container">
