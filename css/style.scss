@@ -171,6 +171,14 @@ ul {
         line-height: 15px;
         font-weight: 700;
     }
+
+    &__item {
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .link {
@@ -195,7 +203,7 @@ ul {
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to bottom, transparent, 65%, $white);
+            background-image: linear-gradient(to bottom, transparent, 65%, $light-pink1);
             z-index: 0;
         }
 
@@ -272,7 +280,7 @@ ul {
 .circle {
     width: 54px;
     height: 54px;
-    background-color: $light-pink;
+    background: linear-gradient(to right, $light-pink, 58% , transparent);
     border-radius: 50%;
 }
 
