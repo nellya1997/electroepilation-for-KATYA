@@ -29,21 +29,6 @@ const swiper1 = new Swiper('.swiper', {
   },
 });
 
-const swiper2 = new Swiper('.swiper__pagination', {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 30,
-  spaceBetween: 50,
-  pagination: {
-    el: '.swiper__pagination-dynamic--bullets',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
 // burger
 
 let burger = document.querySelector('.burger');
