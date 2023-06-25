@@ -45,7 +45,7 @@ ul {
 .header {
   padding-top: 47px;
   overflow-x: hidden;
-  min-height: 97px;
+  min-height: 124px;
 }
 .header__wrapper {
   display: flex;
@@ -138,6 +138,7 @@ ul {
   font-size: 12px;
   line-height: 15px;
   font-weight: 700;
+  color: #7a7dbc;
 }
 .navigation__item {
   margin-right: 12px;
@@ -168,7 +169,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent, 65%, #fdfaff);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 65%, #FDFAFF);
   z-index: 0;
 }
 .picture--atelier img {
@@ -361,6 +362,7 @@ ul {
 }
 .services__wrapper-center {
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 .services__swiper-wrapper {
   padding-bottom: 36px;
@@ -424,6 +426,64 @@ ul {
   background-color: #7a7dbc;
 }
 
+/*    FAQ section          */
+.FAQ__wrap {
+  margin-bottom: 15px;
+}
+.FAQ__wrap .accordion {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7a7dbc;
+  background-color: white;
+  -webkit-text-fill-color: #7a7dbc;
+  cursor: pointer;
+  padding: 18px 18px 18px 53px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  box-shadow: 0px -5px 17px #eedcfa;
+  border-radius: 9px;
+}
+.FAQ__wrap p {
+  font-size: 15px;
+  line-height: 17px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.FAQ__wrap .panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 18px;
+  padding-top: 17px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.FAQ__wrap .accordion::before,
+.FAQ__wrap .accordion::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 42px;
+  background-color: #7a7dbc;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.FAQ__wrap .accordion::after {
+  transform: rotate(90deg) translate(-6%, 0%);
+  transition: all 0.2s ease-in;
+}
+.FAQ__wrap .accordion.active::after {
+  opacity: 0;
+}
+
 .price__title {
   margin-bottom: 23px;
 }
@@ -441,17 +501,17 @@ ul {
   box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
 }
 .price__category-title {
-  text-align: center;
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
   padding-bottom: 15px;
 }
 .price__category-item {
   font-size: 16px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-weight: 500;
 }
 .price__category-item p {
   padding-bottom: 5px;
@@ -537,7 +597,7 @@ ul {
   padding-bottom: 10px;
 }
 .reviews__slider .swiper {
-  padding-bottom: 39px;
+  padding-bottom: 46px;
 }
 .reviews__slider-img {
   width: 236px;
@@ -616,9 +676,22 @@ ul {
     max-width: 600px;
     margin: 0 auto;
   }
-  .picture--about {
-    height: 323px;
-    max-width: 445px;
+  .atelier__advertisement {
+    max-width: 364px;
+  }
+  .atelier__title {
+    font-size: 46px;
+    line-height: 30px;
+  }
+  .atelier__content {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .atelier__info {
+    margin-bottom: 77px;
+  }
+  .atelier__link {
+    padding: 14px 53px;
   }
 }
 @media (min-width: 1280px) {

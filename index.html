@@ -23,7 +23,6 @@
           <span class="burger__line"></span>
         </button>
         <nav class="navigation">
-          <!-- <div class="container"> -->
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#services" class="link navigation__link">ВИДЫ УСЛУГ</a>
@@ -32,13 +31,12 @@
               <a href="#about" class="link navigation__link">О&nbsp;НАС</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="link navigation__link">ОТЗЫВЫ</a>
+              <a href="#reviews" class="link navigation__link">ОТЗЫВЫ</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="link navigation__link">КОНТАКТЫ</a>
+              <a href="#contacts" class="link navigation__link">КОНТАКТЫ</a>
             </li>
           </ul>
-          <!-- </div> -->
         </nav>
       </div>
     </div>
@@ -48,7 +46,7 @@
       <div class="container container--atelier">
         <div class="atelier__wrapper">
           <div class="atelier__wrapper-content">
-            <h1 class="atelier__title title">СТУДИЯ
+            <h1 class="atelier__title title">СТУДИЯ<br>
               <span class="atelier__content">ЭЛЕКТРОЭПИЛЯЦИИ</span>
             </h1>
             <span class="atelier__info">Единственный доказанный метод удаления волос навсегда </span>
@@ -58,8 +56,8 @@
 
         <picture class="picture picture--atelier">
           <source type="image/webp" srcset="img/atelier/content1.webp" media="(max-width: 2400px)">
-          <source type="image/jpeg" srcset="img/atelier/content1.jpg" media="(max-width: 2400px)">
-          <img src="img/atelier/content1.jpg" alt="Студия электроэпиляции">
+          <source type="image/png" srcset="img/atelier/content1.png" media="(max-width: 2400px)">
+          <img src="img/atelier/content1.png" alt="Студия электроэпиляции">
         </picture>
         <div class="atelier__advertisement">
           <div class="atelier__advertisement-content">
@@ -78,11 +76,11 @@
 
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <!-- <a name="#services"></a> -->
       <div class="container">
         <div class="services__wrapper">
-          <h2 id="#services" class="services__title title">ВИДЫ УСЛУГ</h2>
+          <h2 class="services__title title">ВИДЫ УСЛУГ</h2>
           <ul class="services__list list">
             <li>
               <picture class="picture picture--services">
@@ -211,6 +209,47 @@
               Удаляет даже самые светлые волосинки.
             </span>
           </div>
+
+          <div class="flex-center">
+            <span class="subtitle">Часто задаваемые вопросы</span>
+          </div>
+          <div class="FAQ">
+            <!-- <div class="container"> -->
+              <div class="FAQ__wrap">
+                <button class="accordion">Действительно ли волосы удаляются НАВСЕГДА?</button>
+                <div class="panel">
+                  <p>Электроэпиляция — это единственный научно доказанный метод на рынке, который действительно удаляет волосы навсегда.</p>
+                  <p>Этот метод существует уже более 140 лет, и за это время проведено множество научных исследований, подтвердивших, что электроэпиляция действительно удаляет волосы, не замедляет рост волос, а именно удаляет навсегда, путём того, что разряд тока убивает луковицу, из которой растёт волос.</p>
+                </div>
+              </div>
+                <div class="FAQ__wrap">
+                  <button class="accordion">Больно ли делать электроэпиляцию?</button>
+                  <div class="panel">
+                    <p>Все зависит от болевого порога клиента, умения и навыка мастера и немного от аппарата, на котором делают. </p>
+                    <p>У меня есть клиенты/ки, которые спят на процедуре и это без какой-либо анестезии. Для всех остальных есть аппликационная анестезия, а для тех, у кого совсем низкий болевой порог, могу предложить инъекционную анестезию.</p>
+                  </div>
+                </div>
+                <div class="FAQ__wrap">
+                  <button class="accordion">Можно ли делать Электро после лазерной эпиляции?</button>
+                  <div class="panel">
+                    Да, можно. <br>Но для этого нужно какое-то время не ходить на лазер и удалять отросшие волосы бритвой.</p>
+                  </div>
+                </div>
+                <div class="FAQ__wrap">
+                  <button class="accordion">С каким типом волос справляется Электро?</button>
+                  <div class="panel">
+                    <p>Электроэпиляция справляется абсолютно со всеми типами волос: с терминальными и пушковыми, а также с темными, светлыми, седыми и рыжими.</p>
+                  </div>
+                </div>
+
+                <div class="FAQ__wrap">
+                  <button class="accordion">Как часто ходить на&nbsp;Электро?</button>
+                  <div class="panel">
+                    <p>В&nbsp;рамках одной эпилированной зоны нужно ходить примерно раз в&nbsp;20&nbsp;дней. Но&nbsp;это всё индивидуально. Как только у&nbsp;вас после процедуры отросли волосы и&nbsp;достигли определённой длины (подходящая для процедуры длина волоса 5-7&nbsp;мм) сразу&nbsp;же можно приходить на&nbsp;процедуру.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -242,7 +281,7 @@
               </li>
               <li class="price__category-item">
                 <p>Бикини</p>
-                <p>43 р/мин</p>
+                <p>45 р/мин</p>
               </li>
               <li class="price__category-item">
                 <p>Лицо</p>
@@ -320,7 +359,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <h2 class="about__title title">
           О НАС
@@ -444,7 +483,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <h2 class="reviews__title title">ОТЗЫВЫ</h2>
 
@@ -539,18 +578,18 @@
     </section>
 
   </main>
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <h2 class="footer__title title">КОНТАКТЫ</h2>
         <h3 class="footer__subtitle title--h3 subtitle">Как с нами связаться</h3>
         <div class="footer__contacts">
-          <a class="footer__contacts--phone col-2" href="tel:+79085329338">
+          <a class="footer__contacts--phone link col-2" href="tel:+79085329338">
             <img src="icon/phone.png">
             +7 908 532 93 38
           </a>
           <a class="footer__contacts--insta" href="#"><img src="icon/insta.png"></a>
-          <a class="footer__contacts--whats" href="#"><img src="icon/whatsapp.png"></a>
+          <a class="footer__contacts--whats" target="_blank" href="https://wa.me/89035329338?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..."><img src="icon/whatsapp.png"></a>
           <a class="footer__contacts--vk" href="#"><img src="icon/vk.png"></a>
         </div>
         <div class="footer__contacts--adress">
