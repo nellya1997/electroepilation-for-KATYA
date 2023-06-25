@@ -370,7 +370,8 @@ ul {
   top: auto;
 }
 
-.swiper__pagination, .swiper-container {
+.swiper__pagination,
+.swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -571,10 +572,8 @@ ul {
   line-height: 14.63px;
 }
 .footer__wrapper .footer__contacts a.footer__contacts--phone {
-  padding: 5px 10px;
-  width: 150px;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  padding: 0px 6px;
+  width: 123px;
 }
 .footer__wrapper .footer__contacts a.footer__contacts--phone.col-2 {
   display: grid;
@@ -586,8 +585,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 35px;
+  width: 37px;
+  height: 30px;
+}
+.footer__wrapper .footer__contacts a img {
+  width: 20px;
+  height: 20px;
 }
 .footer__wrapper .footer__contacts--adress {
   display: flex;
