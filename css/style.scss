@@ -541,6 +541,7 @@ ul {
     }
 
     &__category-item {
+        font-size: 16px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -549,6 +550,9 @@ ul {
 
     &__category-item p {
         padding-bottom: 5px;
+    }
+    &__category-item span {
+        line-height: 1.4;
     }
 }
 

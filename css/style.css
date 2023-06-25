@@ -447,6 +447,7 @@ ul {
   padding-bottom: 15px;
 }
 .price__category-item {
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -454,6 +455,9 @@ ul {
 }
 .price__category-item p {
   padding-bottom: 5px;
+}
+.price__category-item span {
+  line-height: 1.4;
 }
 
 .about {
