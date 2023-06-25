@@ -445,26 +445,13 @@ ul {
     }
 }
 
-.swiper__pagination,
-.swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-    display: block;
-}
 
-.swiper__pagination,
+
 .swiper {
     margin: 0 auto;
     padding-bottom: 78px;
 }
 
-.swiper__pagination .swiper-button-prev,
-.swiper__pagination .swiper-button-next,
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
     width: 39px;
@@ -481,12 +468,29 @@ ul {
     }
 }
 
-.swiper__pagination .swiper-button-next,
+.services__swiper .swiper .swiper-button-next {
+    right: calc(50% - 107px);
+    left: auto;
+}
+.services__swiper .swiper .swiper-button-prev {
+    left: calc(50% - 107px);
+    right: auto;
+}
+
+.reviews__slider .swiper .swiper-button-next {
+    right: calc(50% - 102px);
+    left: auto;
+}
+.reviews__slider .swiper .swiper-button-prev {
+    left: calc(50% - 102px);
+    right: auto;
+}
+
 .swiper .swiper-button-next {
     right: calc(50% - 63px);
     left: auto;
 }
-.swiper__pagination .swiper-pagination-bullet,
+
 .swiper .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
@@ -498,14 +502,12 @@ ul {
 
 /*    FAQ section          */
 .FAQ {
-    
     @mixin flexCol {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
     &__wrap {
-
         margin-bottom: 15px;
 
         .accordion {
@@ -526,7 +528,8 @@ ul {
             box-shadow: 0px -5px 17px #eedcfa;
             border-radius: 9px;
         }
-        .active, .accordion:hover {
+        .active,
+        .accordion:hover {
             //background-color: #ccc;
         }
 
@@ -549,7 +552,7 @@ ul {
         }
         .accordion::before,
         .accordion::after {
-            content: '';
+            content: "";
             width: 25px;
             height: 4px;
             border-radius: 42px;
@@ -609,7 +612,6 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        
     }
 
     &__category-item p {
@@ -759,8 +761,6 @@ ul {
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 14.63px;
-
-                
 
                 &.footer__contacts--phone {
                     padding: 0px 6px;
