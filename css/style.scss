@@ -61,7 +61,7 @@ ul {
 .header {
     padding-top: 47px;
     overflow-x: hidden;
-    min-height: 87px;
+    min-height: 97px;
 
     &__wrapper {
         display: flex;
@@ -280,7 +280,7 @@ ul {
 .circle {
     width: 54px;
     height: 54px;
-    background: linear-gradient(to right, $light-pink, 58% , transparent);
+    background: linear-gradient(to right, $light-pink, 58%, transparent);
     border-radius: 50%;
 }
 
@@ -444,23 +444,37 @@ ul {
     &__swiper-wrapper {
         padding-bottom: 36px;
     }
-
+    &__wrapper-info {
+    }
+}
+.services {
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
         bottom: 11px;
         top: auto;
     }
-
-    &__wrapper-info {
-    }
 }
 
+.swiper__pagination, .swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.swiper__pagination,
 .swiper {
     margin: 0 auto;
     padding-bottom: 78px;
 }
 
+.swiper__pagination .swiper-button-prev,
+.swiper__pagination .swiper-button-next,
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
     width: 39px;
@@ -477,11 +491,12 @@ ul {
     }
 }
 
+.swiper__pagination .swiper-button-next,
 .swiper .swiper-button-next {
     right: calc(50% - 63px);
     left: auto;
 }
-
+.swiper__pagination .swiper-pagination-bullet,
 .swiper .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
