@@ -891,6 +891,14 @@ ul {
         max-width: 820px;
     }
     .header {
+        .burger {
+            display: none;
+        }
+
+        .navigation {
+        transform: none;
+        visibility: visible;
+    }
     }
     .logo {
     }

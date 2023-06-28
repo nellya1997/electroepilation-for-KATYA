@@ -710,4 +710,11 @@ ul {
   .container {
     max-width: 820px;
   }
+  .header .burger {
+    display: none;
+  }
+  .header .navigation {
+    transform: none;
+    visibility: visible;
+  }
 }/*# sourceMappingURL=style.css.map */
