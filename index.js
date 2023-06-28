@@ -1,5 +1,3 @@
-
-
 const swiper1 = new Swiper('.swiper', {
   slidesPerView: 1,
   loop: true,
