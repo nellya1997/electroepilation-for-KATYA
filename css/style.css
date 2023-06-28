@@ -6,19 +6,33 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Forum";
+  src: url(../fonts/Forum.woff) format("woff2"), url(../fonts/Forum.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat-SemiBold", "font", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
+  font-family: "Montserrat", "font", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14.63px;
   min-width: 320px;
   background-color: #fdfaff;
   overflow-x: hidden;
-  color: #3a3a42;
+  color: #3A3A42;
 }
 
 main {
@@ -45,7 +59,7 @@ ul {
 .header {
   padding-top: 47px;
   overflow-x: hidden;
-  min-height: 124px;
+  min-height: 81px;
 }
 .header__wrapper {
   display: flex;
@@ -58,7 +72,7 @@ ul {
   font-size: 12px;
   line-height: 22px;
   font-weight: 700;
-  color: #7a7dbc;
+  color: #AC5097;
 }
 
 .burger {
@@ -73,7 +87,7 @@ ul {
 }
 .burger__line {
   position: absolute;
-  background-color: #7a7dbc;
+  background-color: #AC5097;
   width: 100%;
   top: 0;
   left: 0;
@@ -138,7 +152,7 @@ ul {
   font-size: 12px;
   line-height: 15px;
   font-weight: 700;
-  color: #7a7dbc;
+  color: #AC5097;
 }
 .navigation__item {
   margin-right: 12px;
@@ -153,11 +167,10 @@ ul {
 
 .picture {
   display: inline-block;
-  height: 100%;
   width: 100%;
 }
 .picture--atelier {
-  width: 92%;
+  width: 100%;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -194,16 +207,13 @@ ul {
   -o-object-position: top;
      object-position: top;
 }
-.picture--services {
-  margin-bottom: 5px;
-}
-
 .title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 37px;
+  font-family: "Forum", "font", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 44.16px;
   margin: 0 auto;
-  color: #7a7dbc;
+  color: #AC5097;
   text-align: center;
 }
 
@@ -226,11 +236,12 @@ ul {
 
 .subtitle {
   font-size: 15px;
-  line-height: 15px;
-  background-color: #969ae4;
+  font-weight: 500;
+  line-height: 18.29px;
+  background-color: #AC5097;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 35px;
   text-align: center;
   display: inline-block;
 }
@@ -257,28 +268,22 @@ ul {
   justify-content: space-between;
   position: relative;
   max-width: 52%;
-  margin-bottom: 235px;
+  margin-bottom: 375px;
 }
 .atelier__wrapper-content {
   position: relative;
   z-index: 1;
 }
 .atelier__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 21px;
-  color: #7a7dbc;
-  margin-bottom: 16px;
+  font-size: 50px;
   text-align: left;
-}
-.atelier__content {
-  font-size: 15px;
-  line-height: 18px;
+  line-height: 55px;
+  color: #AC5097;
 }
 .atelier__info {
-  font-size: 14px;
-  line-height: 13px;
-  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
   margin-bottom: 31px;
   display: inline-block;
 }
@@ -289,6 +294,7 @@ ul {
   color: #fff;
 }
 .atelier__advertisement {
+  color: #AC5097;
   max-width: 296px;
   margin: 0 auto;
   box-shadow: 0px 2px 5px #eedcfa;
@@ -345,12 +351,13 @@ ul {
 .services__list li {
   width: calc(50% - 18px);
   margin-bottom: 16px;
-  padding-bottom: 25px;
 }
 .services__content {
-  display: block;
-  text-align: center;
+  text-transform: uppercase;
   line-height: 10px;
+  text-align: center;
+  line-height: 14.63px;
+  display: block;
 }
 .services__title-swipper {
   margin-bottom: 23px;
@@ -361,7 +368,7 @@ ul {
 .services__content-swiper {
   font-size: 14px;
   line-height: 14px;
-  color: #7a7dbc;
+  color: #AC5097;
   line-height: 14px;
   max-width: 303px;
   display: inline-block;
@@ -389,7 +396,7 @@ ul {
   height: 39px;
   top: auto;
   left: calc(50% - 63px);
-  background-color: #7a7dbc;
+  background-color: #AC5097;
   border-radius: 50%;
   bottom: 0px;
 }
@@ -429,18 +436,19 @@ ul {
   height: 6px;
 }
 .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #7a7dbc;
+  background-color: #AC5097;
 }
 
 .FAQ__wrap {
   margin-bottom: 15px;
 }
 .FAQ__wrap .accordion {
-  font-size: 16px;
-  line-height: 20px;
-  color: #7a7dbc;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 600;
+  color: #AC5097;
   background-color: white;
-  -webkit-text-fill-color: #7a7dbc;
+  -webkit-text-fill-color: #AC5097;
   cursor: pointer;
   padding: 18px 18px 18px 53px;
   width: 100%;
@@ -453,8 +461,9 @@ ul {
   border-radius: 9px;
 }
 .FAQ__wrap p {
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
   padding: 0 10px;
@@ -474,7 +483,7 @@ ul {
   width: 25px;
   height: 4px;
   border-radius: 42px;
-  background-color: #7a7dbc;
+  background-color: #AC5097;
   position: absolute;
   left: 8px;
   top: 50%;
@@ -506,22 +515,17 @@ ul {
 }
 .price__category-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
+  line-height: 18.29px;
   padding-bottom: 15px;
 }
 .price__category-item {
-  font-size: 16px;
   font-weight: 500;
+  height: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-.price__category-item p {
-  padding-bottom: 5px;
-}
-.price__category-item span {
-  line-height: 1.4;
 }
 
 .about {
@@ -557,7 +561,7 @@ ul {
   margin-bottom: 20px;
   padding: 10px 20px;
   font-weight: 500;
-  color: #7a7dbc;
+  color: #AC5097;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.2);
   /* матовый эффект и тень */
