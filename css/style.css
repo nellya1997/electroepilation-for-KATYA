@@ -165,12 +165,12 @@ ul {
 .picture--atelier::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: calc(0% + 287px);
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 65%, #fdfaff);
-  z-index: 0;
+  height: calc(100% - 287px);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 9%, #fdfaff);
+  z-index: 1;
 }
 .picture--atelier img {
   width: 100%;
@@ -189,6 +189,10 @@ ul {
 }
 .picture--about img {
   border-radius: 14px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .picture--services {
   margin-bottom: 5px;
@@ -327,6 +331,9 @@ ul {
   display: flex;
   flex-direction: column;
 }
+.services__title {
+  margin-bottom: 34px;
+}
 .services__list {
   display: flex;
   flex-wrap: wrap;
@@ -425,7 +432,6 @@ ul {
   background-color: #7a7dbc;
 }
 
-/*    FAQ section          */
 .FAQ__wrap {
   margin-bottom: 15px;
 }
@@ -451,6 +457,7 @@ ul {
   line-height: 17px;
   margin: 0;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 .FAQ__wrap .panel {
   display: flex;
@@ -594,7 +601,7 @@ ul {
   padding-bottom: 10px;
 }
 .reviews__slider .swiper {
-  padding-bottom: 46px;
+  padding-bottom: 30px;
 }
 .reviews__slider-img {
   width: 236px;
@@ -668,6 +675,14 @@ ul {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-height: 600px) {
+  .about__workers .swiper {
+    padding-bottom: 51px;
+  }
+  .picture--about {
+    height: 213px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 600px;
