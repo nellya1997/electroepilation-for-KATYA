@@ -217,12 +217,12 @@ ul {
         &::after {
             content: "";
             position: absolute;
-            top: 0;
+            top: calc(0% + 287px);
             left: 0;
             width: 100%;
-            height: 100%;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 65%, $light-pink1);
-            z-index: 0;
+            height: calc(100% - 287px);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 9% , #fdfaff);
+            z-index: 1;
         }
 
         & img {
@@ -244,6 +244,8 @@ ul {
 
         & img {
             border-radius: 14px;
+            object-fit: cover;
+            object-position: top;
         }
     }
 
@@ -313,7 +315,6 @@ ul {
     margin-bottom: 60px;
     position: relative;
     padding-top: 21px;
-    // overflow-x: hidden;
 
     &__wrapper {
         display: flex;
@@ -346,10 +347,9 @@ ul {
     }
 
     &__link {
-        padding: 9px 32px;
+        padding: 9px 27px;
         background-color: $pink;
         border-radius: 50px;
-        padding: 7px 38px;
         color: $white;
     }
 
@@ -403,6 +403,10 @@ ul {
     &__wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 34px;
     }
 
     &__list {
@@ -524,7 +528,6 @@ ul {
     }
 }
 
-/*    FAQ section          */
 .FAQ {
     @mixin flexCol {
         display: flex;
@@ -561,6 +564,7 @@ ul {
             font-weight: 400;
             margin: 0;
             margin-bottom: 20px;
+            padding: 0 10px;
         }
 
         .panel {
@@ -641,7 +645,6 @@ ul {
     }
 }
 
-// О нас
 
 .about {
     margin-top: 100px;
@@ -742,7 +745,7 @@ ul {
         padding-bottom: 10px;
 
         & .swiper {
-            padding-bottom: 46px;
+            padding-bottom: 30px;
         }
     }
 
@@ -829,6 +832,25 @@ ul {
 
     iframe {
         margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .about__workers .swiper {
+        padding-bottom: 51px;
+    }
+
+    .picture--about {
+        height: 213px;
+    }
+}
+
+@media (min-width: 375px) {
+    .header {
+    }
+
+    .picture--about {
+        height: 213px;
     }
 }
 
