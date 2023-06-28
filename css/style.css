@@ -173,7 +173,7 @@ ul {
   width: 100%;
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: 90px;
 }
 .picture--atelier::after {
   content: "";
@@ -547,20 +547,21 @@ ul {
 .about__worker-name {
   margin-bottom: 15px;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 17px;
-  text-align: center;
+  font-size: 15px;
+  line-height: 18.29px;
+  text-align: left;
 }
 .about__worker-text {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .about__desc {
-  max-width: 244px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 240px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 10px 20px;
-  font-weight: 500;
   color: #AC5097;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.2);
@@ -574,7 +575,7 @@ ul {
   padding-bottom: 100px;
 }
 .about__workers .swiper {
-  padding-bottom: 85px;
+  padding-bottom: 35px;
 }
 .about__atelier-img {
   width: 236px;
@@ -636,7 +637,7 @@ ul {
        column-gap: 10px;
 }
 .footer__wrapper .footer__contacts a {
-  background: #ec84b6;
+  background: #AC5097;
   color: #fff;
   border-radius: 6px;
   font-weight: 500;
@@ -683,6 +684,11 @@ ul {
   .about__workers .swiper {
     padding-bottom: 51px;
   }
+  .picture--about {
+    height: 213px;
+  }
+}
+@media (min-width: 375px) {
   .picture--about {
     height: 213px;
   }

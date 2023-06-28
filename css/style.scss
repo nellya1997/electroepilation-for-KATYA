@@ -25,6 +25,8 @@
 
 // цвета
 $titleColor: #AC5097;
+// хотя btnFooterColor и titleColor одинаковые - но используются слишком в разных местах - поэтому сделал еще одну переменную на случай если заказчик захочет другие кнопки
+$btnFooterColor: #AC5097;
 $dark: #3a3a42;
 $pink: #ec84b6;
 $pink1: #eedcfa;
@@ -212,7 +214,7 @@ ul {
         width: 100%;
         position: absolute;
         right: 0px;
-        top: 0px;
+        top: 90px;
 
         &::after {
             content: "";
@@ -221,7 +223,7 @@ ul {
             left: 0;
             width: 100%;
             height: calc(100% - 287px);
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 9% , #fdfaff);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 9%, #fdfaff);
             z-index: 1;
         }
 
@@ -668,22 +670,24 @@ ul {
     &__worker-name {
         margin-bottom: 15px;
         font-weight: 600;
-        font-size: 17px;
-        line-height: 17px;
-        text-align: center;
+        font-size: 15px;
+        line-height: 18.29px;
+        text-align: left;
     }
 
     &__worker-text {
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 20px;
     }
 
     &__desc {
-        max-width: 244px;
+        font-weight: 400;
+        text-align: center;
+        max-width: 240px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 10px 20px;
-        font-weight: 500;
+
         color: $titleColor;
 
         border-radius: 9px;
@@ -708,7 +712,7 @@ ul {
     // }
 
     &__workers .swiper {
-        padding-bottom: 85px;
+        padding-bottom: 35px;
     }
 
     &__atelier-img {
@@ -780,7 +784,7 @@ ul {
             column-gap: 10px;
 
             a {
-                background: $pink;
+                background: $btnFooterColor;
                 color: $white;
                 border-radius: 6px;
                 font-weight: 500;
@@ -846,8 +850,7 @@ ul {
 }
 
 @media (min-width: 375px) {
-    .header {
-    }
+    .header {}
 
     .picture--about {
         height: 213px;
@@ -929,10 +932,6 @@ ul {
         }
     }
 
-    .logo {}
-
-    .navigation {}
-
     .list {
         &__item {}
 
@@ -950,6 +949,4 @@ ul {
 
         &__link {}
     }
-
-    .title {}
 }
