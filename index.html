@@ -48,11 +48,13 @@
   <main>
     <!-- atelier -->
     <section class="atelier ">
+
+      <div class="circle"></div>
+      <div class="circle circle--right-top"></div>
+      <div class="circle circle--left-bottom"></div>
+      <div class="circle circle--right-bottom"></div>
+
       <div class="container">
-        <div class="circle"></div>
-        <div class="circle circle--right-top"></div>
-        <div class="circle circle--left-bottom"></div>
-        <div class="circle circle--right-bottom"></div>
         <div class="atelier__wrapper">
           <h1 class="atelier__title">
             Екатерина Позднеева
@@ -60,15 +62,21 @@
           <div class="atelier__subtitle">Студия электроэпиляции</div>
           <div class="atelier__desc">Сделаю тебя гладкой - <span>быстро</span> и <span>безболезненно</span></div>
 
-          <picture class="atelier__picture picture">
-            <source type="image/webp" srcset="img/atelier/content.webp" media="(max-width: 2400px)">
-            <source type="image/png" srcset="img/atelier/content.png" media="(max-width: 2400px)">
-            <img src="img/atelier/content1.png" alt="Студия электроэпиляции">
-          </picture>
-          <div class="flex-center">
-            <button class="atelier__btn btn">
-              Записаться на сеанс
-            </button>
+          <div class="atelier__record">
+            <picture class="atelier__picture picture">
+              <source type="image/webp" srcset="img/atelier/content.webp" media="(max-width: 2400px)">
+              <source type="image/png" srcset="img/atelier/content.png" media="(max-width: 2400px)">
+              <img src="img/atelier/content1.png" alt="Студия электроэпиляции">
+            </picture>
+            <div class="flex-center atelier__record-link">
+              <a class="atelier__link link" href="https://wa.me/79035329338" target="_blank">
+                Записаться на сеанс
+              </a>
+
+              <img src="/img/atelier/rose.png">
+            </div>
+
+            <!-- <img src="/img/atelier/rose.png"> -->
           </div>
 
 
