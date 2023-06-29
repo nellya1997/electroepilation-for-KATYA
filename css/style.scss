@@ -38,7 +38,7 @@ $lilac: #61236b;
 // цвета
 $titleColor: #ac5097;
 // хотя btnFooterColor и titleColor одинаковые - но используются слишком в разных местах - поэтому сделал еще одну переменную на случай если заказчик захочет другие кнопки
-$btnFooterColor: #ac5097;
+$btnFooterColor: #4a2251;
 $dark: #3a3a42;
 $pink: #ec84b6;
 $pink1: #eedcfa;
@@ -969,52 +969,53 @@ a {
         align-items: center;
 
         .footer__title {
-            margin-bottom: 30px;
+            margin-bottom: 1.7em;
         }
 
-        .footer__subtitle {
-            padding: 4px 10px;
-            margin-bottom: 20px;
+        .footer__paragraf {
+            margin-top: 0;
+            margin-bottom: 1.4em;
+            color: $dark;
+            font-size: 12px;
+            font-weight: 500;
         }
 
         .footer__contacts {
             display: grid;
-            grid-template-columns: repeat(4, max-content);
-            column-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 19px;
 
-            a {
-                background: $btnFooterColor;
-                color: $white;
-                border-radius: 6px;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 14.63px;
+            .footer__contacts__social {
+                @include flex-center;
+                justify-content: space-between;
+                grid-column: span 3;
 
-                &.footer__contacts--phone {
-                    padding: 0px 6px;
-                    width: 123px;
-
-                    &.col-2 {
-                        display: grid;
-                        grid-template-columns: repeat(2, max-content);
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                }
-
-                &.footer__contacts--insta,
-                &.footer__contacts--whats,
-                &.footer__contacts--vk {
+                &.icon {
+                    background: linear-gradient(180deg, #e9c6f5 0%, #c092d0 100%);
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 37px;
-                    height: 30px;
+                    width: 52px;
+                    height: 41px;
+                    border-radius: 6px;
+                    box-shadow: 0px 2px 10px 2px rgba(161, 76, 183, 0.5);
                 }
+            }
 
-                img {
-                    width: 20px;
-                    height: 20px;
+            a {
+                color: $btnFooterColor;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+
+                &.footer__contacts--phone {
+                    grid-column: span 3;
+
+                    &.link {
+                        @include btn-link;
+                    }
                 }
             }
         }
@@ -1022,19 +1023,20 @@ a {
         .footer__contacts--adress {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
-            margin: 15px 0;
+            margin-top: 25px;
             font-size: 12px;
             font-weight: 600;
 
-            img {
-                margin-right: 5px;
+            .footer__paragraf {
+                margin-bottom: 11px;
             }
         }
     }
 
     iframe {
-        margin-bottom: 40px;
+        margin-bottom: 66px;
     }
 }
 
