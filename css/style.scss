@@ -28,8 +28,6 @@
 $dark: #351134;
 $lilac: #61236b;
 
-
-
 // @font-face {
 //     font-family: "Montserrat";
 //     src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
@@ -519,7 +517,6 @@ a {
     .swiper-pagination-bullet-active {
         background: rgba(192, 146, 208, 1);
     }
-
 }
 
 // about
@@ -561,11 +558,13 @@ a {
 
 .quality {
     position: relative;
-    margin-bottom: 50px;
     &__wrapper {
-        background: url("/img/quality/content.png") no-repeat center right;
-        background-size: contain;
+        padding-bottom: 50px;
+        background: url("/img/quality/content.png") no-repeat, url("/img/quality/bg.png") no-repeat;
+        background-size: 43px, 170px;
+        background-position: right, right;
     }
+
     &__circle {
         z-index: 0;
         position: absolute;
@@ -620,7 +619,6 @@ a {
         }
     }
 }
-
 // Виды услуг
 
 .services {
@@ -685,11 +683,11 @@ a {
         padding-bottom: 36px;
     }
 
-    &__wrapper-info {}
+    &__wrapper-info {
+    }
 }
 
 .services {
-
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
@@ -697,8 +695,6 @@ a {
         top: auto;
     }
 }
-
-
 
 /*.FAQ {
     @mixin flexCol {
@@ -920,7 +916,6 @@ a {
         line-height: 12px;
         color: #351134;
     }
-
 }
 
 .price {
@@ -980,7 +975,6 @@ a {
         line-height: 12px;
         font-weight: 500;
         text-align: center;
-
     }
 }
 
@@ -1028,7 +1022,7 @@ a {
             }
 
             a {
-                color: $btnFooterColor;
+                // color: $btnFooterColor;
                 border-radius: 6px;
                 font-weight: 500;
                 font-size: 14px;
@@ -1075,7 +1069,8 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
     .picture--about {
         height: 213px;
@@ -1083,31 +1078,42 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
-    .logo {}
+    .logo {
+    }
 
-    .navigation {}
+    .navigation {
+    }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
-        &--navigation {}
+        &--navigation {
+        }
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 
-    .title {}
+    .title {
+    }
 }
 
 @media (min-width: 768px) {
@@ -1147,7 +1153,8 @@ a {
     }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
         .navigation {
             transform: none;
@@ -1158,14 +1165,19 @@ a {
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 }
