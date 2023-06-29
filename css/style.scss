@@ -190,7 +190,11 @@ a {
     padding-top: 14px;
     overflow-x: hidden;
     min-height: 68px;
-    position: relative;
+    // position: relative;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
 
     &__wrapper {
         @include flex-center;
@@ -343,15 +347,27 @@ a {
 }
 
 .circle {
-    width: 54px;
-    height: 54px;
-    background: linear-gradient(to right, $light-pink, 58%, transparent);
-    border-radius: 50%;
+    // width: 54px;
+    // height: 54px;
+    background-color: rgba(208, 201, 255, 0.5);
+    background: linear-gradient(to right bottom, rgba(208, 201, 255, 0.5), 40%, rgba(255, 255, 255, 0)) no-repeat;
+    // border-radius: 50%;
+
+    position: absolute;
+    top: -31px;
+    width: 231px;
+    left: -99px;
+    z-index: 0;
+    height: 231px;
 }
 
 // Студия
 
 .atelier {
+
+    padding-top: 72px;
+    background-image: url(../img/atelier/roses.png);
+    background-size: contain;
     &__wrapper {
         font-family: "Montserrat", sans-serif;
         text-align: center;
@@ -375,14 +391,14 @@ a {
     &__desc {
         font-size: 10px;
         font-weight: 400;
-        margin-bottom: 31px;
+        margin-bottom: 26px;
         span {
             color: $lilac;
             font-weight: 700;
         }
     }
 
-    &__img {
+    &__picture {
         margin-left: -15%;
     }
 
