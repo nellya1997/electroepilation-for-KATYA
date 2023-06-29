@@ -926,6 +926,8 @@ a {
   .header .navigation {
     transform: none;
     visibility: visible;
+    position: unset;
+    width: inherit;
   }
 }
 
