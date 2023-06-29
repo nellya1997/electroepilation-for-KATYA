@@ -360,7 +360,7 @@ a {
   line-height: 0;
 }
 .atelier__subtitle {
-  color: #3a3a42;
+  color: #351134;
   font-size: 14px;
   font-weight: 400;
   line-height: 0.8;
@@ -393,23 +393,16 @@ a {
   top: 0;
 }
 
-/*  для слайдеру - но уже есть такой селехтор выше!!!111
-.picture {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        //border-radius: 9px;
-    }
+.swiper {
+  padding-bottom: 25px;
 }
-*/
-.bottomBadge {
-  background: rgba(250, 215, 244, 0.2);
-  box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+.swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #61236b;
+}
+.swiper .swiper-pagination-bullet-active {
+  background: rgb(192, 146, 208);
 }
 
 .about {
@@ -441,10 +434,12 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 80%;
+  width: 84%;
   gap: 20px;
   text-align: center;
   border-radius: 9px;
+  background: rgba(250, 215, 244, 0.2);
+  box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
 }
 
 .quality {
@@ -559,61 +554,6 @@ a {
   top: auto;
 }
 
-/* .swiper {
-    margin: 0 auto;
-    padding-bottom: 78px;
-}
-
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-    width: 39px;
-    height: 39px;
-    top: auto;
-    left: calc(50% - 63px);
-    background-color: $titleColor;
-    border-radius: 50%;
-    bottom: 0px;
-
-    &::after {
-        font-size: 21px;
-        color: $white;
-    }
-}
-
-.services__swiper .swiper .swiper-button-next {
-    right: calc(50% - 107px);
-    left: auto;
-}
-
-.services__swiper .swiper .swiper-button-prev {
-    left: calc(50% - 107px);
-    right: auto;
-}
-
-.reviews__slider .swiper .swiper-button-next {
-    right: calc(50% - 102px);
-    left: auto;
-}
-
-.reviews__slider .swiper .swiper-button-prev {
-    left: calc(50% - 102px);
-    right: auto;
-}
-
-.swiper .swiper-button-next {
-    right: calc(50% - 63px);
-    left: auto;
-}
-
-.swiper .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-
-    &.swiper-pagination-bullet-active {
-        background-color: $titleColor;
-    }
-}
-*/
 /*.FAQ {
     @mixin flexCol {
         display: flex;
@@ -813,31 +753,86 @@ a {
     // }
 }
 */
-.reviews {
-  background: url("/img/reviews/review-bg.jpg") no-repeat bottom right;
-  padding-bottom: 60px;
+.result {
+  margin: 50px auto;
+  text-align: center;
 }
-.reviews__title {
-  margin-bottom: 30px;
+.result__container {
+  margin: 0 auto;
+  width: 84%;
 }
-.reviews__slider {
+.result__slider {
+  padding-bottom: 15px;
+}
+.result__description {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #351134;
+}
+
+.price {
+  margin: 50px auto;
+}
+.price__container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.price__women {
+  min-width: 253px;
+  padding: 10px;
   border-radius: 9px;
-  background: var(--unnamed, rgba(255, 255, 255, 0.2));
-  /* матовый эффект и тень */
+  background: rgba(250, 215, 244, 0.2);
+  box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+}
+.price__men {
+  min-width: 253px;
+  padding: 10px;
+  border-radius: 9px;
+  background: rgba(201, 235, 255, 0.2);
   box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
-  -webkit-backdrop-filter: blur(2.5px);
-          backdrop-filter: blur(2.5px);
+
+  backdrop-filter: blur(2.5px);
   padding: 0 13px;
   padding-bottom: 10px;
+
 }
-.reviews__slider .swiper {
-  padding-bottom: 30px;
+.price__subtitle {
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 700;
+  text-align: center;
 }
-.reviews__slider-img {
-  width: 236px;
-  height: 160px;
-  border-radius: 9px;
-  margin-bottom: 10px;
+.price__line {
+  font-size: 12px;
+  line-height: 14.63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 26px;
+}
+.price__line p:nth-child(1) {
+  font-weight: 400;
+}
+.price__line p:nth-child(2) {
+  font-weight: 500;
+}
+
+.reviews {
+  margin: 50px auto;
+  position: relative;
+}
+.reviews__description {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .footer {
@@ -864,6 +859,25 @@ a {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 19px;
 }
+
+.footer__wrapper .footer__contacts a {
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--phone {
+  padding: 0px 6px;
+  width: 123px;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--phone.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__wrapper .footer__contacts a.footer__contacts--insta, .footer__wrapper .footer__contacts a.footer__contacts--whats, .footer__wrapper .footer__contacts a.footer__contacts--vk,
 .footer__wrapper .footer__contacts .footer__contacts__social {
   display: flex;
   justify-content: center;
