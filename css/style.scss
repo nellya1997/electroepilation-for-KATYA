@@ -32,20 +32,18 @@ $lilac: #61236b;
 //     font-display: swap;
 // }
 
-
-
 // цвета
-$titleColor: #AC5097;
+$titleColor: #ac5097;
 // хотя btnFooterColor и titleColor одинаковые - но используются слишком в разных местах - поэтому сделал еще одну переменную на случай если заказчик захочет другие кнопки
-$btnFooterColor: #AC5097;
+$btnFooterColor: #ac5097;
 $dark: #3a3a42;
 $pink: #ec84b6;
 $pink1: #eedcfa;
-$pink2: #AC5097;
+$pink2: #ac5097;
 $white: #fff;
 $light-pink: #fdecff;
 $light-pink1: #fdfaff;
-$mainColorText: #3A3A42;
+$mainColorText: #3a3a42;
 
 // переменная со шрифтом
 
@@ -233,7 +231,6 @@ a {
     right: 21px;
 }
 .burger {
-
     padding: 0;
     background-color: transparent;
     border: none;
@@ -352,7 +349,6 @@ a {
     border-radius: 50%;
 }
 
-
 // Студия
 
 .atelier {
@@ -396,10 +392,11 @@ a {
 }
 
 // Преимущества
-.quality {
 
+.quality {
+    margin-bottom: 50px;
     &__title {
-       margin-bottom: 38px;
+        margin-bottom: 38px;
     }
     &__list {
         width: 222px;
@@ -435,44 +432,45 @@ a {
             background: #ca74cc;
             border-radius: 50%;
         }
-      
     }
 }
 
+// Виды услуг
 
 .services {
-    margin-bottom: 60px;
-
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+    margin-bottom: 61px;
 
     &__title {
-        margin-bottom: 34px;
+        margin-bottom: 24px;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        box-shadow: 0px 2px 5px #eedcfa;
-        margin-bottom: 27px;
         padding: 0 5px;
 
         & li {
+            position: relative;
             width: calc(50% - 18px);
             margin-bottom: 16px;
         }
     }
 
     &__content {
-        text-transform: uppercase;
-        line-height: 10px;
+        font-size: 10px;
+        color: #fff;
+        font-weight: 600;
+        line-height: normal;
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        line-height: 14.63px;
         display: block;
     }
+
+    // Другое
 
     &__title-swipper {
         margin-bottom: 23px;
@@ -501,11 +499,11 @@ a {
         padding-bottom: 36px;
     }
 
-    &__wrapper-info {}
+    &__wrapper-info {
+    }
 }
 
 .services {
-
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
@@ -685,7 +683,6 @@ a {
         align-items: flex-end;
     }
 }
-
 
 .about {
     margin-top: 100px;
@@ -889,7 +886,8 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
     .picture--about {
         height: 213px;
@@ -897,31 +895,42 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
-    .logo {}
+    .logo {
+    }
 
-    .navigation {}
+    .navigation {
+    }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
-        &--navigation {}
+        &--navigation {
+        }
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 
-    .title {}
+    .title {
+    }
 }
 
 @media (min-width: 768px) {
@@ -972,20 +981,27 @@ a {
     }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
-        &--navigation {}
+        &--navigation {
+        }
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 }
