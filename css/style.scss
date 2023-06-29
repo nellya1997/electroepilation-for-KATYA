@@ -179,7 +179,6 @@ a {
     }
 
     &--services {
-        // max-height: 100px;
         margin-bottom: 5px;
     }
 }
@@ -189,8 +188,8 @@ a {
 .header {
     padding-top: 14px;
     overflow-x: hidden;
+    min-width: 320px;
     min-height: 68px;
-    // position: relative;
 
     position: absolute;
     top: 0;
@@ -347,18 +346,36 @@ a {
 }
 
 .circle {
-    // width: 54px;
-    // height: 54px;
-    background-color: rgba(208, 201, 255, 0.5);
-    background: linear-gradient(to right bottom, rgba(208, 201, 255, 0.5), 40%, rgba(255, 255, 255, 0)) no-repeat;
-    // border-radius: 50%;
 
     position: absolute;
+    box-shadow: 33px 0px 104px 50px rgba(208, 201, 255, 0.6);
     top: -31px;
-    width: 231px;
-    left: -99px;
+    left: -0px;
     z-index: 0;
+    border-radius: 17%;
     height: 231px;
+
+    &--right-top {
+        right: 0;
+        left: auto;
+        box-shadow: -33px 0px 104px 50px rgba(255, 201, 250, 0.6);
+    }
+
+    &--left-bottom {
+        top: auto;
+        bottom: 0;
+        box-shadow: 33px -364px 104px 50px rgba(255, 201, 211, 0.6);
+    }
+
+    &--right-bottom {
+        bottom: 0;
+        top: auto;
+        left: auto;
+        right: 0;
+        box-shadow: 33px -372px 104px 50px rgba(201, 235, 255, 0.6);
+    }
+
+    // rgba(201, 235, 255, 1);
 }
 
 // Студия
@@ -368,6 +385,8 @@ a {
     padding-top: 72px;
     background-image: url(../img/atelier/roses.png);
     background-size: contain;
+    background-position: 0% 14%;
+
     &__wrapper {
         font-family: "Montserrat", sans-serif;
         text-align: center;
