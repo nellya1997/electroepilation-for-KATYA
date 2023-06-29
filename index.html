@@ -94,7 +94,7 @@
       </div>
       <div class="about__slider">
         <div class="swiper about__swiper">
-
+          здесь будет слайдер
           <!--
           <div class="swiper-wrapper about__swiper-wrapper">
             <div class="swiper-slide">
@@ -120,20 +120,19 @@
             </div>
           </div>
         -->
-
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="about__advantages bottomBadge">
-        <div class="bottomBadge__elem">
+      <div class="about__advantages">
+        <div>
           <p>+150</p>
           <p>Клиентов</p>
         </div>
-        <div class="bottomBadge__elem">
+        <div>
           <p>+3</p>
           <p>Года опыта</p>
         </div>
-        <div class="bottomBadge__elem">
+        <div>
           <p>+80</p>
           <p>Отзывов</p>
         </div>
@@ -213,13 +212,11 @@
       <div class="result__container">
         <div class="result__title">
           <h2 class="title">Результат</h2>
-          <div class="about__description">
-            <p>Колоссальные изменения процедуры</p>
-          </div>
+          <p class="result__description">Колоссальные изменения процедуры</p>
         </div>
         <div class="result__slider">
-          <div class="services__swiper">
-            <div class="swiper services__swiper-wrapper">
+          <div class="result__swiper">
+            <div class="swiper result__swiper-wrapper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <picture class="picture picture--services">
@@ -286,16 +283,13 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
-        <div class="result__checkIn">
-          <!--эту ссылочку я украду с главной когда Нелли сделает:)-->
-          <button class="atelier__btn btn">
+        <div>
+          <a class="link btn-link" href="https://wa.me/79035329338" target="_blank">
             Записаться на сеанс
-          </button>
+          </a>
         </div>
     </section>
 
@@ -303,16 +297,14 @@
     <section class="price">
       <div class="price__container">
         <h2 class="price__title title">Прайс</h2>
-        <div class="forHer">
-          <div class="price__subtitle subtitle">
-            <p>Для нее</p>
-          </div>
+        <div class="price__women">
+          <p class="price__subtitle">Для нее</p>
           <div class="price__line">
             <p>Ноги</p>
             <p>43 р/мин</p>
           </div>
           <div class="price__line">
-            <p>Подмышечные впадины</p>
+            <p>Подмышечные<br>впадины</p>
             <p>43 р/мин</p>
           </div>
           <div class="price__line">
@@ -328,8 +320,8 @@
             <p>45 р/мин</p>
           </div>
         </div>
-        <div class="forHim">
-          <div class="price__subtitle subtitle">
+        <div class="price__men">
+          <div class="price__subtitle">
             <p>Для него</p>
           </div>
           <div class="price__line">
@@ -337,7 +329,7 @@
             <p>70 р/мин</p>
           </div>
           <div class="price__line">
-            <p>Подмышечные впадины</p>
+            <p>Подмышечные<br>впадины</p>
             <p>70 р/мин</p>
           </div>
           <div class="price__line">
@@ -353,106 +345,85 @@
             <p>80 р/мин</p>
           </div>
         </div>
-        <div class="price__checkIn">
-          <!--эту ссылочку я украду с главной когда Нелли сделает:)-->
-          <button class="atelier__btn btn">
+        <div>
+          <a class="link btn-link" href="https://wa.me/79035329338" target="_blank">
             Записаться на сеанс
-          </button>
+          </a>
         </div>
       </div>
     </section>
 
-
-
     <section id="reviews" class="reviews">
-      <div class="container">
-        <h2 class="reviews__title title">ОТЗЫВЫ</h2>
 
-        <div class="flex-center">
-          <span class="subtitle">Что о&nbsp;нас говорят наши клиенты</span>
-        </div>
+      <div class="circle">
+        <div class="circle circle--right-top"></div>
+        <div class="circle circle--left-bottom"></div>
+        <div class="circle circle--right-bottom"></div>
+      </div>
+      <div class="reviews__container">
+        <h2 class="title">Отзывы</h2>
+        <p class="reviews__description">Что о&nbsp;нас говорят клиенты</p>
         <div class="reviews__slider">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content1.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content1.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content1.jpg" alt="отзывы">
-                  </picture>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content2.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content2.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content2.jpg" alt="отзывы">
-                  </picture>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content3.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content3.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content3.jpg" alt="мастер Екатерина">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content1.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content1.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content1.jpg" alt="отзывы">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content4.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content4.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content4.jpg" alt="отзывы">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content2.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content2.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content2.jpg" alt="отзывы">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content5.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content5.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content5.jpg" alt="отзывы">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content3.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content3.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content3.jpg" alt="мастер Екатерина">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content6.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content6.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content6.jpg" alt="отзывы">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content4.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content4.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content4.jpg" alt="отзывы">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content7.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content7.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content7.jpg" alt="отзывы">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content5.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content5.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content5.jpg" alt="отзывы">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="flex-center">
-                  <picture class="picture">
-                    <source type="image/webp" srcset="img/reviews/content8.webp" media="(max-width: 2400px)">
-                    <source type="image/jpeg" srcset="img/reviews/content8.jpg" media="(max-width: 2400px)">
-                    <img src="img/reviews/content8.jpg" alt="отзывы">
-                  </picture>
-                </div>
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content6.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content6.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content6.jpg" alt="отзывы">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content7.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content7.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content7.jpg" alt="отзывы">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture class="picture">
+                  <source type="image/webp" srcset="img/reviews/content8.webp" media="(max-width: 2400px)">
+                  <source type="image/jpeg" srcset="img/reviews/content8.jpg" media="(max-width: 2400px)">
+                  <img src="img/reviews/content8.jpg" alt="отзывы">
+                </picture>
               </div>
             </div>
-
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>

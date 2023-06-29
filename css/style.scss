@@ -27,6 +27,9 @@
 
 $dark: #351134;
 $lilac: #61236b;
+
+
+
 // @font-face {
 //     font-family: "Montserrat";
 //     src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
@@ -38,8 +41,7 @@ $lilac: #61236b;
 // цвета
 $titleColor: #ac5097;
 // хотя btnFooterColor и titleColor одинаковые - но используются слишком в разных местах - поэтому сделал еще одну переменную на случай если заказчик захочет другие кнопки
-$btnFooterColor: #ac5097;
-$dark: #3a3a42;
+
 $pink: #ec84b6;
 $pink1: #eedcfa;
 $pink2: #ac5097;
@@ -69,6 +71,7 @@ body {
     min-width: 320px;
     background-color: $light-pink1;
     overflow-x: hidden;
+    // а что это значит???
     color: $lilac;
 }
 
@@ -103,7 +106,7 @@ a {
     /* no underline */
 }
 
-// Миксоны
+// Миксины
 
 @mixin flex-center {
     display: flex;
@@ -371,6 +374,7 @@ a {
     }
 }
 
+// если используешь этот класс - напиши мне (FA1FW)
 .subtitle {
     font-size: 15px;
     font-weight: 500;
@@ -486,28 +490,23 @@ a {
 
 
 //slider started
-/*  для слайдеру - но уже есть такой селехтор выше!!!111
-.picture {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
 
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        //border-radius: 9px;
+.swiper {
+    padding-bottom: 25px;
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: $lilac;
     }
+
+    .swiper-pagination-bullet-active {
+        background: rgba(192, 146, 208, 1);
+    }
+
 }
-*/
 
 // about
-
-// бейдж с блюром в секции "обо мне" и в прайсе одинаковый
-.bottomBadge {
-    background: rgba(250, 215, 244, 0.2);
-    box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
-}
 
 .about {
     @include flexy(column);
@@ -533,16 +532,15 @@ a {
 
     &__advantages {
         @include flexy;
-        @include centryBlock(80%);
+        @include centryBlock(84%);
         gap: 20px;
         text-align: center;
         border-radius: 9px;
+        background: rgba(250, 215, 244, 0.2);
+        box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
     }
 
 }
-
-
-
 
 // Преимущества
 
@@ -668,61 +666,7 @@ a {
     }
 }
 
-/* .swiper {
-    margin: 0 auto;
-    padding-bottom: 78px;
-}
 
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-    width: 39px;
-    height: 39px;
-    top: auto;
-    left: calc(50% - 63px);
-    background-color: $titleColor;
-    border-radius: 50%;
-    bottom: 0px;
-
-    &::after {
-        font-size: 21px;
-        color: $white;
-    }
-}
-
-.services__swiper .swiper .swiper-button-next {
-    right: calc(50% - 107px);
-    left: auto;
-}
-
-.services__swiper .swiper .swiper-button-prev {
-    left: calc(50% - 107px);
-    right: auto;
-}
-
-.reviews__slider .swiper .swiper-button-next {
-    right: calc(50% - 102px);
-    left: auto;
-}
-
-.reviews__slider .swiper .swiper-button-prev {
-    left: calc(50% - 102px);
-    right: auto;
-}
-
-.swiper .swiper-button-next {
-    right: calc(50% - 63px);
-    left: auto;
-}
-
-.swiper .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-
-    &.swiper-pagination-bullet-active {
-        background-color: $titleColor;
-    }
-}
-*/
 
 /*.FAQ {
     @mixin flexCol {
@@ -926,37 +870,85 @@ a {
 }
 */
 
+.result {
+    margin: 50px auto;
+    text-align: center;
 
-
-
-// reviews
-.reviews {
-    background: url("/img/reviews/review-bg.jpg") no-repeat bottom right;
-    padding-bottom: 60px;
-
-    &__title {
-        margin-bottom: 30px;
+    &__container {
+        @include centryBlock(84%);
     }
 
     &__slider {
-        border-radius: 9px;
-        background: var(--unnamed, rgba(255, 255, 255, 0.2));
-        /* матовый эффект и тень */
-        box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
-        backdrop-filter: blur(2.5px);
-        padding: 0 13px;
-        padding-bottom: 10px;
-
-        & .swiper {
-            padding-bottom: 30px;
-        }
+        padding-bottom: 15px;
     }
 
-    &__slider-img {
-        width: 236px;
-        height: 160px;
+    &__description {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        color: #351134;
+    }
+
+}
+
+.price {
+    margin: 50px auto;
+
+    &__container {
+        @include centryBlock(80%);
+        @include flexy(column);
+        gap: 25px;
+    }
+
+    &__women {
+        min-width: 253px;
+        padding: 10px;
         border-radius: 9px;
-        margin-bottom: 10px;
+        background: rgba(250, 215, 244, 0.2);
+        box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+    }
+
+    &__men {
+        min-width: 253px;
+        padding: 10px;
+        border-radius: 9px;
+        background: rgba(201, 235, 255, 0.2);
+        box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 17.07px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__line {
+        font-size: 12px;
+        line-height: 14.63px;
+        @include flexy(row, space-between);
+        height: 26px;
+    }
+
+    &__line p:nth-child(1) {
+        font-weight: 400;
+    }
+
+    &__line p:nth-child(2) {
+        font-weight: 500;
+    }
+}
+
+.reviews {
+    margin: 50px auto;
+    position: relative;
+
+    &__description {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        text-align: center;
+
     }
 }
 
@@ -983,7 +975,7 @@ a {
             column-gap: 10px;
 
             a {
-                background: $btnFooterColor;
+                //background: $btnFooterColor;
                 color: $white;
                 border-radius: 6px;
                 font-weight: 500;
