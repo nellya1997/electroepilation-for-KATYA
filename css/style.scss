@@ -1,26 +1,37 @@
+// @font-face {
+//     font-family: "Montserrat", sans-serif;
+//     src: url("/fonts/Montserrat-Regular.ttf");
+//     font-weight: normal;
+//     font-style: normal;
+// }
 @font-face {
-    font-family: "Montserrat-SemiBold";
-    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff");
+    font-family: "Dancing Script";
+    src: url("/fonts/DancingScript-Regular.ttf");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
+@font-face {
+    font-family: "Koulen";
+    src: url("/fonts/Koulen-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+// цвета
+.none {
+    display: none;
 }
+$dark: #351134;
+$lilac: #61236b;
+// @font-face {
+//     font-family: "Montserrat";
+//     src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: "Forum";
-    src: url(../fonts/Forum.woff) format("woff2"), url(../fonts/Forum.woff2) format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 // цвета
@@ -45,18 +56,24 @@ html {
 }
 
 body {
-    font-family: "Montserrat", "font", sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14.63px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
     min-width: 320px;
     background-color: $light-pink1;
     overflow-x: hidden;
-    color: $mainColorText;
+    color: $lilac;
 }
 
 main {
     margin: 0 auto;
+}
+
+// Обнуление тегов
+li {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -64,6 +81,29 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+}
+
+// Миксоны
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Общие стили
 
 .container {
     margin: 0 21px;
@@ -77,45 +117,139 @@ ul {
     overflow: hidden;
 }
 
-.header {
-    padding-top: 47px;
-    overflow-x: hidden;
-    //переписывать JS потому что при нажатии на меню дожен добавляться доп.отступ?
-    min-height: 81px;
+.btn {
+    @include flex-center;
+    width: 245px;
+    height: 39px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #e9c6f5 0%, #c092d0 100%);
+    box-shadow: 0px 2px 10px 2px rgba(161, 76, 183, 0.5);
+}
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
+.title {
+    font-size: 14px;
+    color: $lilac;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-center {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+
+    .services__wrapper & {
+        margin-bottom: 25px;
+    }
+
+    .price__categories &,
+    .price & {
+        margin-bottom: 15px;
+    }
+
+    .about & {
+        margin-bottom: 20px;
+    }
+
+    .reviews & {
+        margin-bottom: 15px;
     }
 }
 
-.logo {
-    font-size: 12px;
-    line-height: 22px;
-    font-weight: 700;
-    color: $titleColor;
+.picture {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    &--about {
+        height: 250px;
+        max-width: 236px;
+
+        & img {
+            border-radius: 14px;
+        }
+    }
+
+    &--services {
+        // max-height: 100px;
+        margin-bottom: 5px;
+    }
 }
 
+// header
+
+.header {
+    padding-top: 14px;
+    overflow-x: hidden;
+    min-height: 68px;
+    position: relative;
+
+    &__wrapper {
+        @include flex-center;
+    }
+}
+// logo
+.logo {
+    color: #2d0d22;
+    font-size: 15px;
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    padding-right: 8px;
+    span {
+        font-size: 20px;
+        font-family: "Koulen", cursive;
+        color: #a3127a;
+        font-weight: normal;
+        line-height: 0;
+        text-transform: uppercase;
+    }
+    &::after {
+        content: url("/img/atelier/logo.png");
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        right: 4%;
+        top: 16%;
+    }
+}
+// burger
+.burger__wrapper {
+    position: absolute;
+    top: 19%;
+    right: 21px;
+}
 .burger {
+
     padding: 0;
     background-color: transparent;
     border: none;
-    width: 25px;
-    height: 20px;
+    width: 20px;
+    height: 14px;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-in;
 
     &__line {
         position: absolute;
-        background-color: $titleColor;
+        background-color: $lilac;
         width: 100%;
         top: 0;
         left: 0;
-        height: 5px;
-        border-radius: 6px;
+        height: 2px;
 
         &:nth-child(2) {
             top: 50%;
@@ -150,7 +284,7 @@ ul {
         }
     }
 }
-
+// nav
 .navigation {
     position: absolute;
     top: 55px;
@@ -199,96 +333,6 @@ ul {
     }
 }
 
-.link {
-    text-decoration: none;
-}
-
-.picture {
-    display: inline-block;
-    //height: 100%;
-    width: 100%;
-
-    &--atelier {
-        //width: 92%;       - появляется обрезка ноги слева
-        //плохо на PC
-        width: 100%;
-        position: absolute;
-        right: 0px;
-        top: 90px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: calc(0% + 287px);
-            left: 0;
-            width: 100%;
-            height: calc(100% - 287px);
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 9%, #fdfaff);
-            z-index: 1;
-        }
-
-        & img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 9px;
-    }
-
-    &--about {
-        height: 250px;
-        max-width: 236px;
-
-        & img {
-            border-radius: 14px;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
-
-    &--services {
-        // max-height: 100px;
-        // margin-bottom: 5px;
-    }
-}
-
-.title {
-    font-family: 'Forum', "font", sans-serif;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 44.16px;
-    margin: 0 auto;
-    color: $titleColor;
-    text-align: center;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-
-    .services__wrapper & {
-        margin-bottom: 25px;
-    }
-
-    .price__categories &,
-    .price & {
-        margin-bottom: 15px;
-    }
-
-    .about & {
-        margin-bottom: 20px;
-    }
-
-    .reviews & {
-        margin-bottom: 15px;
-    }
-}
-
 .subtitle {
     font-size: 15px;
     font-weight: 500;
@@ -308,96 +352,93 @@ ul {
     border-radius: 50%;
 }
 
-.list {
-    margin: 0;
-    padding: 0;
-}
+
+// Студия
 
 .atelier {
-    margin-bottom: 60px;
-    position: relative;
-    padding-top: 21px;
-
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        max-width: 52%;
-        margin-bottom: 375px;
-    }
-
-    &__wrapper-content {
-        position: relative;
-        z-index: 1;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
     }
 
     &__title {
-        font-size: 50px;
-        text-align: left;
-        line-height: 55px;
-        color: $titleColor;
-
-        //margin-bottom: 16px;
+        color: $lilac;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 0;
     }
 
-    &__info {
-        font-size: 12px;
-        line-height: 14.63px;
-        text-transform: uppercase;
+    &__subtitle {
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 0.8;
+        margin-bottom: 16px;
+    }
+
+    &__desc {
+        font-size: 10px;
+        font-weight: 400;
         margin-bottom: 31px;
-        display: inline-block;
-    }
-
-    &__link {
-        padding: 9px 27px;
-        background-color: $pink;
-        border-radius: 50px;
-        color: $white;
-    }
-
-    &__advertisement {
-        color: $titleColor;
-        max-width: 296px;
-        margin: 0 auto;
-        box-shadow: 0px 2px 5px $pink1;
-        border-radius: 9px;
-        z-index: 1;
-
-        position: relative;
-
-        &::after,
-        &::before {
-            position: absolute;
-            top: 8px;
-            left: 2px;
-            width: 21px;
-            height: 51px;
-            content: "";
-            background: url(../icon/quotes-start.svg) no-repeat;
-        }
-
-        &::before {
-            bottom: -23px;
-            right: 21px;
-            top: auto;
-            left: auto;
-            background: url(../icon/quotes-end.svg) no-repeat;
+        span {
+            color: $lilac;
+            font-weight: 700;
         }
     }
 
-    &__advertisement-content {
-        padding: 17px 35px;
-        display: inline-block;
+    &__img {
+        margin-left: -15%;
     }
 
-    &__circle {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translate(-50%, 50%);
-        z-index: 0;
+    &__btn {
+        margin-top: -13%;
     }
 }
+
+// Преимущества
+.quality {
+
+    &__title {
+       margin-bottom: 38px;
+    }
+    &__list {
+        width: 222px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        position: relative;
+        padding-left: 21px;
+        margin-right: 21%;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 1%;
+            width: 2px;
+            height: 134px;
+            background: $lilac;
+        }
+    }
+
+    &__list-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 21px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5%;
+            width: 12px;
+            height: 12px;
+            background: #ca74cc;
+            border-radius: 50%;
+        }
+      
+    }
+}
+
 
 .services {
     margin-bottom: 60px;
@@ -472,8 +513,6 @@ ul {
         top: auto;
     }
 }
-
-
 
 .swiper {
     margin: 0 auto;
