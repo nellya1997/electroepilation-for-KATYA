@@ -26,23 +26,46 @@
             <span class="burger__line"></span>
           </button>
         </div>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#services" class="link navigation__link">ВИДЫ УСЛУГ</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#about" class="link navigation__link">О&nbsp;НАС</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#reviews" class="link navigation__link">ОТЗЫВЫ</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#contacts" class="link navigation__link">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <!-- Навигация -->
+
+      <nav class="navigation">
+
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#services" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">Обо&nbsp;мне</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#reviews" class="navigation__link">Услуги</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Результат</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Прайс</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="navigation__social">
+          <a class="navigation__social-item social-item" target="_blank" href="https://instagram.com/katrin_elektro?igshid=NGExMmI2YTkyZg=="><img src="icon/insta.png"></a>
+          <a class="navigation__social-item social-item" target="_blank" href="https://wa.me/79035329338"><img src="icon/whatsapp.png"></a>
+          <a class="navigation__social-item  social-item" target="_blank" href="https://vk.com/katrin_elektro"><img src="icon/vk.png"></a>
+
+        </div>
+        <a class="navigation__phone phone" href="tel:+79085329338">
+          8-928-759-85-74
+        </a>
+    </div>
+    </nav>
     </div>
   </header>
   <main>
@@ -142,9 +165,11 @@
     <!-- Quality-->
 
     <section class="quality">
+      <div class="quality__circle"></div>
+
       <div class="container">
         <div class="flex-center">
-          <h2 class="quality__title title">Неоспоримые преимущества электроэпиляции</h2>
+          <h2 class="quality__title title">Неоспоримые <br>преимущества электроэпиляции</h2>
           <ul class="quality__list">
             <li class="quality__list-item">Удаление любого типа волос</li>
             <li class="quality__list-item">Безопасность для здоровья</li>
@@ -609,23 +634,22 @@
   <footer id="contacts" class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <h2 class="footer__title title">КОНТАКТЫ</h2>
-        <!-- это нужно удолить!!
-        <h3 class="footer__subtitle title--h3 subtitle">Как с нами связаться</h3>
-        -->
+        <h2 class="footer__title title">Контакты</h2>
+        <p class="footer__paragraf">Свяжись с нами!</p>
         <div class="footer__contacts">
 
-          <a class="footer__contacts--phone link col-2" href="tel:+79085329338">
-            <img src="icon/phone.png">
-            +7 908 532 93 38
+          <a class="footer__contacts--phone link" href="tel:+79287598574">
+            8-928-759-85-74
           </a>
-          <a class="footer__contacts--insta" target="_blank" href="https://instagram.com/katrin_elektro?igshid=NGExMmI2YTkyZg=="><img src="icon/insta.png"></a>
-          <a class="footer__contacts--whats" target="_blank" href="https://wa.me/79035329338"><img src="icon/whatsapp.png"></a>
-          <a class="footer__contacts--vk" target="_blank" href="https://vk.com/katrin_elektro"><img src="icon/vk.png"></a>
+          <div class="footer__contacts__social">
+            <a class="footer__contacts__social icon" target="_blank" href="https://instagram.com/katrin_elektro?igshid=NGExMmI2YTkyZg=="><img src="./icon/insta.svg" alt="icon"></a>
+            <a class="footer__contacts__social icon" target="_blank" href="https://wa.me/79287598574"><img src="./icon/whatsapp.svg" alt="icon"></a>
+            <a class="footer__contacts__social icon" target="_blank" href="https://vk.com/katrin_elektro"><img src="./icon/vk.svg" alt="icon"></a>
+          </div>
         </div>
         <div class="footer__contacts--adress">
-          <img src="icon/location.png">
-          <p>г. Дзержинский, ул. Дзержинская 21 А</p>
+          <img src="./icon/location.svg" alt="icon">
+          <p class="footer__paragraf">г. Дзержинский, ул. Дзержинская 21 А</p>
         </div>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A63a77de0dc8eeb2f259f58ef3952c2ee420fb2e4be90f827514e8cdb0029f564&amp;source=constructor" width="100%" height="240"
           frameborder="0"></iframe>
