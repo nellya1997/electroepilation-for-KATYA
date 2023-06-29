@@ -10,18 +10,21 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Koulen";
     src: url("/fonts/Koulen-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 // цвета
 .none {
     display: none;
 }
+
 $dark: #351134;
 $lilac: #61236b;
 // @font-face {
@@ -48,6 +51,11 @@ $mainColorText: #3a3a42;
 // переменная со шрифтом
 
 // $font-italic: 'inter-italic', 'font', sans-serif;
+
+
+// удолить после окончания разработки!!!
+$redBorder: 2px solid red;
+
 
 html {
     scroll-behavior: smooth;
@@ -88,9 +96,11 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+
 a {
     color: inherit;
-    text-decoration: none; /* no underline */
+    text-decoration: none;
+    /* no underline */
 }
 
 // Миксоны
@@ -99,6 +109,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@mixin flexy($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centryBlock($width) {
+    margin: 0 auto;
+    width: $width;
 }
 
 // Общие стили
@@ -148,10 +172,11 @@ a {
         margin-bottom: 15px;
     }
 
+    /*
     .about & {
         margin-bottom: 20px;
     }
-
+*/
     .reviews & {
         margin-bottom: 15px;
     }
@@ -169,15 +194,16 @@ a {
         object-fit: contain;
     }
 
+    /*
     &--about {
         height: 250px;
         max-width: 236px;
 
-        & img {
-            border-radius: 14px;
-        }
+    & img {
+        border-radius: 14px;
     }
-
+}
+*/
     &--services {
         // max-height: 100px;
         margin-bottom: 5px;
@@ -200,6 +226,7 @@ a {
         @include flex-center;
     }
 }
+
 // logo
 .logo {
     color: #2d0d22;
@@ -211,6 +238,7 @@ a {
     text-align: center;
     position: relative;
     padding-right: 8px;
+
     span {
         font-size: 20px;
         font-family: "Koulen", cursive;
@@ -219,6 +247,7 @@ a {
         line-height: 0;
         text-transform: uppercase;
     }
+
     &::after {
         content: url("/img/atelier/logo.png");
         position: absolute;
@@ -228,12 +257,14 @@ a {
         top: 16%;
     }
 }
+
 // burger
 .burger__wrapper {
     position: absolute;
     top: 19%;
     right: 21px;
 }
+
 .burger {
     padding: 0;
     background-color: transparent;
@@ -285,6 +316,7 @@ a {
         }
     }
 }
+
 // nav
 .navigation {
     position: absolute;
@@ -368,6 +400,7 @@ a {
     padding-top: 72px;
     background-image: url(../img/atelier/roses.png);
     background-size: contain;
+
     &__wrapper {
         font-family: "Montserrat", sans-serif;
         text-align: center;
@@ -392,6 +425,7 @@ a {
         font-size: 10px;
         font-weight: 400;
         margin-bottom: 26px;
+
         span {
             color: $lilac;
             font-weight: 700;
@@ -407,13 +441,75 @@ a {
     }
 }
 
+
+//slider started
+/*  для слайдеру - но уже есть такой селехтор выше!!!111
+.picture {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        //border-radius: 9px;
+    }
+}
+*/
+
+// about
+
+// бейдж с блюром в секции "обо мне" и в прайсе одинаковый
+.bottomBadge {
+    background: rgba(250, 215, 244, 0.2);
+    box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+}
+
+.about {
+    @include flexy(column);
+    gap: 20px;
+    margin: 50px auto;
+
+    &__title {
+        @include centryBlock(80%);
+    }
+
+    &__description {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    &__slider {
+        width: 465px;
+        height: 190px;
+        border: $redBorder;
+    }
+
+    &__advantages {
+        @include flexy;
+        @include centryBlock(80%);
+        gap: 20px;
+        text-align: center;
+        border-radius: 9px;
+    }
+
+}
+
+
+
+
 // Преимущества
 
 .quality {
     margin-bottom: 50px;
+
     &__title {
         margin-bottom: 38px;
     }
+
     &__list {
         width: 222px;
         font-size: 12px;
@@ -438,6 +534,7 @@ a {
         position: relative;
         margin-bottom: 15px;
         padding-left: 21px;
+
         &::before {
             content: "";
             position: absolute;
@@ -515,11 +612,11 @@ a {
         padding-bottom: 36px;
     }
 
-    &__wrapper-info {
-    }
+    &__wrapper-info {}
 }
 
 .services {
+
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
@@ -528,7 +625,7 @@ a {
     }
 }
 
-.swiper {
+/* .swiper {
     margin: 0 auto;
     padding-bottom: 78px;
 }
@@ -582,8 +679,9 @@ a {
         background-color: $titleColor;
     }
 }
+*/
 
-.FAQ {
+/*.FAQ {
     @mixin flexCol {
         display: flex;
         flex-direction: column;
@@ -656,8 +754,9 @@ a {
         }
     }
 }
+*/
 
-.price {
+/* .price {
     &__title {
         margin-bottom: 23px;
     }
@@ -678,7 +777,7 @@ a {
         border-radius: 9px;
         background: rgba(255, 255, 255, 0.2);
 
-        /* матовый эффект и тень */
+        // матовый эффект и тень 
         box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
         // backdrop-filter: blur(2.5px);
     }
@@ -699,8 +798,9 @@ a {
         align-items: flex-end;
     }
 }
+*/
 
-.about {
+/* .about {
     margin-top: 100px;
 
     &__title {
@@ -744,7 +844,7 @@ a {
 
         border-radius: 9px;
         background: rgba(255, 255, 255, 0.2);
-        /* матовый эффект и тень */
+        // матовый эффект и тень 
 
         box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
         backdrop-filter: blur(2.5px);
@@ -781,6 +881,10 @@ a {
 
     // }
 }
+*/
+
+
+
 
 // reviews
 .reviews {
@@ -902,8 +1006,7 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {
-    }
+    .header {}
 
     .picture--about {
         height: 213px;
@@ -911,42 +1014,31 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {
-    }
+    .header {}
 
-    .logo {
-    }
+    .logo {}
 
-    .navigation {
-    }
+    .navigation {}
 
     .list {
-        &__item {
-        }
+        &__item {}
 
-        &--navigation {
-        }
+        &--navigation {}
     }
 
     .atelier {
-        &__wrapper {
-        }
+        &__wrapper {}
 
-        &__wrapper-content {
-        }
+        &__wrapper-content {}
 
-        &__title {
-        }
+        &__title {}
 
-        &__content {
-        }
+        &__content {}
 
-        &__link {
-        }
+        &__link {}
     }
 
-    .title {
-    }
+    .title {}
 }
 
 @media (min-width: 768px) {
@@ -997,27 +1089,20 @@ a {
     }
 
     .list {
-        &__item {
-        }
+        &__item {}
 
-        &--navigation {
-        }
+        &--navigation {}
     }
 
     .atelier {
-        &__wrapper {
-        }
+        &__wrapper {}
 
-        &__wrapper-content {
-        }
+        &__wrapper-content {}
 
-        &__title {
-        }
+        &__title {}
 
-        &__content {
-        }
+        &__content {}
 
-        &__link {
-        }
+        &__link {}
     }
 }
