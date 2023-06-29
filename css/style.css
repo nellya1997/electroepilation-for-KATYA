@@ -62,7 +62,7 @@ a {
 }
 
 .container {
-  margin: 0 21px;
+  padding: 0 21px;
 }
 .container--atelier {
   margin: 0 0 0 21px;
@@ -451,6 +451,10 @@ a {
   position: relative;
   margin-bottom: 50px;
 }
+.quality__wrapper {
+  background: url("/img/quality/content.png") no-repeat center right;
+  background-size: contain;
+}
 .quality__circle {
   z-index: 0;
   position: absolute;
@@ -821,7 +825,8 @@ a {
   background: var(--unnamed, rgba(255, 255, 255, 0.2));
   /* матовый эффект и тень */
   box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
-  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
   padding: 0 13px;
   padding-bottom: 10px;
 }
@@ -957,6 +962,5 @@ a {
     visibility: visible;
     position: unset;
     width: inherit;
-    
   }
 }

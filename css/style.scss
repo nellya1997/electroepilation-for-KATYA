@@ -133,7 +133,7 @@ a {
 // Общие стили
 
 .container {
-    margin: 0 21px;
+    padding: 0 21px;
 
     &--atelier {
         margin: 0 0 0 21px;
@@ -363,7 +363,6 @@ a {
     &__social-item {
         margin-right: 55px;
     }
-   
 }
 .social-item {
     display: inline-block;
@@ -558,6 +557,10 @@ a {
 .quality {
     position: relative;
     margin-bottom: 50px;
+    &__wrapper {
+        background: url("/img/quality/content.png") no-repeat center right;
+        background-size: contain;
+    }
     &__circle {
         z-index: 0;
         position: absolute;
