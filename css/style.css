@@ -338,6 +338,12 @@ a {
   right: 0;
   box-shadow: 33px -372px 104px 50px rgba(201, 235, 255, 0.6);
 }
+.reviews .circle--left-bottom {
+  box-shadow: 33px 64px 104px 50px rgba(255, 201, 211, 0.6);
+}
+.reviews .circle--right-bottom {
+  box-shadow: 33px 62px 104px 50px rgba(201, 235, 255, 0.6);
+}
 
 .atelier {
   padding-top: 72px;
@@ -565,80 +571,64 @@ a {
   top: auto;
 }
 
-/*.FAQ {
-    @mixin flexCol {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    &__wrap {
-        margin-bottom: 15px;
-
-        .accordion {
-            font-size: 12px;
-            line-height: 14.63px;
-            font-weight: 600;
-            color: $titleColor;
-            background-color: white;
-            -webkit-text-fill-color: $titleColor;
-            cursor: pointer;
-            // padding: 18px;
-            padding: 18px 18px 18px 53px;
-            width: 100%;
-            text-align: left;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            position: relative;
-            box-shadow: 0px -5px 17px #eedcfa;
-            border-radius: 9px;
-        }
-
-        & p {
-            font-size: 12px;
-            line-height: 14.63px;
-            font-weight: 400;
-            margin: 0;
-            margin-bottom: 20px;
-            padding: 0 10px;
-        }
-
-        .panel {
-            @include flexCol;
-
-            // padding: 0 18px;
-            // padding-top: 17px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        .accordion::before,
-        .accordion::after {
-            content: "";
-            width: 25px;
-            height: 4px;
-            border-radius: 42px;
-            background-color: $titleColor;
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .accordion::after {
-            transform: rotate(90deg) translate(-6%, 0%);
-            transition: all 0.2s ease-in;
-        }
-
-        .accordion.active::after {
-            opacity: 0;
-        }
-    }
+.FAQ__wrap {
+  margin-bottom: 15px;
 }
-*/
+.FAQ__wrap .accordion {
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 600;
+  color: #ac5097;
+  background-color: white;
+  -webkit-text-fill-color: #ac5097;
+  cursor: pointer;
+  padding: 18px 18px 18px 53px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  box-shadow: 0px -5px 17px #eedcfa;
+  border-radius: 9px;
+}
+.FAQ__wrap p {
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.FAQ__wrap .panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.FAQ__wrap .accordion::before,
+.FAQ__wrap .accordion::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  border-radius: 42px;
+  background-color: #ac5097;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.FAQ__wrap .accordion::after {
+  transform: rotate(90deg) translate(-6%, 0%);
+  transition: all 0.2s ease-in;
+}
+.FAQ__wrap .accordion.active::after {
+  opacity: 0;
+}
+
 /* .price {
     &__title {
         margin-bottom: 23px;
@@ -790,8 +780,6 @@ a {
   margin: 50px auto;
 }
 .price__container {
-  margin: 0 auto;
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -837,6 +825,7 @@ a {
 .reviews {
   margin: 50px auto;
   position: relative;
+  padding: 0 60px;
 }
 .reviews__description {
   font-size: 10px;
