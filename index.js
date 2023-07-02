@@ -1,18 +1,3 @@
-const swiper1 = new Swiper('.swiper', {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 30,
-  spaceBetween: 50,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
 // burger
 
 let burger = document.querySelector('.burger');
@@ -59,3 +44,53 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+//swiper
+
+// пока напишу как ублюдоид: в будущем надо создавать один класс 
+//свайпер - на него одинаковая навигация, далее swiper-standard 
+//для обчного свайпера и swiper-coverflow - для создания этого 
+//чудесного эффекта
+
+
+const swiper1 = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 50,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+const aboutMeSlider = new Swiper ('.about__swiper', {
+  loop: true,
+  spaceBetween: 25,
+  speed: 1000,
+  autoplay: {
+    delay: 3000
+  },
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    depth: 100,
+    modifier: 3,
+    rotate: 0,
+    scale: 1,
+    slideShadows: false,
+    stretch: 0,
+  },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+

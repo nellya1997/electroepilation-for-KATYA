@@ -38,7 +38,6 @@ $lilac: #61236b;
 
 // цвета
 $titleColor: #ac5097;
-// хотя btnFooterColor и titleColor одинаковые - но используются слишком в разных местах - поэтому сделал еще одну переменную на случай если заказчик захочет другие кнопки
 $pink: #ec84b6;
 $pink1: #eedcfa;
 $pink2: #ac5097;
@@ -198,16 +197,16 @@ a {
         object-fit: contain;
     }
 
-    /*
+
     &--about {
         height: 250px;
         max-width: 236px;
 
-    & img {
-        border-radius: 14px;
+        & img {
+            border-radius: 14px;
+        }
     }
-}
-*/
+
     &--services {
         margin-bottom: 5px;
     }
@@ -391,7 +390,6 @@ a {
     box-shadow: 0px 2px 10px 2px rgba(161, 76, 183, 0.5);
 }
 
-// если используешь этот класс - напиши мне (FA1FW)
 .subtitle {
     font-size: 15px;
     font-weight: 500;
@@ -431,6 +429,14 @@ a {
         left: auto;
         right: 0;
         box-shadow: 33px -372px 104px 50px rgba(201, 235, 255, 0.6);
+    }
+
+    .reviews &--left-bottom {
+        box-shadow: 33px 64px 104px 50px rgba(255, 201, 211, 0.6);
+    }
+
+    .reviews &--right-bottom {
+        box-shadow: 33px 62px 104px 50px rgba(201, 235, 255, 0.6);
     }
 
     // rgba(201, 235, 255, 1);
@@ -522,32 +528,54 @@ a {
 // about
 
 .about {
-    @include flexy(column);
     gap: 20px;
     margin: 50px auto;
 
-    &__title {
+    //во всей секции текст в центре
+    text-align: center;
+
+    &__container {
         @include centryBlock(80%);
+        @include flexy(column);
     }
 
     &__description {
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
-        text-align: center;
+    }
+
+    &__master {
+        &:first-child {
+            font-size: 12px;
+            line-height: 14.63px;
+            font-weight: 600;
+        }
     }
 
     &__slider {
-        width: 465px;
-        height: 190px;
-        border: $redBorder;
+        width: 100%;
+
+        .swiper-wrapper {
+            padding-bottom: 17px;
+        }
+
+        // пока напишу как ублюдоид: в будущем надо создавать один класс свайпер - на него одинаковая навигация, далее swiper-standard для обчного свайпера и swiper-coverflow - для создания этого чудесного эффекта
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            background: $lilac;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgba(192, 146, 208, 1);
+        }
     }
 
     &__advantages {
         @include flexy;
         @include centryBlock(84%);
         gap: 20px;
-        text-align: center;
         border-radius: 9px;
         background: rgba(250, 215, 244, 0.2);
         box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
@@ -558,6 +586,7 @@ a {
 
 .quality {
     position: relative;
+
     &__wrapper {
         padding-bottom: 50px;
         background: url("/img/quality/content.png") no-repeat, url("/img/quality/bg.png") no-repeat;
@@ -619,6 +648,7 @@ a {
         }
     }
 }
+
 // Виды услуг
 
 .services {
@@ -683,11 +713,11 @@ a {
         padding-bottom: 36px;
     }
 
-    &__wrapper-info {
-    }
+    &__wrapper-info {}
 }
 
 .services {
+
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
@@ -696,7 +726,7 @@ a {
     }
 }
 
-/*.FAQ {
+.FAQ {
     @mixin flexCol {
         display: flex;
         flex-direction: column;
@@ -769,7 +799,6 @@ a {
         }
     }
 }
-*/
 
 /* .price {
     &__title {
@@ -900,13 +929,14 @@ a {
 
 .result {
     margin: 50px auto;
-    text-align: center;
+    @include centryBlock(84%);
 
     &__container {
-        @include centryBlock(84%);
+        @include flexy(column);
     }
 
     &__slider {
+        width: 100%;
         padding-bottom: 15px;
     }
 
@@ -922,7 +952,7 @@ a {
     margin: 50px auto;
 
     &__container {
-        @include centryBlock(80%);
+        // @include centryBlock(80%);
         @include flexy(column);
         gap: 25px;
     }
@@ -969,6 +999,7 @@ a {
 .reviews {
     margin: 50px auto;
     position: relative;
+    padding: 0 60px;
 
     &__description {
         font-size: 10px;
@@ -1069,8 +1100,7 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {
-    }
+    .header {}
 
     .picture--about {
         height: 213px;
@@ -1078,42 +1108,31 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {
-    }
+    .header {}
 
-    .logo {
-    }
+    .logo {}
 
-    .navigation {
-    }
+    .navigation {}
 
     .list {
-        &__item {
-        }
+        &__item {}
 
-        &--navigation {
-        }
+        &--navigation {}
     }
 
     .atelier {
-        &__wrapper {
-        }
+        &__wrapper {}
 
-        &__wrapper-content {
-        }
+        &__wrapper-content {}
 
-        &__title {
-        }
+        &__title {}
 
-        &__content {
-        }
+        &__content {}
 
-        &__link {
-        }
+        &__link {}
     }
 
-    .title {
-    }
+    .title {}
 }
 
 @media (min-width: 768px) {
@@ -1153,8 +1172,7 @@ a {
     }
 
     .list {
-        &__item {
-        }
+        &__item {}
 
         .navigation {
             transform: none;
@@ -1165,19 +1183,14 @@ a {
     }
 
     .atelier {
-        &__wrapper {
-        }
+        &__wrapper {}
 
-        &__wrapper-content {
-        }
+        &__wrapper-content {}
 
-        &__title {
-        }
+        &__title {}
 
-        &__content {
-        }
+        &__content {}
 
-        &__link {
-        }
+        &__link {}
     }
 }
