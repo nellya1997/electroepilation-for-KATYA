@@ -518,6 +518,11 @@ a {
 
 .services {
   margin-bottom: 61px;
+  position: relative;
+}
+.services .circle {
+  top: inherit;
+  bottom: -31px;
 }
 .services__title {
   margin-bottom: 24px;
@@ -532,6 +537,10 @@ a {
   position: relative;
   width: calc(50% - 18px);
   margin-bottom: 16px;
+  border-radius: 10px;
+}
+.services__list li img {
+  border-radius: 20px;
 }
 .services__content {
   font-size: 10px;
@@ -786,19 +795,38 @@ a {
   align-items: center;
   gap: 25px;
 }
+.price__title {
+  margin-bottom: 18px;
+}
 .price__women {
-  min-width: 253px;
+  min-width: 214px;
   padding: 10px;
   border-radius: 9px;
   background: rgba(250, 215, 244, 0.2);
   box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+  margin-bottom: 29px;
+  position: relative;
+}
+.price__women ::before {
+  content: url("/img/price/petal1.png");
+  position: absolute;
+  left: -25px;
+  top: -30px;
 }
 .price__men {
-  min-width: 253px;
+  min-width: 214px;
   padding: 10px;
   border-radius: 9px;
   background: rgba(201, 235, 255, 0.2);
   box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+  margin-bottom: 23px;
+  position: relative;
+}
+.price__men ::after {
+  content: url("/img/price/petal2.png");
+  position: absolute;
+  right: -21px;
+  top: -30px;
 }
 .price__subtitle {
   font-size: 14px;
@@ -956,4 +984,4 @@ a {
     position: unset;
     width: inherit;
   }
-}/*# sourceMappingURL=style.css.map */
+}

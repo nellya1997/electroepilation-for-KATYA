@@ -197,7 +197,6 @@ a {
         object-fit: contain;
     }
 
-
     &--about {
         height: 250px;
         max-width: 236px;
@@ -653,6 +652,11 @@ a {
 
 .services {
     margin-bottom: 61px;
+    position: relative;
+    .circle {
+        top: inherit;
+        bottom: -31px;
+    }
 
     &__title {
         margin-bottom: 24px;
@@ -664,10 +668,14 @@ a {
         justify-content: space-between;
         padding: 0 5px;
 
-        & li {
+        li {
             position: relative;
             width: calc(50% - 18px);
             margin-bottom: 16px;
+            border-radius: 10px;
+            img {
+                border-radius: 20px;
+            }
         }
     }
 
@@ -713,11 +721,11 @@ a {
         padding-bottom: 36px;
     }
 
-    &__wrapper-info {}
+    &__wrapper-info {
+    }
 }
 
 .services {
-
     &__swiper-wrapper .swiper-pagination,
     &__swiper-wrapper .swiper-button-next,
     &__swiper-wrapper .swiper-button-prev {
@@ -956,21 +964,41 @@ a {
         @include flexy(column);
         gap: 25px;
     }
-
+    &__title {
+        margin-bottom: 18px;
+    }
     &__women {
-        min-width: 253px;
+        min-width: 214px;
         padding: 10px;
         border-radius: 9px;
         background: rgba(250, 215, 244, 0.2);
         box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+        margin-bottom: 29px;
+
+        position: relative;
+        ::before {
+            content: url("/img/price/petal1.png");
+            position: absolute;
+            left: -25px;
+            top: -30px;
+        }
     }
 
     &__men {
-        min-width: 253px;
+        min-width: 214px;
         padding: 10px;
         border-radius: 9px;
         background: rgba(201, 235, 255, 0.2);
         box-shadow: 0px 2px 3px 0px rgba(238, 220, 250, 0.78);
+        margin-bottom: 23px;
+
+        position: relative;
+        ::after {
+            content: url("/img/price/petal2.png");
+            position: absolute;
+            right: -21px;
+            top: -30px;
+        }
     }
 
     &__subtitle {
@@ -995,7 +1023,7 @@ a {
         font-weight: 500;
     }
 }
-
+// reviews
 .reviews {
     margin: 50px auto;
     position: relative;
@@ -1100,7 +1128,8 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
     .picture--about {
         height: 213px;
@@ -1108,31 +1137,42 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
+    .header {
+    }
 
-    .logo {}
+    .logo {
+    }
 
-    .navigation {}
+    .navigation {
+    }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
-        &--navigation {}
+        &--navigation {
+        }
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 
-    .title {}
+    .title {
+    }
 }
 
 @media (min-width: 768px) {
@@ -1172,7 +1212,8 @@ a {
     }
 
     .list {
-        &__item {}
+        &__item {
+        }
 
         .navigation {
             transform: none;
@@ -1183,14 +1224,19 @@ a {
     }
 
     .atelier {
-        &__wrapper {}
+        &__wrapper {
+        }
 
-        &__wrapper-content {}
+        &__wrapper-content {
+        }
 
-        &__title {}
+        &__title {
+        }
 
-        &__content {}
+        &__content {
+        }
 
-        &__link {}
+        &__link {
+        }
     }
 }
