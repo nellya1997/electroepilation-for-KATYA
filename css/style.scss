@@ -196,19 +196,6 @@ a {
         -o-object-fit: contain;
         object-fit: contain;
     }
-
-    &--about {
-        height: 250px;
-        max-width: 236px;
-
-        & img {
-            border-radius: 14px;
-        }
-    }
-
-    &--services {
-        margin-bottom: 5px;
-    }
 }
 
 // header
@@ -527,13 +514,14 @@ a {
 // about
 
 .about {
-    gap: 20px;
+    padding: 50px 0px;
 
     //во всей секции текст в центре
     text-align: center;
 
     &__container {
         @include flexy(column);
+        gap: 20px;
     }
 
     &__description {
@@ -551,10 +539,25 @@ a {
     }
 
     &__slider {
-        width: 100%;
+        picture {
+            height: calc(250px + 200 * (100vw / 1366));
+
+            //600рх до 800рх вообще не понятно что это слайдер: внести изменения в coverflow
+
+            @media(max-width: 700px) {
+                picture {
+                    height: calc(250px + 250 * ((100vw - 320px) / 1366));
+                }
+            }
+
+            img {
+                object-fit: contain;
+            }
+        }
 
         .swiper-wrapper {
-            padding-bottom: 17px;
+            padding-bottom: 25px;
+
         }
 
         // пока напишу как ублюдоид: в будущем надо создавать один класс свайпер - на него одинаковая навигация, далее swiper-standard для обчного свайпера и swiper-coverflow - для создания этого чудесного эффекта
@@ -566,6 +569,36 @@ a {
 
         .swiper-pagination-bullet-active {
             background: rgba(192, 146, 208, 1);
+        }
+    }
+
+    .tabs {
+        input[type="radio"] {
+            display: none;
+
+            &:checked+label {
+                background-color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        .tab-inner {
+            display: none;
+        }
+
+        #tab-btn-1:checked~#ekaterina,
+        #tab-btn-2:checked~#polina,
+        #tab-btn-3:checked~#elena {
+            display: block;
+        }
+
+        label {
+            @include btn-link;
+            margin: 15px auto;
+
+            &:not(:first-of-type) {
+                border-left: none;
+            }
         }
     }
 
@@ -735,6 +768,8 @@ a {
 }
 
 .result {
+    padding: 50px 0px;
+
     &__container {
         @include flexy(column);
     }
@@ -753,6 +788,8 @@ a {
 }
 
 .price {
+    padding: 50px 0px;
+
     &__container {
         // @include centryBlock(80%);
         @include flexy(column);
@@ -886,7 +923,7 @@ a {
 // reviews
 .reviews {
     position: relative;
-    padding: 0 60px;
+    padding: 50px 0px;
 
     &__description {
         font-size: 10px;
