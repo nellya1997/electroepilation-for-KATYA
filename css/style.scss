@@ -538,40 +538,6 @@ a {
         }
     }
 
-    &__slider {
-        picture {
-            height: calc(250px + 200 * (100vw / 1366));
-
-            //600рх до 800рх вообще не понятно что это слайдер: внести изменения в coverflow
-
-            @media(max-width: 700px) {
-                picture {
-                    height: calc(250px + 250 * ((100vw - 320px) / 1366));
-                }
-            }
-
-            img {
-                object-fit: contain;
-            }
-        }
-
-        .swiper-wrapper {
-            padding-bottom: 25px;
-
-        }
-
-        // пока напишу как ублюдоид: в будущем надо создавать один класс свайпер - на него одинаковая навигация, далее swiper-standard для обчного свайпера и swiper-coverflow - для создания этого чудесного эффекта
-        .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
-            background: $lilac;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: rgba(192, 146, 208, 1);
-        }
-    }
-
     .tabs {
         input[type="radio"] {
             display: none;
@@ -602,6 +568,31 @@ a {
         }
     }
 
+    .swiper-slide {
+        width: 300px;
+        margin: 0px calc(5px + 35 * (100vw / 1366));
+
+        picture {
+            height: calc(250px + 200 * (100vw / 1366));
+        }
+    }
+
+    .swiper-wrapper {
+        //make a gap to pagination
+        padding-bottom: 25px;
+    }
+
+    // пока напишу как ублюдоид: в будущем надо создавать один класс свайпер - на него одинаковая навигация, далее swiper-standard для обчного свайпера и swiper-coverflow - для создания этого чудесного эффекта
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: $lilac;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: rgba(192, 146, 208, 1);
+    }
+
     &__advantages {
         @include flexy;
         @include centryBlock(84%);
@@ -609,6 +600,22 @@ a {
         border-radius: 9px;
         background: rgba(250, 215, 244, 0.2);
         box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
+    }
+}
+
+
+
+
+.cabinet {
+    padding: 50px 0px;
+    text-align: center;
+
+    &__container {
+        @include flexy(column);
+    }
+
+    &__slider {
+        width: 100%;
     }
 }
 
