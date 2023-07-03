@@ -612,6 +612,19 @@ a {
     }
 }
 
+.cabinet {
+    padding: 50px 0px;
+    text-align: center;
+
+    &__container {
+        @include flexy(column);
+    }
+
+    &__slider {
+        width: 100%;
+    }
+}
+
 // Преимущества
 
 .quality {
