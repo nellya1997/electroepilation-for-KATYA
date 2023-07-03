@@ -543,8 +543,8 @@ a {
             display: none;
 
             &:checked+label {
-                background-color: #fff;
-                border-bottom: 1px solid #fff;
+                background: $dark;
+                color: white;
             }
         }
 
@@ -603,21 +603,6 @@ a {
     }
 }
 
-
-
-
-.cabinet {
-    padding: 50px 0px;
-    text-align: center;
-
-    &__container {
-        @include flexy(column);
-    }
-
-    &__slider {
-        width: 100%;
-    }
-}
 
 // Преимущества
 
@@ -786,6 +771,23 @@ a {
         padding-bottom: 15px;
     }
 
+    /*
+        пытаюсь сделать анимацию пальца
+    .swiper-slide: {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: $redBorder;
+            //background-image: url('../img/swipe.png');
+        }
+
+        */
+
+
     &__description {
         font-size: 10px;
         font-weight: 500;
@@ -845,6 +847,19 @@ a {
 
     &__line p:nth-child(2) {
         font-weight: 500;
+    }
+}
+
+.cabinet {
+    padding: 50px 0px;
+    text-align: center;
+
+    &__container {
+        @include flexy(column);
+    }
+
+    &__slider {
+        width: 100%;
     }
 }
 
