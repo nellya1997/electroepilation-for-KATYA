@@ -70,19 +70,20 @@ const swiper1 = new Swiper('.swiper', {
 
 
 const aboutMeSlider = new Swiper ('.about__swiper', {
+  slidesPerView: 6,
   loop: true,
-  spaceBetween: 35,
+  spaceBetween: 1,
   speed: 1000,
   autoplay: {
-    delay: 6000
+    delay: 20000
   },
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
   coverflowEffect: {
-    depth: 100,
-    modifier: 3,
+    depth: 600,
+    modifier: 1,
     rotate: 0,
     scale: 1,
     slideShadows: false,
