@@ -71,10 +71,10 @@ const swiper1 = new Swiper('.swiper', {
 
 const aboutMeSlider = new Swiper ('.about__swiper', {
   loop: true,
-  spaceBetween: 25,
+  spaceBetween: 35,
   speed: 1000,
   autoplay: {
-    delay: 3000
+    delay: 6000
   },
   effect: 'coverflow',
   grabCursor: true,
