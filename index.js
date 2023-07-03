@@ -70,9 +70,7 @@ const swiper1 = new Swiper('.swiper', {
 
 
 const aboutMeSlider = new Swiper ('.about__swiper', {
-  slidesPerView: 6,
   loop: true,
-  spaceBetween: 1,
   speed: 1000,
   autoplay: {
     delay: 20000
@@ -82,12 +80,11 @@ const aboutMeSlider = new Swiper ('.about__swiper', {
   centeredSlides: true,
   slidesPerView: 'auto',
   coverflowEffect: {
-    depth: 600,
-    modifier: 1,
     rotate: 0,
-    scale: 1,
+    stretch: 40,
+    depth: 200,
+    modifier: 1,
     slideShadows: false,
-    stretch: 0,
   },
     pagination: {
     el: '.swiper-pagination',
