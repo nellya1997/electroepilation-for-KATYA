@@ -28,13 +28,13 @@
 $dark: #351134;
 $lilac: #61236b;
 
-// @font-face {
-//     font-family: "Montserrat";
-//     src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff) format("woff2"), url(../fonts/Montserrat-Regular.woff2) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 // цвета
 $titleColor: #ac5097;
@@ -320,8 +320,8 @@ a {
     z-index: 8;
     transform: translateX(120%);
     transition: all 0.4s ease-in;
+    background: rgba(255, 228, 252, 1);
     opacity: 0.949999988079071;
-    background: rgba(255, 228, 252, 0.35);
     left: 0;
     top: 0;
     padding: 35px 0 0 25px;
@@ -332,6 +332,7 @@ a {
         padding: 0px 0px;
         transform: none;
         visibility: visible;
+        background: rgba(255, 228, 252, 0.35);
     }
 
     &.open {
@@ -434,6 +435,8 @@ a {
     display: inline-block;
 }
 
+//circles
+/*
 .circle {
     position: absolute;
     box-shadow: 33px 0px 104px 50px rgba(208, 201, 255, 0.6);
@@ -473,17 +476,13 @@ a {
 
     // rgba(201, 235, 255, 1);
 }
+*/
 
 // Студия
-
+/*
 .atelier {
-
-    padding-top: 72px;
-    background-image: url(../img/atelier/roses.png);
-    background-size: contain;
-    background-position: 0% 14%;
-
     &__wrapper {
+        height: calc(100vh - 50px);
         font-family: "Montserrat", sans-serif;
         text-align: center;
         position: relative;
@@ -515,19 +514,6 @@ a {
         }
     }
 
-    &__record {
-        position: relative;
-
-        // & img {
-        //     width: 49px;
-        //     height: 49px;
-        // }
-    }
-
-    &__picture {
-        margin-left: -15%;
-    }
-
     &__record-link {
         position: absolute;
         bottom: 0;
@@ -538,6 +524,92 @@ a {
             height: 49px;
             left: -17px;
             top: 0;
+        }
+    }
+}
+*/
+
+.home {
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+
+    &__background {
+        position: absolute;
+        top: -60px;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background: url('../img/atelier/background.png') center/cover no-repeat;
+
+        .roses {
+            width: 100%;
+            height: 100%;
+            background: url('../img/atelier/roses.png') center/contain no-repeat;
+            //background-size: contain;
+            //background-position: 0% 14%;
+        }
+    }
+
+    .container {
+        height: calc(100vh - 60px);
+        @include flexy(column, space-between);
+
+    }
+
+    &__title {
+        color: $lilac;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 0;
+    }
+
+    &__desription {
+
+        p:first-child {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 0.8;
+            color: $dark;
+            margin-bottom: 16px;
+        }
+
+        p:nth-child(2) {
+            font-family: Montserrat;
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 26px;
+        }
+    }
+
+    &__img {
+        height: 75%;
+
+        .girl {
+            height: 100%;
+            margin-left: -15%;
+
+            picture {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: url('/img/atelier/rose.png') center/cover no-repeat;
+            right: 100%;
+            width: 50px;
+            height: 50px;
         }
     }
 }
@@ -661,7 +733,6 @@ a {
         box-shadow: 0px 2px 0px 1px rgba(238, 220, 250, 0.78);
     }
 }
-
 
 // Преимущества
 
@@ -1003,8 +1074,17 @@ a {
 
 // reviews
 .reviews {
-    position: relative;
-    padding: 50px 0px;
+    .container {
+        padding: 50px 0px;
+    }
+
+    &__background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: url('../img/reviews/background.png') center/cover no-repeat;
+    }
 
     &__description {
         font-size: 10px;
