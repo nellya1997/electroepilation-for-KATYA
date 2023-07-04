@@ -184,6 +184,11 @@ a {
   top: 10%;
   right: 21px;
 }
+@media (min-width: 1023px) {
+  .burger__wrapper {
+    display: none;
+  }
+}
 
 .burger {
   padding: 0;
@@ -243,12 +248,31 @@ a {
   top: 0;
   padding: 35px 0 0 25px;
 }
+@media (min-width: 1023px) {
+  .navigation {
+    display: block;
+    height: 60px;
+    opacity: 1;
+    padding: 0px 0px;
+    transform: none;
+    visibility: visible;
+  }
+}
 .navigation.open {
   transform: none;
   visibility: visible;
 }
 .navigation__list {
   padding: 10px;
+}
+@media (min-width: 1023px) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+  }
 }
 .navigation__item {
   margin-bottom: 15px;
@@ -265,8 +289,23 @@ a {
 .navigation__social {
   margin-bottom: 40px;
 }
+@media (min-width: 1023px) {
+  .navigation__social {
+    display: none;
+  }
+}
 .navigation__social-item {
   margin-right: 55px;
+}
+@media (min-width: 1023px) {
+  .navigation__social-item {
+    display: none;
+  }
+}
+@media (min-width: 1023px) {
+  .navigation .phone {
+    display: none;
+  }
 }
 
 .social-item {
@@ -433,6 +472,15 @@ a {
 .about .tabs #tab-btn-2:checked ~ #polina,
 .about .tabs #tab-btn-3:checked ~ #elena {
   display: block;
+  animation: 0.8s appearence ease-in-out;
+}
+@keyframes appearence {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .about .tabs label {
   display: flex;
@@ -444,6 +492,7 @@ a {
   background: linear-gradient(180deg, #e9c6f5 0%, #c092d0 100%);
   box-shadow: 0px 2px 10px 2px rgba(161, 76, 183, 0.5);
   margin: 15px auto;
+  transition: 0.5s ease-in-out;
 }
 .about .tabs label:not(:first-of-type) {
   border-left: none;
