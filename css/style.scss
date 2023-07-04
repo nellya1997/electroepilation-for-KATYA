@@ -650,6 +650,8 @@ a {
     }
 
     &__master {
+        @include centryBlock(80vw);
+
         &:first-child {
             font-size: 12px;
             line-height: 14.63px;
@@ -875,8 +877,6 @@ a {
     &__swiper-wrapper {
         padding-bottom: 36px;
     }
-
-    &__wrapper-info {}
 }
 
 .services {
@@ -1185,39 +1185,9 @@ a {
 }
 
 @media (min-width: 375px) {
-    .header {}
-
     .picture--about {
         height: 213px;
     }
-}
-
-@media (min-width: 375px) {
-    .header {}
-
-    .logo {}
-
-    .navigation {}
-
-    .list {
-        &__item {}
-
-        &--navigation {}
-    }
-
-    .atelier {
-        &__wrapper {}
-
-        &__wrapper-content {}
-
-        &__title {}
-
-        &__content {}
-
-        &__link {}
-    }
-
-    .title {}
 }
 
 @media (min-width: 768px) {
@@ -1257,7 +1227,6 @@ a {
     }
 
     .list {
-        &__item {}
 
         .navigation {
             transform: none;
@@ -1265,17 +1234,5 @@ a {
             position: unset;
             width: inherit;
         }
-    }
-
-    .atelier {
-        &__wrapper {}
-
-        &__wrapper-content {}
-
-        &__title {}
-
-        &__content {}
-
-        &__link {}
     }
 }
