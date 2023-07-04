@@ -212,6 +212,10 @@ a {
 
     &__wrapper {
         @include flex-center;
+
+        @media (min-width: 1023px) {
+            display: none;
+        }
     }
 }
 
@@ -252,10 +256,6 @@ a {
     position: absolute;
     top: 10%;
     right: 21px;
-
-    @media (min-width: 1023px) {
-        display: none;
-    }
 }
 
 .burger {
@@ -321,13 +321,12 @@ a {
     transform: translateX(120%);
     transition: all 0.4s ease-in;
     opacity: 0.949999988079071;
-    background: #ffe4fc;
+    background: rgba(255, 228, 252, 0.35);
     left: 0;
     top: 0;
     padding: 35px 0 0 25px;
 
     @media (min-width: 1023px) {
-        display: block;
         height: 60px;
         opacity: 1;
         padding: 0px 0px;
@@ -346,11 +345,25 @@ a {
         @media (min-width: 1023px) {
             @include flexy(row, space-evenly);
             height: 60px;
+            padding: 0px;
+        }
+    }
+
+    .logo-nav {
+        display: none;
+
+        @media (min-width: 1023px) {
+            display: block;
         }
     }
 
     &__item {
         margin-bottom: 15px;
+
+        @media (min-width: 1023px) {
+            //обнулил чтобы на PC были на одной линии
+            margin-bottom: 0px;
+        }
     }
 
     &__link {
@@ -464,6 +477,7 @@ a {
 // Студия
 
 .atelier {
+
     padding-top: 72px;
     background-image: url(../img/atelier/roses.png);
     background-size: contain;
