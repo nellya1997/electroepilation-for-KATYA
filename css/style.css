@@ -262,7 +262,7 @@ a {
     padding: 0px 0px;
     transform: none;
     visibility: visible;
-    background: linear-gradient(to right, rgba(208, 202, 255, 0.6), rgba(255, 255, 255, 0), rgba(255, 201, 249, 0.8));
+    background: linear-gradient(to right, rgba(208, 202, 255, 0.6), white, rgba(255, 201, 249, 0.8));
   }
 }
 .navigation.open {
