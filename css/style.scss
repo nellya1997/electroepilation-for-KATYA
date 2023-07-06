@@ -332,7 +332,8 @@ a {
         padding: 0px 0px;
         transform: none;
         visibility: visible;
-        background: rgba(255, 228, 252, 0.35);
+        // background: rgba(255, 228, 252, 0.35);
+        background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
     }
 
     &.open {
@@ -435,100 +436,6 @@ a {
     display: inline-block;
 }
 
-//circles
-/*
-.circle {
-    position: absolute;
-    box-shadow: 33px 0px 104px 50px rgba(208, 201, 255, 0.6);
-    top: -31px;
-    left: -0px;
-    z-index: 0;
-    border-radius: 17%;
-    height: 231px;
-
-    &--right-top {
-        right: 0;
-        left: auto;
-        box-shadow: -33px 0px 104px 50px rgba(255, 201, 250, 0.6);
-    }
-
-    &--left-bottom {
-        top: auto;
-        bottom: 0;
-        box-shadow: 33px -364px 104px 50px rgba(255, 201, 211, 0.6);
-    }
-
-    &--right-bottom {
-        bottom: 0;
-        top: auto;
-        left: auto;
-        right: 0;
-        box-shadow: 33px -372px 104px 50px rgba(201, 235, 255, 0.6);
-    }
-
-    .reviews &--left-bottom {
-        box-shadow: 33px 64px 104px 50px rgba(255, 201, 211, 0.6);
-    }
-
-    .reviews &--right-bottom {
-        box-shadow: 33px 62px 104px 50px rgba(201, 235, 255, 0.6);
-    }
-
-    // rgba(201, 235, 255, 1);
-}
-*/
-
-// Студия
-/*
-.atelier {
-    &__wrapper {
-        height: calc(100vh - 50px);
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        position: relative;
-    }
-
-    &__title {
-        color: $lilac;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 0;
-    }
-
-    &__subtitle {
-        color: $dark;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 0.8;
-        margin-bottom: 16px;
-    }
-
-    &__desc {
-        font-size: 10px;
-        font-weight: 400;
-        margin-bottom: 26px;
-
-        span {
-            color: $lilac;
-            font-weight: 700;
-        }
-    }
-
-    &__record-link {
-        position: absolute;
-        bottom: 0;
-
-        & img {
-            position: absolute;
-            width: 49px;
-            height: 49px;
-            left: -17px;
-            top: 0;
-        }
-    }
-}
-*/
-
 .home {
     height: calc(100vh - 60px);
     margin-top: 60px;
@@ -616,6 +523,62 @@ a {
     }
 }
 
+// Студия
+/*
+
+.atelier {
+
+    margin-top: 60px;
+    position: relative;
+
+    &__wrapper {
+        // height: calc(100vh - 50px);
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        position: relative;
+        // max-height: calc(100vh - 61px);
+    }
+
+    &__title {
+        color: $lilac;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 0;
+    }
+
+    &__subtitle {
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 0.8;
+        margin-bottom: 16px;
+    }
+
+    &__desc {
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 26px;
+
+        span {
+            color: $lilac;
+            font-weight: 700;
+        }
+    }
+
+    &__record-link {
+        position: absolute;
+        bottom: 0;
+
+        & img {
+            position: absolute;
+            width: 49px;
+            height: 49px;
+            left: -17px;
+            top: 0;
+        }
+    }
+}
+*/
 //slider started
 
 .swiper {
@@ -1260,6 +1223,19 @@ a {
         }
     }
 }
+
+/*
+@media (min-width: 1023px) {
+    .home {
+        margin-top: 118px;
+    }
+
+    &__wrapper {
+        max-height: calc(100vh - 61px);
+    }
+}
+*/
+
 
 @media (min-width: 1280px) {
     .container {
