@@ -332,7 +332,8 @@ a {
         padding: 0px 0px;
         transform: none;
         visibility: visible;
-        // background: rgba(255, 228, 252, 0.35);
+        // // background: rgba(255, 228, 252, 0.35);
+        background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
         background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
     }
 
@@ -440,14 +441,13 @@ a {
     height: calc(100vh - 60px);
     margin-top: 60px;
     text-align: center;
-    position: relative;
 
     &__background {
         position: absolute;
         top: -60px;
         z-index: -1;
         width: 100%;
-        height: 100%;
+        height: calc(100vh + 60px);
         background: radial-gradient(at 15% 21%, rgba(208, 202, 255, 0.6) 11%, rgba(255, 255, 255, 0) 35%),
             radial-gradient(at 90% 5%, rgba(255, 201, 249, 0.8) 11%, rgba(255, 255, 255, 0) 25%),
             radial-gradient(at 20% 70%, rgba(255, 199, 209, 0.8) 11%, rgba(255, 255, 255, 0) 35%),
@@ -464,8 +464,7 @@ a {
 
     .container {
         height: calc(100vh - 60px);
-        // @include flexy(column, space-between);
-
+        @include flexy(column, space-between);
     }
 
     &__title {
@@ -495,21 +494,22 @@ a {
     }
 
     &__img {
-        // height: 75%;
+        max-height: 75vh;
+        position: relative;
+        @include flexy(column);
+        margin-bottom: 1px;
 
-        .girl {
-            // height: 100%;
-            margin-left: -15%;
 
-            picture {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+        img {
+            //width: 100%;
+            //height: 100%;
+            //object-fit: cover;
         }
     }
 
+
     &__link {
+        margin: 0 auto;
         position: absolute;
         bottom: 0;
 
@@ -525,7 +525,7 @@ a {
 }
 
 // Студия
-
+/*
 .atelier {
 
     margin-top: 60px;
@@ -578,7 +578,7 @@ a {
         }
     }
 }
-
+*/
 //slider started
 
 .swiper {
@@ -1224,6 +1224,7 @@ a {
     }
 }
 
+/*
 @media (min-width: 1023px) {
     .home {
         margin-top: 118px;
@@ -1233,7 +1234,7 @@ a {
         max-height: calc(100vh - 61px);
     }
 }
-
+*/
 
 
 @media (min-width: 1280px) {
