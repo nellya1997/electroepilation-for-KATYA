@@ -333,7 +333,7 @@ a {
         transform: none;
         visibility: visible;
         // background: rgba(255, 228, 252, 0.35);
-        background: linear-gradient(to right, rgba(208, 202, 255, 0.6), white, rgba(255, 201, 249, 0.8));
+        background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
     }
 
     &.open {
@@ -532,7 +532,7 @@ a {
 
 .home {
     height: calc(100vh - 60px);
-    margin-top: 60px;
+    margin-top: 118px;
     text-align: center;
     position: relative;
 

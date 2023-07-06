@@ -262,7 +262,7 @@ a {
     padding: 0px 0px;
     transform: none;
     visibility: visible;
-    background: linear-gradient(to right, rgba(208, 202, 255, 0.6), white, rgba(255, 201, 249, 0.8));
+    background: linear-gradient(to right, rgb(208, 202, 255), white, rgb(255, 201, 249));
   }
 }
 .navigation.open {
@@ -454,7 +454,7 @@ a {
 */
 .home {
   height: calc(100vh - 60px);
-  margin-top: 60px;
+  margin-top: 118px;
   text-align: center;
   position: relative;
 }
