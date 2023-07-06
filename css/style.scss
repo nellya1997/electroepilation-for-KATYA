@@ -332,7 +332,8 @@ a {
         padding: 0px 0px;
         transform: none;
         visibility: visible;
-        // background: rgba(255, 228, 252, 0.35);
+        // // background: rgba(255, 228, 252, 0.35);
+        background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
         background: linear-gradient(to right, rgba(208, 202, 255, 1), white, rgba(255, 201, 249, 1));
     }
 
@@ -524,7 +525,6 @@ a {
 }
 
 // Студия
-/*
 
 .atelier {
 
@@ -578,7 +578,7 @@ a {
         }
     }
 }
-*/
+
 //slider started
 
 .swiper {
@@ -1224,7 +1224,6 @@ a {
     }
 }
 
-/*
 @media (min-width: 1023px) {
     .home {
         margin-top: 118px;
@@ -1234,7 +1233,7 @@ a {
         max-height: calc(100vh - 61px);
     }
 }
-*/
+
 
 
 @media (min-width: 1280px) {
