@@ -506,6 +506,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow-x: hidden;
 }
 .about__description {
   font-size: 12px;
@@ -560,15 +561,15 @@ a {
 .about .tabs label:not(:first-of-type) {
   border-left: none;
 }
+.about .swiper-wrapper {
+  padding-bottom: 25px;
+}
 .about .swiper-slide {
   width: 300px;
   margin: 0px calc(5px + 2.5622254758vw);
 }
 .about .swiper-slide picture {
   height: calc(250px + 14.6412884334vw);
-}
-.about .swiper-wrapper {
-  padding-bottom: 25px;
 }
 .about .swiper-pagination-bullet {
   width: 8px;
